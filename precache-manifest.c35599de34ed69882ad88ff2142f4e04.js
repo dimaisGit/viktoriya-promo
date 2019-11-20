@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d74fecfce74cc87a0e687ff60f8a47c",
+    "revision": "f2eace9c31910ebeb139b8cce7d8fd1c",
     "url": "/manda-react/index.html"
   },
   {
-    "revision": "49909660da5f126b31ac",
-    "url": "/manda-react/static/css/main.b7fe136f.chunk.css"
+    "revision": "df60dbc5da9cc77f77f8",
+    "url": "/manda-react/static/css/main.30e382be.chunk.css"
   },
   {
     "revision": "dd4cd9241311027b7bb5",
     "url": "/manda-react/static/js/2.2ee8eab1.chunk.js"
   },
   {
-    "revision": "49909660da5f126b31ac",
-    "url": "/manda-react/static/js/main.23dfe8de.chunk.js"
+    "revision": "df60dbc5da9cc77f77f8",
+    "url": "/manda-react/static/js/main.eddf92c9.chunk.js"
   },
   {
     "revision": "980a803a227fd18a794d",
@@ -118,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "737bef3b860f3b997719326c5fcaa090",
     "url": "/manda-react/static/media/snowflakes-bg-mechanics.737bef3b.png"
+  },
+  {
+    "revision": "a8728306033824825c6c2a887fdda3cc",
+    "url": "/manda-react/static/media/snowflakes-bg-mobile.a8728306.png"
   },
   {
     "revision": "a3d2a0781dc5d37804e48d86d38827a1",
