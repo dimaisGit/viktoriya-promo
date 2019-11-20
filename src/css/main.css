@@ -9,7 +9,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 a {
     text-decoration: none;
     position: relative;
-;
+    ;
 }
 
 a:hover {
@@ -80,6 +81,8 @@ main.oranged {
 }
 
 .flexing {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -97,7 +100,9 @@ main .col {
 }
 
 main .container.flexing {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 main .col:first-child, main .col .code {
@@ -115,7 +120,9 @@ main .col .code {
     background: #fff;
     border-radius: 1vw;
     color: #c81c25;
-    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
     width: 30vw;
     padding: .1vw .1vw 0.8vw;
     font-size: 4vw;
@@ -156,7 +163,8 @@ main .col .code {
     width: 20vw;
     font-size: 1vw;
     text-transform: uppercase;
-    box-shadow: 2px 2px 10px grey;
+    -webkit-box-shadow: 2px 2px 10px grey;
+            box-shadow: 2px 2px 10px grey;
     display: block;
     text-align: center;
     padding: 1vw 1vw;
@@ -233,7 +241,8 @@ main .col .code {
 
 .mandarin-img img {
     max-width: 100%;
-    filter: drop-shadow(5px 8px 6px rgba(0,0,0,.4));
+        -webkit-filter: drop-shadow(5px 8px 6px rgba(0,0,0,.4));
+                filter: drop-shadow(5px 8px 6px rgba(0,0,0,.4));
     max-height: 100%;
 }
 
@@ -249,7 +258,9 @@ main .col .code {
     left: 18vw;
     bottom: 12vw;
     height: 21vw;
-    transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+            transform: rotate(-8deg);
 }
 
 .card {
@@ -315,8 +326,12 @@ main .col .code {
     position: relative;
     max-width: 40vw;
     margin: 5vw auto;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .block {
@@ -327,14 +342,17 @@ main .col .code {
     font-size: .81vw;
     line-height: 1.5;
     position: relative;
-    box-shadow: 5px 5px 16px #9c9c9c;
+    -webkit-box-shadow: 5px 5px 16px #9c9c9c;
+            box-shadow: 5px 5px 16px #9c9c9c;
     overflow: hidden;
 }
 
 .block.first {
     background-color: #ff8200;
     color: #fff;
-    flex: 30%;
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
     max-width: 35%;
     margin-top: -5vw;
     z-index: 30;
@@ -394,7 +412,9 @@ main .col .code {
 .block.second {
     background-color: #fff;
     color: #000;
-    flex: 70%;
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
     max-width: 54%;
     margin-bottom: -5vw;
     margin-left: -3vw;
@@ -415,7 +435,8 @@ main .col .code {
     background: transparent;
     border: none;
     overflow: visible;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .block.no-bg:first-child {
@@ -433,13 +454,17 @@ main .col .code {
     border-radius: 50% 50% 0 0;
     display: block;
     position: absolute;
-    transform: rotate(-22deg);
+    -webkit-transform: rotate(-22deg);
+        -ms-transform: rotate(-22deg);
+            transform: rotate(-22deg);
     top: 3.75vw;
     right: -4vw;
 }
 
 .block.no-bg:last-child::before {
-    transform: rotate(230deg);
+    -webkit-transform: rotate(230deg);
+        -ms-transform: rotate(230deg);
+            transform: rotate(230deg);
     right: auto;
     top: -1vw;
     left: -1vw;
@@ -487,13 +512,21 @@ main .col .code {
     background: url(../img/price-box.png) no-repeat center;
     background-size: contain;
     height: 15vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .price-box {
-    flex: 30%;
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
     margin: 0 2vw;
 }
 
@@ -504,7 +537,9 @@ main .col .code {
 }
 
 .prices-blocks {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .prices h2, .raffle.oranged h2, .map h2 {
@@ -520,7 +555,8 @@ main .col .code {
 }
 
 .prices a.btn {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     margin-top: 3vw;
     position: relative;
 }
@@ -531,10 +567,14 @@ a.btn::after{
     left: 0;
     bottom: 0;
     border-radius: 2.5vw;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 a.btn:hover::after{
     width: 100%;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 .price-box p {
@@ -570,7 +610,9 @@ a.btn:hover::after{
 }
 
 .raffle.oranged img {
-    flex: 20%;
+    -webkit-box-flex: 20%;
+        -ms-flex: 20%;
+            flex: 20%;
     max-width: 32%;
 }
 
@@ -588,9 +630,15 @@ a.btn:hover::after{
 .content-raffle {
     max-width: 70%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #map {
@@ -600,8 +648,9 @@ a.btn:hover::after{
     overflow: hidden;
 }
 
-.ymaps-2-1-74-ground-pane {
-    filter: hue-rotate(160deg) sepia(0.1);
+.ymaps-2-1-75-ground-pane {
+    -webkit-filter: hue-rotate(160deg) sepia(0.1);
+            filter: hue-rotate(160deg) sepia(0.1);
 }
 
 .map h2 {

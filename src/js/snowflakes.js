@@ -78,7 +78,7 @@ export const initSnowFlakes = () => {
         ctx.fillStyle = '#FFF';
 
         var wasActive = active;
-        active = width > 600;
+        active = width > 100;
 
         if (!wasActive && active) {
             window.requestAnimFrame(update);

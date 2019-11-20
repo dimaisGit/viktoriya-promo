@@ -15,8 +15,8 @@ export default class MapComponent extends React.Component {
         let zoomControl = new window.ymaps.control.ZoomControl({
             options: {
                 position: {
-                    right: 50,
-                    top: 50
+                    left: 10,
+                    top: 10
                 },
                 size: 'large'
             }
@@ -35,7 +35,7 @@ export default class MapComponent extends React.Component {
             clusterDisableClickZoom: true
         });
         let  MyIconContentLayout = window.ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #278DC5; font-weight:bold;width:46px;vertical-align:middle;line-height:46px;">$[properties.iconContent]</div>'
+            '<div style="color: #fff; font-weight:bold;width:46px;vertical-align:middle;line-height:46px;">$[properties.iconContent]</div>'
         );
         // Чтобы задать опции одиночным объектам и кластерам,
         // обратимся к дочерним коллекциям ObjectManager.

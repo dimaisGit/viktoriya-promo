@@ -37,7 +37,7 @@ export default class PricesComponent extends React.Component {
                     <div className="userNav">
                         <div className="prev">{'<'}
                         </div>
-                        <div className="next">></div>
+                        <div className="next">{'>'}</div>
                     </div>
                     <a href="#" className="btn">Зарегистрировать код «2020»</a>
                 </div>
