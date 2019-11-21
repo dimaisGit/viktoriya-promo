@@ -156,16 +156,6 @@ main .col .code {
     position: relative;
 }
 
-.heading::before {
-    content: '';
-    position: absolute;
-    left: -5vw;
-    top: -5vw;
-    width: 10vw;
-    height: 6vw;
-    background: url(../img/snow.svg) no-repeat center;
-    background-size: contain;
-}
 
 .sales-block .additional {
     font-size: 60%;
@@ -349,6 +339,7 @@ main .col .code {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .block {
@@ -356,98 +347,83 @@ main .col .code {
     padding: 3vw 1vw;
     text-transform: uppercase;
     text-align: center;
-    font-size: .81vw;
+    font-size: 1.1vw;
     line-height: 1.5;
     position: relative;
     -webkit-box-shadow: 5px 5px 16px #9c9c9c;
     box-shadow: 5px 5px 16px #9c9c9c;
-    overflow: hidden;
-}
-
-.block.first {
+    /* overflow: hidden; */
     background-color: #ff8200;
     color: #fff;
-    -webkit-box-flex: 30%;
-    -ms-flex: 30%;
-    flex: 30%;
-    max-width: 35%;
-    margin-top: -5vw;
-    z-index: 30;
+    width: 85%;
 }
 
 .block.first::before {
     content: '1';
     position: absolute;
-    left: -1.2vw;
-    font-size: 15.5vw;
+    left: 0;
+    font-size: 13.5vw;
     color: #ff9e4f;
-    line-height: 0;
-    top: 4.85vw;
+    line-height: .71;
+    top: 0;
     bottom: 0;
     margin: auto;
     padding: 0;
     font-family: 'pomidorko';
+    overflow: hidden;
+    height: 100%;
+    text-align: left;
+    vertical-align: bottom;
 }
 
-.blocks:first-child::before {
-    content: '';
-    position: absolute;
-    left: -3.15vw;
-    width: 10vw;
-    height: 10vw;
-    top: -5vw;
-    background: url(../img/mandarin-block-first.png) no-repeat center;
-    background-size: contain;
-    z-index: 0;
-}
 
-.blocks:first-child::after {
-    content: '';
-    position: absolute;
-    right: 12.85vw;
-    width: 9vw;
-    height: 9vw;
-    top: -8vw;
-    background: url(../img/mandarin-block-sec.png) no-repeat center;
-    z-index: 30;
-    background-size: contain;
-}
 
+.block.second{
+    margin-top: 3.5vw;
+}
 .block.second::before {
     content: '2';
     position: absolute;
-    left: -.8vw;
-    font-size: 15vw;
-    color: #ebebeb;
-    line-height: 0;
-    top: 5.5vw;
+    left: 0;
+    font-size: 13.5vw;
+    color: #ff9e4f;
+    line-height: .71;
+    top: 0;
+    bottom: 0;
     margin: auto;
     padding: 0;
     font-family: 'pomidorko';
-}
-
-.block.second {
-    background-color: #fff;
-    color: #000;
-    -webkit-box-flex: 70%;
-    -ms-flex: 70%;
-    flex: 70%;
-    max-width: 54%;
-    margin-bottom: -5vw;
-    margin-left: -3vw;
-    z-index: 10;
-    margin-right: 0.4vw;
+    overflow: hidden;
+    height: 100%;
+    text-align: left;
+    vertical-align: bottom;
 }
 
 .block p {
     position: relative;
+    max-width: 80%;
+    margin: auto;
 }
-
+.block.first::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3vw;
+    margin: auto;
+    background: url(../img/block-first-after.png) no-repeat center;
+    background-size: contain;
+    width: 2vw;
+    height: 3vw;
+}
 .block.second p {
     max-width: 65%;
     margin: auto;
 }
-
+.blocks:last-child{
+    flex-direction: row;
+    align-items: flex-start;
+}
 .block.no-bg {
     background: transparent;
     border: none;
@@ -455,44 +431,27 @@ main .col .code {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-
-.block.no-bg:first-child {
-    margin-top: -13vw;
-    margin-left: -12vw;
-    max-width: 40%;
-}
-
-.block.no-bg:first-child::before, .block.no-bg:last-child::before {
-    content: '';
-    width: 8vw;
-    height: 3vw;
-    border: dashed .12vw #ff8200;
-    border-color: #ff8200 transparent transparent transparent;
-    border-radius: 50% 50% 0 0;
-    display: block;
+.block.no-bg:last-child::before{
+    content:'';
     position: absolute;
-    -webkit-transform: rotate(-22deg);
-    -ms-transform: rotate(-22deg);
-    transform: rotate(-22deg);
-    top: 3.75vw;
-    right: -4vw;
+    top: -5vw;
+    width: 5vw;
+    height: 5vw;
+    background: url(../img/arrow-no-bg-block.png) no-repeat center;
+    transform: rotateY(180deg);
+    background-size: contain;
+    left: 2vw;
 }
-
-.block.no-bg:last-child::before {
-    -webkit-transform: rotate(230deg);
-    -ms-transform: rotate(230deg);
-    transform: rotate(230deg);
-    right: auto;
-    top: -1vw;
-    left: -1vw;
+.block.no-bg:first-child::before{
+    content:'';
+    position: absolute;
+    top: -5vw;
+    width: 5vw;
+    height: 5vw;
+    background: url(../img/arrow-no-bg-block.png) no-repeat center;
+    background-size: contain;
+    right: 2vw;
 }
-
-.block.no-bg:last-child {
-    margin-top: 3vw;
-    max-width: 40%;
-    margin-left: 9vw;
-}
-
 .block.no-bg h4 {
     font-family: 'pomidorko';
     color: #ff8200;
@@ -500,30 +459,27 @@ main .col .code {
     font-weight: 100;
     text-transform: lowercase;
     position: relative;
-    top: -.51vw;
 }
 
 .block.no-bg p {
     text-transform: none;
-    max-width: 75%;
+    max-width: 73%;
     margin: auto;
     font-size: 1vw;
+    color: #000;
+    font-weight: 450;
 }
 
 .block.no-bg:last-child p {
     max-width: 100%;
 }
-
-.blocks:last-child::after {
-    content: '';
-    width: 8vw;
-    height: 8vw;
+/* .orangesAll{
     position: absolute;
-    left: 7vw;
-    bottom: 0;
-    background: url(../img/mandarin-block-third.png) no-repeat center;
-    background-size: contain;
-}
+    width: 100%;
+    height: 100%;border: 1px solid red;
+    top: 0%;
+    left: 0;
+} */
 
 .price-box .box {
     background: url(../img/price-box.png) no-repeat center;
@@ -615,8 +571,9 @@ a.btn:hover::after {
 
 .raffle.oranged {
     background: url(../img/trees-bg.svg) no-repeat, url(../img/raffle-snowflakes-bg.png) no-repeat 54%;
-    background-size: 100%, 94%;
+    background-size: 120%, 100%;
     background-blend-mode: multiply;
+    background-position: 0 0vw, center;
     position: relative;
     margin: -14vw -.21vw;
     padding: 17vw 0;
@@ -639,8 +596,8 @@ a.btn:hover::after {
 .raffle.oranged::before {
     content: '';
     position: absolute;
-    right: 23vw;
-    top: 12.1vw;
+    right: 31vw;
+    top: 12.41vw;
     width: 8vw;
     height: 7vw;
     background: url(../img/mandarin-rafl-before.png) no-repeat center;
@@ -648,7 +605,7 @@ a.btn:hover::after {
 }
 
 .content-raffle {
-    max-width: 70%;
+    max-width: 85%;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -739,7 +696,6 @@ footer::after {
     flex: 50% 1;
     width: 13vw;
     height: 25vw;
-    margin-right: 4vw;
     animation: 5s breathing ease-out infinite normal;
     position: relative;
     filter: drop-shadow(5px 9px 9px rgba(0,0,0,.3));
@@ -788,7 +744,8 @@ footer::after {
     cursor: pointer;
 }
 .orange-animated:hover .mouth{
-    animation:  1.5s mouseMove linear 1 alternate;
+    transform: translate(2vw, 1vw) rotate(-8deg) scale(.8, 1);
+    transition: all .3s;
 }
 .rightBrow {
     background: url(../img/orangePieces/right-brow.svg) no-repeat center;
@@ -827,6 +784,7 @@ footer::after {
     height: 8vw;
     background-size: contain;
     top: 9.2vw;
+    transition: all .3s;
     left: 5.5vw;
 }
 .tail{
