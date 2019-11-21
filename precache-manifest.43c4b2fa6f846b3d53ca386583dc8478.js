@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f2eace9c31910ebeb139b8cce7d8fd1c",
+    "revision": "e731aa854e70f7b1efa1c73078bc2fde",
     "url": "/manda-react/index.html"
   },
   {
-    "revision": "df60dbc5da9cc77f77f8",
-    "url": "/manda-react/static/css/main.30e382be.chunk.css"
+    "revision": "21d49d0b0b5ed6e4f78b",
+    "url": "/manda-react/static/css/main.b2f755aa.chunk.css"
   },
   {
-    "revision": "dd4cd9241311027b7bb5",
-    "url": "/manda-react/static/js/2.2ee8eab1.chunk.js"
+    "revision": "46eb735bcffe5a27a23d",
+    "url": "/manda-react/static/js/2.e5848bba.chunk.js"
   },
   {
-    "revision": "df60dbc5da9cc77f77f8",
-    "url": "/manda-react/static/js/main.eddf92c9.chunk.js"
+    "revision": "21d49d0b0b5ed6e4f78b",
+    "url": "/manda-react/static/js/main.9ac17706.chunk.js"
   },
   {
     "revision": "980a803a227fd18a794d",
@@ -52,6 +52,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/manda-react/static/media/h1.b7802700.svg"
   },
   {
+    "revision": "6249edee3e9a7f206729786810206d2f",
+    "url": "/manda-react/static/media/leave.6249edee.svg"
+  },
+  {
+    "revision": "38421feb435c7796a27db1e6e5ce25ff",
+    "url": "/manda-react/static/media/left-brow.38421feb.svg"
+  },
+  {
+    "revision": "830efa5e152fe414187c51f9ce38cb7a",
+    "url": "/manda-react/static/media/left-eye-closed.830efa5e.svg"
+  },
+  {
+    "revision": "1e6918c697ea3effd38352a541f0e205",
+    "url": "/manda-react/static/media/left-eye.1e6918c6.svg"
+  },
+  {
+    "revision": "531e69949eb303c48033a16399d6b288",
+    "url": "/manda-react/static/media/left-hand.531e6994.svg"
+  },
+  {
     "revision": "c991cfd2afe84d6de8266475c50b992d",
     "url": "/manda-react/static/media/list.c991cfd2.png"
   },
@@ -64,20 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/manda-react/static/media/logo.25bf045c.svg"
   },
   {
-    "revision": "616f40ced03b35229832f095a55897da",
-    "url": "/manda-react/static/media/mandarin-block-first.616f40ce.png"
-  },
-  {
-    "revision": "20deb544a1b4428f9465478e05dc8f77",
-    "url": "/manda-react/static/media/mandarin-block-sec.20deb544.png"
-  },
-  {
-    "revision": "f15a8d867b4242689da3c03ebb48bcef",
-    "url": "/manda-react/static/media/mandarin-block-third.f15a8d86.png"
-  },
-  {
     "revision": "0016dba0d0f77b987e5bdbf3cae07b76",
     "url": "/manda-react/static/media/mandarin-raffle.0016dba0.svg"
+  },
+  {
+    "revision": "5b9a83cf2877a0d0f79d56cc31c2e508",
+    "url": "/manda-react/static/media/mandarin.5b9a83cf.svg"
   },
   {
     "revision": "c3b8fb0da51585aa4febc6b695e9460f",
@@ -86,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a202fbb8c7608e581915d0afea82c8c",
     "url": "/manda-react/static/media/map-snow-bg.5a202fbb.png"
+  },
+  {
+    "revision": "872c647951c34d86b20678c546a6afcf",
+    "url": "/manda-react/static/media/mouth.872c6479.svg"
   },
   {
     "revision": "25ee9a3fab3caaf4a4f48e1a05b56523",
@@ -108,12 +124,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/manda-react/static/media/plane.2be4da57.png"
   },
   {
-    "revision": "a8510a81324d5ceb40f614890e01e7be",
-    "url": "/manda-react/static/media/price-box.a8510a81.png"
+    "revision": "c07d54a0f2b12c0557e0a9904f6329ee",
+    "url": "/manda-react/static/media/price-box.c07d54a0.png"
   },
   {
     "revision": "1a6bb0513c8bc2a2e1f6a252d41eb89d",
     "url": "/manda-react/static/media/raffle-snowflakes-bg.1a6bb051.png"
+  },
+  {
+    "revision": "725be481000e645ec36de8380e7dd059",
+    "url": "/manda-react/static/media/right-brow.725be481.svg"
+  },
+  {
+    "revision": "46a39494d91ff9dbb0afc737705fa52c",
+    "url": "/manda-react/static/media/right-eye-closed.46a39494.svg"
+  },
+  {
+    "revision": "b6356b0b4cb7571e089ce341ce1eabf2",
+    "url": "/manda-react/static/media/right-eye.b6356b0b.svg"
   },
   {
     "revision": "737bef3b860f3b997719326c5fcaa090",
@@ -130,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3cb15569837f13f160ae62e045551dd4",
     "url": "/manda-react/static/media/snowflakes-bg.3cb15569.png"
+  },
+  {
+    "revision": "84f660f1f498150cba78574afe1c4dee",
+    "url": "/manda-react/static/media/tail.84f660f1.svg"
   },
   {
     "revision": "2803f44f8506c5d55d38521249d67706",

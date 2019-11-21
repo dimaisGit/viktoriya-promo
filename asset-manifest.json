@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/manda-react/static/css/main.30e382be.chunk.css",
-    "main.js": "/manda-react/static/js/main.eddf92c9.chunk.js",
-    "main.js.map": "/manda-react/static/js/main.eddf92c9.chunk.js.map",
+    "main.css": "/manda-react/static/css/main.b2f755aa.chunk.css",
+    "main.js": "/manda-react/static/js/main.9ac17706.chunk.js",
+    "main.js.map": "/manda-react/static/js/main.9ac17706.chunk.js.map",
     "runtime-main.js": "/manda-react/static/js/runtime-main.993b9381.js",
     "runtime-main.js.map": "/manda-react/static/js/runtime-main.993b9381.js.map",
-    "static/js/2.2ee8eab1.chunk.js": "/manda-react/static/js/2.2ee8eab1.chunk.js",
-    "static/js/2.2ee8eab1.chunk.js.map": "/manda-react/static/js/2.2ee8eab1.chunk.js.map",
+    "static/js/2.e5848bba.chunk.js": "/manda-react/static/js/2.e5848bba.chunk.js",
+    "static/js/2.e5848bba.chunk.js.map": "/manda-react/static/js/2.e5848bba.chunk.js.map",
     "index.html": "/manda-react/index.html",
-    "precache-manifest.c35599de34ed69882ad88ff2142f4e04.js": "/manda-react/precache-manifest.c35599de34ed69882ad88ff2142f4e04.js",
+    "precache-manifest.43c4b2fa6f846b3d53ca386583dc8478.js": "/manda-react/precache-manifest.43c4b2fa6f846b3d53ca386583dc8478.js",
     "service-worker.js": "/manda-react/service-worker.js",
-    "static/css/main.30e382be.chunk.css.map": "/manda-react/static/css/main.30e382be.chunk.css.map",
-    "static/media/main.css": "/manda-react/static/media/snowflakes-bg.3cb15569.png",
+    "static/css/main.b2f755aa.chunk.css.map": "/manda-react/static/css/main.b2f755aa.chunk.css.map",
+    "static/media/main.css": "/manda-react/static/media/tail.84f660f1.svg",
     "static/media/mobile.css": "/manda-react/static/media/trees-bg.591d6818.svg",
     "static/media/card.png": "/manda-react/static/media/card.95ded8f8.png",
+    "static/media/animations.css": "/manda-react/static/media/right-eye-closed.46a39494.svg",
     "static/media/list.png": "/manda-react/static/media/list.c991cfd2.png",
     "static/media/logo.svg": "/manda-react/static/media/logo.25bf045c.svg",
     "static/media/mandarin-raffle.svg": "/manda-react/static/media/mandarin-raffle.0016dba0.svg",
@@ -24,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.993b9381.js",
-    "static/js/2.2ee8eab1.chunk.js",
-    "static/css/main.30e382be.chunk.css",
-    "static/js/main.eddf92c9.chunk.js"
+    "static/js/2.e5848bba.chunk.js",
+    "static/css/main.b2f755aa.chunk.css",
+    "static/js/main.9ac17706.chunk.js"
   ]
 }
