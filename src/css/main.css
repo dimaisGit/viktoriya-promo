@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -101,8 +101,8 @@ main .col {
 
 main .container.flexing {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 main .col:first-child, main .col .code {
@@ -121,8 +121,8 @@ main .col .code {
     border-radius: 1vw;
     color: #c81c25;
     -webkit-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
     width: 30vw;
     padding: .1vw .1vw 0.8vw;
     font-size: 4vw;
@@ -151,6 +151,12 @@ main .col .code {
     right: 2vw;
 }
 
+.heading {
+    display: block;
+    position: relative;
+}
+
+
 .sales-block .additional {
     font-size: 60%;
     line-height: 0.5;
@@ -164,7 +170,7 @@ main .col .code {
     font-size: 1vw;
     text-transform: uppercase;
     -webkit-box-shadow: 2px 2px 10px grey;
-            box-shadow: 2px 2px 10px grey;
+    box-shadow: 2px 2px 10px grey;
     display: block;
     text-align: center;
     padding: 1vw 1vw;
@@ -189,6 +195,7 @@ main .col .code {
     height: 5vw;
     margin-bottom: 3.5vw;
     margin-top: -2vw;
+    display: block;
 }
 
 .logo::before {
@@ -241,8 +248,8 @@ main .col .code {
 
 .mandarin-img img {
     max-width: 100%;
-        -webkit-filter: drop-shadow(5px 8px 6px rgba(0,0,0,.4));
-                filter: drop-shadow(5px 8px 6px rgba(0,0,0,.4));
+    -webkit-filter: drop-shadow(5px 8px 6px rgba(0, 0, 0, .4));
+    filter: drop-shadow(5px 8px 6px rgba(0, 0, 0, .4));
     max-height: 100%;
 }
 
@@ -259,8 +266,8 @@ main .col .code {
     bottom: 12vw;
     height: 21vw;
     -webkit-transform: rotate(-8deg);
-        -ms-transform: rotate(-8deg);
-            transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
 }
 
 .card {
@@ -327,11 +334,12 @@ main .col .code {
     max-width: 40vw;
     margin: 5vw auto;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .block {
@@ -339,143 +347,111 @@ main .col .code {
     padding: 3vw 1vw;
     text-transform: uppercase;
     text-align: center;
-    font-size: .81vw;
+    font-size: 1.1vw;
     line-height: 1.5;
     position: relative;
     -webkit-box-shadow: 5px 5px 16px #9c9c9c;
-            box-shadow: 5px 5px 16px #9c9c9c;
-    overflow: hidden;
-}
-
-.block.first {
+    box-shadow: 5px 5px 16px #9c9c9c;
+    /* overflow: hidden; */
     background-color: #ff8200;
     color: #fff;
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
-    max-width: 35%;
-    margin-top: -5vw;
-    z-index: 30;
+    width: 85%;
 }
 
 .block.first::before {
     content: '1';
     position: absolute;
-    left: -1.2vw;
-    font-size: 15.5vw;
+    left: 0;
+    font-size: 13.5vw;
     color: #ff9e4f;
-    line-height: 0;
-    top: 4.85vw;
+    line-height: .71;
+    top: 0;
     bottom: 0;
     margin: auto;
     padding: 0;
     font-family: 'pomidorko';
+    overflow: hidden;
+    height: 100%;
+    text-align: left;
+    vertical-align: bottom;
 }
 
-.blocks:first-child::before {
-    content: '';
-    position: absolute;
-    left: -3.15vw;
-    width: 10vw;
-    height: 10vw;
-    top: -5vw;
-    background: url(../img/mandarin-block-first.png) no-repeat center;
-    background-size: contain;
-    z-index: 0;
-}
 
-.blocks:first-child::after {
-    content: '';
-    position: absolute;
-    right: 12.85vw;
-    width: 9vw;
-    height: 9vw;
-    top: -8vw;
-    background: url(../img/mandarin-block-sec.png) no-repeat center;
-    z-index: 30;
-    background-size: contain;
-}
 
+.block.second{
+    margin-top: 3.5vw;
+}
 .block.second::before {
     content: '2';
     position: absolute;
-    left: -.8vw;
-    font-size: 15vw;
-    color: #ebebeb;
-    line-height: 0;
-    top: 5.5vw;
+    left: 0;
+    font-size: 13.5vw;
+    color: #ff9e4f;
+    line-height: .71;
+    top: 0;
+    bottom: 0;
     margin: auto;
     padding: 0;
     font-family: 'pomidorko';
-}
-
-.block.second {
-    background-color: #fff;
-    color: #000;
-    -webkit-box-flex: 70%;
-        -ms-flex: 70%;
-            flex: 70%;
-    max-width: 54%;
-    margin-bottom: -5vw;
-    margin-left: -3vw;
-    z-index: 10;
-    margin-right: 0.4vw;
+    overflow: hidden;
+    height: 100%;
+    text-align: left;
+    vertical-align: bottom;
 }
 
 .block p {
     position: relative;
+    max-width: 80%;
+    margin: auto;
 }
-
+.block.first::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3vw;
+    margin: auto;
+    background: url(../img/block-first-after.png) no-repeat center;
+    background-size: contain;
+    width: 2vw;
+    height: 3vw;
+}
 .block.second p {
     max-width: 65%;
     margin: auto;
 }
-
+.blocks:last-child{
+    flex-direction: row;
+    align-items: flex-start;
+}
 .block.no-bg {
     background: transparent;
     border: none;
     overflow: visible;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
-
-.block.no-bg:first-child {
-    margin-top: -13vw;
-    margin-left: -12vw;
-    max-width: 40%;
-}
-
-.block.no-bg:first-child::before, .block.no-bg:last-child::before {
-    content: '';
-    width: 8vw;
-    height: 3vw;
-    border: dashed .12vw #ff8200;
-    border-color: #ff8200 transparent transparent transparent;
-    border-radius: 50% 50% 0 0;
-    display: block;
+.block.no-bg:last-child::before{
+    content:'';
     position: absolute;
-    -webkit-transform: rotate(-22deg);
-        -ms-transform: rotate(-22deg);
-            transform: rotate(-22deg);
-    top: 3.75vw;
-    right: -4vw;
+    top: -5vw;
+    width: 5vw;
+    height: 5vw;
+    background: url(../img/arrow-no-bg-block.png) no-repeat center;
+    transform: rotateY(180deg);
+    background-size: contain;
+    left: 2vw;
 }
-
-.block.no-bg:last-child::before {
-    -webkit-transform: rotate(230deg);
-        -ms-transform: rotate(230deg);
-            transform: rotate(230deg);
-    right: auto;
-    top: -1vw;
-    left: -1vw;
+.block.no-bg:first-child::before{
+    content:'';
+    position: absolute;
+    top: -5vw;
+    width: 5vw;
+    height: 5vw;
+    background: url(../img/arrow-no-bg-block.png) no-repeat center;
+    background-size: contain;
+    right: 2vw;
 }
-
-.block.no-bg:last-child {
-    margin-top: 3vw;
-    max-width: 40%;
-    margin-left: 9vw;
-}
-
 .block.no-bg h4 {
     font-family: 'pomidorko';
     color: #ff8200;
@@ -483,30 +459,27 @@ main .col .code {
     font-weight: 100;
     text-transform: lowercase;
     position: relative;
-    top: -.51vw;
 }
 
 .block.no-bg p {
     text-transform: none;
-    max-width: 75%;
+    max-width: 73%;
     margin: auto;
     font-size: 1vw;
+    color: #000;
+    font-weight: 450;
 }
 
 .block.no-bg:last-child p {
     max-width: 100%;
 }
-
-.blocks:last-child::after {
-    content: '';
-    width: 8vw;
-    height: 8vw;
+/* .orangesAll{
     position: absolute;
-    left: 7vw;
-    bottom: 0;
-    background: url(../img/mandarin-block-third.png) no-repeat center;
-    background-size: contain;
-}
+    width: 100%;
+    height: 100%;border: 1px solid red;
+    top: 0%;
+    left: 0;
+} */
 
 .price-box .box {
     background: url(../img/price-box.png) no-repeat center;
@@ -516,17 +489,17 @@ main .col .code {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 .price-box {
     -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    -ms-flex: 30%;
+    flex: 30%;
     margin: 0 2vw;
 }
 
@@ -538,8 +511,8 @@ main .col .code {
 
 .prices-blocks {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .prices h2, .raffle.oranged h2, .map h2 {
@@ -556,11 +529,12 @@ main .col .code {
 
 .prices a.btn {
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     margin-top: 3vw;
     position: relative;
 }
-a.btn::after{
+
+a.btn::after {
     background-color: #ff8200;
     width: 100%;
     height: 100%;
@@ -571,12 +545,14 @@ a.btn::after{
     -o-transition: all .3s;
     transition: all .3s;
 }
-a.btn:hover::after{
+
+a.btn:hover::after {
     width: 100%;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
+
 .price-box p {
     color: #fff;
     text-align: center;
@@ -595,8 +571,9 @@ a.btn:hover::after{
 
 .raffle.oranged {
     background: url(../img/trees-bg.svg) no-repeat, url(../img/raffle-snowflakes-bg.png) no-repeat 54%;
-    background-size: 100%, 94%;
+    background-size: 120%, 100%;
     background-blend-mode: multiply;
+    background-position: 0 0vw, center;
     position: relative;
     margin: -14vw -.21vw;
     padding: 17vw 0;
@@ -611,16 +588,16 @@ a.btn:hover::after{
 
 .raffle.oranged img {
     -webkit-box-flex: 20%;
-        -ms-flex: 20%;
-            flex: 20%;
+    -ms-flex: 20%;
+    flex: 20%;
     max-width: 32%;
 }
 
 .raffle.oranged::before {
     content: '';
     position: absolute;
-    right: 23vw;
-    top: 12.1vw;
+    right: 31vw;
+    top: 12.41vw;
     width: 8vw;
     height: 7vw;
     background: url(../img/mandarin-rafl-before.png) no-repeat center;
@@ -628,17 +605,17 @@ a.btn:hover::after{
 }
 
 .content-raffle {
-    max-width: 70%;
+    max-width: 85%;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #map {
@@ -650,7 +627,7 @@ a.btn:hover::after{
 
 .ymaps-2-1-75-ground-pane {
     -webkit-filter: hue-rotate(160deg) sepia(0.1);
-            filter: hue-rotate(160deg) sepia(0.1);
+    filter: hue-rotate(160deg) sepia(0.1);
 }
 
 .map h2 {
@@ -710,6 +687,121 @@ footer::after {
     background: url(../img/footer-after.png) no-repeat center;
     background-size: contain;
 }
-.userNav{
+
+.userNav {
     display: none;
+}
+
+.orange-animated {
+    flex: 50% 1;
+    width: 13vw;
+    height: 25vw;
+    animation: 5s breathing ease-out infinite normal;
+    position: relative;
+    filter: drop-shadow(5px 9px 9px rgba(0,0,0,.3));
+}
+
+.mandarinMain {
+    background: url(../img/orangePieces/mandarin.svg) no-repeat center;
+    background-size: contain;
+    width: 20vw;
+    height: 23vw;
+    position: absolute;
+    left: 2vw;
+    
+}
+
+.leftHand, .rightHand {
+    background: url(../img/orangePieces/left-hand.svg) no-repeat center;
+    background-size: contain;
+    width: 6vw;
+    height: 7vw;
+    top: 7vw;
+    position: absolute;
+    left: -1.8vw;
+}
+
+.rightHand {
+    left: auto;
+    left: 19.2vw;
+    transform: rotateY(180deg);
+}
+
+.leftBrow, .rightBrow {
+    position: absolute;
+    background: url(../img/orangePieces/left-brow.svg) no-repeat center;
+    background-size: contain;
+    width: 5vw;
+    height: 4vw;
+    background-size: contain;
+    top: 3.54vw;
+    left: 6.5vw;
+    
+}
+.orange-animated:hover .leftBrow,
+.orange-animated:hover .rightBrow {
+    animation:  .3s raise ease-in-out 2;
+    cursor: pointer;
+}
+.orange-animated:hover .mouth{
+    transform: translate(2vw, 1vw) rotate(-8deg) scale(.8, 1);
+    transition: all .3s;
+}
+.rightBrow {
+    background: url(../img/orangePieces/right-brow.svg) no-repeat center;
+    left: auto;
+    left: 11.5vw;
+    top: 3.2vw;
+    width: 6vw;
+    height: 5vw;
+}
+
+.leftEye {
+    background: url(../img/orangePieces/left-eye.svg) no-repeat center;
+    width: 9vw;
+    height: 11vw;
+    background-size: contain;
+    top: 4vw;
+    left: 4.6vw;
+    position: absolute;
+    animation: 4s eyeClosing ease-in-out infinite;
+}
+.rightEye {
+    background: url(../img/orangePieces/right-eye.svg) no-repeat center;
+    width: 9vw;
+    height: 7.5vw;
+    background-size: contain;
+    top: 5.7vw;
+    left: 10vw;
+    position: absolute;
+    animation: 4s eyeClosingRight ease-in-out infinite;
+
+}
+.mouth{
+    background: url(../img/orangePieces/mouth.svg) no-repeat center;
+    position: absolute;
+    width: 12vw;
+    height: 8vw;
+    background-size: contain;
+    top: 9.2vw;
+    transition: all .3s;
+    left: 5.5vw;
+}
+.tail{
+    position: absolute;
+    background: url(../img/orangePieces/tail.svg) no-repeat center;
+    background-size: contain;
+    height: 6vw;
+    width: 3.5vw;
+    left: 7.51vw;
+    top: -.51vw;
+}
+.leave{
+    background: url(../img/orangePieces/leave.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 11vw;
+    height: 11vw;
+    left: 7.8vw;
+    top: -2.5vw;
 }

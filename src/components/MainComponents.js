@@ -13,9 +13,9 @@ export default class MainComponent extends React.Component {
             <main className="oranged ">
                 <div className="container flexing">
                     <div className="col">
-                        <div className="logo">
+                        <a href="http://dixy.ru/" target="_blank" className="logo">
                             <div className="logo-inner"></div>
-                        </div>
+                        </a>
                         <span className="dating">с 16 декабря 2019 по 31 января 2020</span>
                         <h1>Мандарим в Дикси!</h1>
                         <div className="sales-block">
