@@ -27,20 +27,30 @@
         margin-left: 23vw;
     }
     .block {
-        font-size: 1.51vw;
+        font-size: 2vw;
+        width: 100%;
     }
     .block.second::before {
-        top: 8.5vw;
-        font-size: 23vw;
-    }
-    .block.first::before {
-        top: 6.75vw;
         font-size: 18vw;
     }
+    .block.first::before {
+        font-size: 17.3vw;
+    }
+    .block.first::after{
+        width: 3vw;
+        height: 5vw;
+        bottom: -5vw;
+
+    }
+    .block.second {
+        margin-top: 5.5vw;
+    }
+    
     .block.no-bg p {
         max-width: 100%;
         margin: auto;
-        font-size: 2vw;
+        
+    font-size: 1.82vw;
     }
     .blocks:first-child::after {
         right: 12.85vw;
@@ -55,21 +65,17 @@
         top: -5vw;
     }
     .block.no-bg h4 {
-        font-size: 2.8vw;
+        font-size: 3.8vw;
     }
-    .block.no-bg:first-child::before, .block.no-bg:last-child::before {
-        border: dashed .2vw #ff8200;
-        border-color: #ff8200 transparent transparent transparent;
-        top: 4.95vw;
+    .block.no-bg:first-child::before, .block.no-bg:last-child::before{
+        height: 7vw;
     }
     .mechanics {
         padding: 10vw 0 1vw;
         background: url(../img/mechanics-bg.jpg) repeat, url(../img/snowflakes-bg-mechanics.png) no-repeat center;
-        background-size: 7%, 100%;
+        background-size: 7%, 140%
     }
-    .block.no-bg:first-child {
-        margin-left: -18vw;
-    }
+    
     .blocks:last-child::after {
         width: 12vw;
         height: 12vw;
@@ -120,21 +126,38 @@
         padding: 15vw 0;
     }
     main .container.flexing {
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     main .col {
         max-width: 100%;
-        flex: 100%;
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     main.oranged {
-        background: url(../img/oranged-bg-main-mobile.jpg), url(../img/snowflakes-bg.png);
-        background-size: 101%, 110%;
-        background-position: 2vw -6vw, 0 0;
+        background: url(../img/oranged-bg-main-mobile.jpg), url(../img/snowflakes-bg-mobile.png);
+        background-size: 101%, 100%;
+        background-position: 2vw -6vw, -4vw -6vw;
+        background-blend-mode: overlay;
         padding-top: 5vw;
     }
     .dating {
@@ -142,7 +165,8 @@
         text-shadow: 18px -6px 20px #ff8a03;
     }
     .logo {
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         height: 15vw;
         width: 15vw;
         position: absolute;
@@ -206,7 +230,9 @@
         left: 10vw;
         bottom: 12vw;
         height: 31vw;
-        transform: rotate(-8deg);
+        -webkit-transform: rotate(-8deg);
+            -ms-transform: rotate(-8deg);
+                transform: rotate(-8deg);
     }
     .card {
         position: absolute;
@@ -250,7 +276,10 @@
         background-size: 7%, 150%;
     }
     .blocks {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-width: 100%;
         margin-left: 0;
     }
@@ -263,12 +292,18 @@
         margin: 2vw 0;
         font-size: 3vw;
     }
+    .block.second{
+        margin-top: 8vw;
+    }
     .block.first::before {
-        top: 10.5vw;
         font-size: 28vw;
     }
+    .block.first::after {
+        width: 5vw;
+        height: 7vw;
+        bottom: -7vw;
+    }
     .block.second::before {
-        top: 10.5vw;
         font-size: 29vw;
     }
     .blocks:first-child::before {
@@ -288,12 +323,16 @@
         margin: 0 auto;
     }
     .mechanics .blocks:last-child {
-        flex-direction: row;
-        justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
     .mechanics .blocks:last-child .block.no-bg {
-        margin: 0;
-        max-width: 30%;
+        margin: 5vw 0 0;
+        max-width: 50%;
     }
     .blocks:last-child::after {
         width: 22vw;
@@ -310,16 +349,11 @@
         font-size: 3vw;
     }
     .block.no-bg:first-child::before, .block.no-bg:last-child::before {
-        width: 18vw;
         height: 12vw;
-        top: -6vw;
-        transform: rotate(-45deg);
-        left: 10vw;
+        width: 8vw;
+        top: -12vw;
     }
-    .block.no-bg:last-child::before {
-        transform: rotate(45deg);
-        left: -2vw;
-    }
+
     .price-box .box {
         height: 50vw;
     }
@@ -332,8 +366,12 @@
         display: none;
     }
     .userNav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         position: relative;
         width: 100%;
         left: 0;
@@ -351,28 +389,28 @@
         width: 12vw;
         color: transparent;
         height: 12vw;
-        filter: hue-rotate(90deg) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+        -webkit-filter: hue-rotate(90deg) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+                filter: hue-rotate(90deg) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
     }
     .next:hover, .prev:hover {
-        filter: hue-rotate(90deg) saturate(0.4);
+        -webkit-filter: hue-rotate(90deg) saturate(0.4);
+                filter: hue-rotate(90deg) saturate(0.4);
     }
     .next {
         left: auto;
         right: 15vw;
     }
     .prev {
-        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
     }
     .prices a.btn {
         margin-top: -7vw;
     }
-    .prices.oranged {
-        padding-bottom: 12vw;
-    }
+    
     .raffle.oranged::before {
-        top: 14vw;
-        width: 17vw;
-        height: 8vw;
+        top: 17.5vw;
+        right: 19vw;
     }
     #map {
         height: 65vw;
@@ -388,6 +426,12 @@
         padding: 0 6vw;
         font-size: 2.5vw;
     }
+    footer h2{
+        font-size: 4.52vw;
+        max-width: 88%;
+        margin: -5vw auto 5vw;
+        line-height: 1.5;
+    }
     footer::after {
         width: 80vw;
         height: 13vw;
@@ -395,5 +439,13 @@
     .price-box p {
         font-size: 3vw;
     }
-
+    .raffle.oranged {
+        background: url(../img/trees-bg.svg) no-repeat, url(../img/raffle-snowflakes-bg.png) no-repeat 54%;
+        background-size: cover, 95%;
+        background-blend-mode: multiply;
+        position: relative;
+        margin: -20vw 0;
+        padding: 22vw 0;
+        margin-bottom: -10vw;
+    }
 }
