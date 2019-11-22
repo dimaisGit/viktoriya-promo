@@ -1,35 +1,45 @@
 import React from 'react'
+import toolt from '../img/tooltip.png'
+import 'react-tippy/dist/tippy.css';
+import { Tooltip } from 'react-tippy';
+import mandarin from '../img/mand.mp4'
 
 export default class MechanicsComponent extends React.Component {
-    render () {
+
+    render() {
         return (
             <section className="mechanics mandarined">
                 <div className="container">
+                    <h2>Встречай Новый год вместе с нами!</h2>
                     <div className="blocks flexing">
                         <div className="block first">
-                            <p>С <b>16.12.2019</b> ПО <b>31.01.2020</b> СОВЕРШИТЕ ПОКУПКУ
-                                НА СУММУ ОТ 700Р*</p>
+                            <p>Соверши покупку ОТ 700<small>₽</small></p> и получи купон (скретч-карту)
                         </div>
                         <div className="block second">
-                            <p>ПОЛУЧИТЕ <b>КУПОН</b> НА КАССЕ
-                                И СТЕРЕВ ЗАЩИТНЫЙ СЛОЙ вы получите...</p>
+                            <p>Под защитным слоем ты найдешь один из подарков:</p>
                         </div>
                     </div>
                     <div className="blocks flexing">
                         <div className="block no-bg">
                             <h4>скидку до 20%</h4>
-                            <p>Используйте купон
-                                при следующей покупке
-                                от 700 руб.</p>
+                            <p>На следующую покупку от 700<small>₽</small> в <b>«ДИКСИ»</b>
+                                <Tooltip
+                                    title="Без учета табака, табачной продукции, табачных изделий, курительных принадлежностей, алкогольной продукции с установленной минимальной розничной ценой"
+                                    position="top"
+                                    trigger="click" >
+                                    <img className="tooltip-min" src={toolt} />
+                                </Tooltip>
+                            </p>
                         </div>
                         <div className="block no-bg">
                             <h4>код «2020»</h4>
-                            <p>с шансом поучаствовать
-                                в розыгрыше призов</p>
+                            <p>Для участия в новогоднем розыгрыше <b>СУПЕРПРИЗОВ</b>!</p>
                         </div>
                     </div>
                 </div>
-                <div className="orangesAll"></div>
+                <div className="orangesAll">
+                   <img src={mandarin}/>
+                </div>
             </section>
         )
     }

@@ -65,7 +65,6 @@ export default class MapComponent extends React.Component {
             this.myMap.setCenter(center);
         });
         let resultingObjects = data.map(async (item, index) => {
-            console.log(item)
             return {
                 type: 'Feature',
                 id: index,
@@ -80,7 +79,6 @@ export default class MapComponent extends React.Component {
         })
         let resultingData
         Promise.all(resultingObjects).then((completed) => {
-            console.log(completed)
             resultingData = {
                 "type": "FeatureCollection",
                 "features": completed
@@ -96,7 +94,7 @@ export default class MapComponent extends React.Component {
         return (
             <section className="map oranged">
                 <div className="container">
-                    <h2>за призами в магазины</h2>
+                    <h2>Карта магазинов</h2>
                     <div id="map"></div>
                 </div>
             </section>

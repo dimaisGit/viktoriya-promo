@@ -323,10 +323,11 @@ main .col .code {
 }
 
 .mechanics {
-    background: url(../img/mechanics-bg.jpg) repeat, url(../img/snowflakes-bg-mechanics.png) no-repeat center;
-    background-size: 7%, 80%;
+    background: url(../img/mechanics-bg.jpg) repeat, url(../img/snowflakes-bg-mechanics.png);
+    background-size: 7%, 120%;
     background-blend-mode: soft-light;
     padding: 10vw 0;
+    background-position: 90% 60%;
 }
 
 .blocks {
@@ -341,7 +342,7 @@ main .col .code {
     align-items: center;
     flex-direction: column;
 }
-.blocks:first-child::after{
+.blocks:nth-child(2)::after{
     content: '';
     position: absolute;
     width: 10vw;
@@ -351,41 +352,32 @@ main .col .code {
     left: 38vw;
     top: 5vw;
 }
-.blocks:first-child::before{
+.blocks:nth-child(2)::before{
     content: '';
     position: absolute;
     width: 10vw;
     height: 9vw;
     background: url(../img/mandarin-block-first.png) no-repeat center;
     background-size: contain;
-    left: -8vw;
+    left: -10vw;
     top: 17vw;
 }
-.blocks:last-child::after{
-    content: '';
-    position: absolute;
-    width: 10vw;
-    height: 9vw;
-    background: url(../img/mandarin-block-third.png) no-repeat center;
-    background-size: contain;
-    left: 16vw;
-    top: 10vw;
-
+.blocks:nth-child(3){
+    max-width: 60vw;
 }
+
 .block {
     border-radius: .5vw;
     padding: 3vw 1vw;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 1.5vw;
     line-height: 1.5;
     position: relative;
-    -webkit-box-shadow: 5px 5px 16px #9c9c9c;
     box-shadow: 5px 5px 16px #9c9c9c;
-    /* overflow: hidden; */
     background-color: #ff8200;
     color: #fff;
-    width: 85%;
+    width: 100%;
 }
 
 .block.first::before {
@@ -485,7 +477,7 @@ main .col .code {
 .block.no-bg h4 {
     font-family: 'pomidorko';
     color: #ff8200;
-    font-size: 1.8vw;
+    font-size: 2.5vw;
     font-weight: 100;
     text-transform: lowercase;
     position: relative;
@@ -495,7 +487,7 @@ main .col .code {
     text-transform: none;
     max-width: 73%;
     margin: auto;
-    font-size: 1vw;
+    font-size: 1.5vw;
     color: #000;
     font-weight: 450;
 }
@@ -545,13 +537,15 @@ main .col .code {
     justify-content: center;
 }
 
-.prices h2, .raffle.oranged h2, .map h2 {
+.prices h2, .raffle.oranged h2, .map h2, .mechanics h2 {
     text-align: center;
     font-size: 3vw;
     margin: 2vw 0;
     text-transform: uppercase;
 }
-
+.mechanics h2{
+    color: #ff8200;
+}
 .raffle.oranged h2 {
     color: #ff8200;
     text-align: left;
@@ -834,4 +828,14 @@ footer::after {
     height: 11vw;
     left: 7.8vw;
     top: -2.5vw;
+}
+.tooltip-min{
+    max-width: 1vw;
+    margin-left: .5vw;
+    cursor: pointer;
+}
+.info{
+    max-width: 35vw; 
+    font-size: 1.52vw;
+    line-height: 1.5;
 }

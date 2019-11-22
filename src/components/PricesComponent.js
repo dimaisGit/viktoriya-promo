@@ -11,27 +11,23 @@ export default class PricesComponent extends React.Component {
                 <div className="container">
                     <h2>суперпризы</h2>
                     <div className="prices-blocks flexing owl-carousel">
-
                         <div className="price-box">
                             <div className="box">
                                 <img src={tel} alt="tel" />
                             </div>
-                            <p>7 телефонов
-                                iPhone 11</p>
+                            <p>iPad или iPhone 11</p>
                         </div>
                         <div className="price-box">
                             <div className="box">
                                 <img src={card} alt="card" />
                             </div>
-                            <p>Сертификат
-                                на 4000₽</p>
+                            <p>Сертификат на покупку бытовой техники</p>
                         </div>
                         <div className="price-box">
                             <div className="box">
                                 <img src={tour} alt="tour" />
                             </div>
-                            <p>Путевка
-                                на путешествие</p>
+                            <p>Одно из трех путешествий</p>
                         </div>
                     </div>
                     <div className="userNav">

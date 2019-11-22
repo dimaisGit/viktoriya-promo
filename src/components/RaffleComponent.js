@@ -12,7 +12,7 @@ export default class RaffleComponent extends React.Component {
                         <div className="orange-animated">
                             <div className="tail"></div>
                             <div className="leave"></div>
-                            <div class="mandarinMain"> </div>
+                            <div className="mandarinMain"> </div>
                             <div className="leftHand"></div>
                             <div className="rightHand"></div>
                             <div className="leftBrow"></div>
@@ -21,10 +21,11 @@ export default class RaffleComponent extends React.Component {
                             <div className="rightEye"></div>
                             <div className="mouth"></div>
                         </div>
-                            <div className="info">
-                                <h2>Розыгрыш</h2>
-                                <p>Розыгрыш призов вы сможете увидеть в прямом эфире тогда-то</p>
-                            </div>
+                        <div className="info">
+                            <h2>Розыгрыш призов</h2>
+                            <p>Розыгрыш  состоится 31.01.2020. Мы проведем прямой эфир, где узнаем имена счастливых обладателей главных призов. 
+                                Запись будет выложена на сайт сразу после определения победителей. </p>
+                        </div>
                     </div>
                 </div>
             </section>
