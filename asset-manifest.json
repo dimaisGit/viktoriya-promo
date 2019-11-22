@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/manda-react/static/css/main.b2f755aa.chunk.css",
-    "main.js": "/manda-react/static/js/main.9ac17706.chunk.js",
-    "main.js.map": "/manda-react/static/js/main.9ac17706.chunk.js.map",
+    "main.css": "/manda-react/static/css/main.c15945b8.chunk.css",
+    "main.js": "/manda-react/static/js/main.c29c15e5.chunk.js",
+    "main.js.map": "/manda-react/static/js/main.c29c15e5.chunk.js.map",
     "runtime-main.js": "/manda-react/static/js/runtime-main.993b9381.js",
     "runtime-main.js.map": "/manda-react/static/js/runtime-main.993b9381.js.map",
     "static/js/2.e5848bba.chunk.js": "/manda-react/static/js/2.e5848bba.chunk.js",
     "static/js/2.e5848bba.chunk.js.map": "/manda-react/static/js/2.e5848bba.chunk.js.map",
     "index.html": "/manda-react/index.html",
-    "precache-manifest.43c4b2fa6f846b3d53ca386583dc8478.js": "/manda-react/precache-manifest.43c4b2fa6f846b3d53ca386583dc8478.js",
+    "precache-manifest.90e54075c3abf431948d783fb5716aec.js": "/manda-react/precache-manifest.90e54075c3abf431948d783fb5716aec.js",
     "service-worker.js": "/manda-react/service-worker.js",
-    "static/css/main.b2f755aa.chunk.css.map": "/manda-react/static/css/main.b2f755aa.chunk.css.map",
+    "static/css/main.c15945b8.chunk.css.map": "/manda-react/static/css/main.c15945b8.chunk.css.map",
     "static/media/main.css": "/manda-react/static/media/tail.84f660f1.svg",
     "static/media/mobile.css": "/manda-react/static/media/trees-bg.591d6818.svg",
     "static/media/card.png": "/manda-react/static/media/card.95ded8f8.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.993b9381.js",
     "static/js/2.e5848bba.chunk.js",
-    "static/css/main.b2f755aa.chunk.css",
-    "static/js/main.9ac17706.chunk.js"
+    "static/css/main.c15945b8.chunk.css",
+    "static/js/main.c29c15e5.chunk.js"
   ]
 }

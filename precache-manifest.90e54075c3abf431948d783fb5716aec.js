@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e731aa854e70f7b1efa1c73078bc2fde",
+    "revision": "f0289967f321a6f9c87e0ef16aeb2dda",
     "url": "/manda-react/index.html"
   },
   {
-    "revision": "21d49d0b0b5ed6e4f78b",
-    "url": "/manda-react/static/css/main.b2f755aa.chunk.css"
+    "revision": "4a21457dc75f1b00e8d2",
+    "url": "/manda-react/static/css/main.c15945b8.chunk.css"
   },
   {
     "revision": "46eb735bcffe5a27a23d",
     "url": "/manda-react/static/js/2.e5848bba.chunk.js"
   },
   {
-    "revision": "21d49d0b0b5ed6e4f78b",
-    "url": "/manda-react/static/js/main.9ac17706.chunk.js"
+    "revision": "4a21457dc75f1b00e8d2",
+    "url": "/manda-react/static/js/main.c29c15e5.chunk.js"
   },
   {
     "revision": "980a803a227fd18a794d",
@@ -82,6 +82,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "25bf045ca257e971124f3997d89f321c",
     "url": "/manda-react/static/media/logo.25bf045c.svg"
+  },
+  {
+    "revision": "7a482a10bcd2bd7ae29ee5b36becf9fc",
+    "url": "/manda-react/static/media/mandarin-block-first.7a482a10.png"
+  },
+  {
+    "revision": "20deb544a1b4428f9465478e05dc8f77",
+    "url": "/manda-react/static/media/mandarin-block-sec.20deb544.png"
+  },
+  {
+    "revision": "12c89c6f7e623982ef6ed4d541a928c0",
+    "url": "/manda-react/static/media/mandarin-block-third.12c89c6f.png"
   },
   {
     "revision": "0016dba0d0f77b987e5bdbf3cae07b76",
