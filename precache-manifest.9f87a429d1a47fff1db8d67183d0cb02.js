@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52dd5648f615178611e0cae4ff957fa8",
+    "revision": "2c356b10a393d3c70840ebd0f45f471f",
     "url": "/manda-react/index.html"
   },
   {
-    "revision": "de110d5e4082380b8951",
+    "revision": "c1bbf229869c7637e703",
     "url": "/manda-react/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "fff1d3c5fe2b07117067",
+    "revision": "d53522f7d945e0cbe1f7",
     "url": "/manda-react/static/css/main.f91ad0a6.chunk.css"
   },
   {
-    "revision": "de110d5e4082380b8951",
-    "url": "/manda-react/static/js/2.16b9eba6.chunk.js"
+    "revision": "c1bbf229869c7637e703",
+    "url": "/manda-react/static/js/2.d0ea6917.chunk.js"
   },
   {
-    "revision": "fff1d3c5fe2b07117067",
-    "url": "/manda-react/static/js/main.2f4569ce.chunk.js"
+    "revision": "d53522f7d945e0cbe1f7",
+    "url": "/manda-react/static/js/main.26d86a89.chunk.js"
   },
   {
-    "revision": "980a803a227fd18a794d",
-    "url": "/manda-react/static/js/runtime-main.993b9381.js"
+    "revision": "94f005a0036619d036aa",
+    "url": "/manda-react/static/js/runtime-main.48f88ba5.js"
   },
   {
     "revision": "4bba6aa20e86c60d8c5651b2a8e8ce45",
