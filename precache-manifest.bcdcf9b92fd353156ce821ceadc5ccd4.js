@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0289967f321a6f9c87e0ef16aeb2dda",
+    "revision": "52dd5648f615178611e0cae4ff957fa8",
     "url": "/manda-react/index.html"
   },
   {
-    "revision": "4a21457dc75f1b00e8d2",
-    "url": "/manda-react/static/css/main.c15945b8.chunk.css"
+    "revision": "de110d5e4082380b8951",
+    "url": "/manda-react/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "46eb735bcffe5a27a23d",
-    "url": "/manda-react/static/js/2.e5848bba.chunk.js"
+    "revision": "fff1d3c5fe2b07117067",
+    "url": "/manda-react/static/css/main.f91ad0a6.chunk.css"
   },
   {
-    "revision": "4a21457dc75f1b00e8d2",
-    "url": "/manda-react/static/js/main.c29c15e5.chunk.js"
+    "revision": "de110d5e4082380b8951",
+    "url": "/manda-react/static/js/2.16b9eba6.chunk.js"
+  },
+  {
+    "revision": "fff1d3c5fe2b07117067",
+    "url": "/manda-react/static/js/main.2f4569ce.chunk.js"
   },
   {
     "revision": "980a803a227fd18a794d",
