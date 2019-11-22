@@ -341,7 +341,37 @@ main .col .code {
     align-items: center;
     flex-direction: column;
 }
+.blocks:first-child::after{
+    content: '';
+    position: absolute;
+    width: 10vw;
+    height: 9vw;
+    background: url(../img/mandarin-block-sec.png) no-repeat center;
+    background-size: contain;
+    left: 38vw;
+    top: 5vw;
+}
+.blocks:first-child::before{
+    content: '';
+    position: absolute;
+    width: 10vw;
+    height: 9vw;
+    background: url(../img/mandarin-block-first.png) no-repeat center;
+    background-size: contain;
+    left: -8vw;
+    top: 17vw;
+}
+.blocks:last-child::after{
+    content: '';
+    position: absolute;
+    width: 10vw;
+    height: 9vw;
+    background: url(../img/mandarin-block-third.png) no-repeat center;
+    background-size: contain;
+    left: 16vw;
+    top: 10vw;
 
+}
 .block {
     border-radius: .5vw;
     padding: 3vw 1vw;
