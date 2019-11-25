@@ -23,12 +23,12 @@
         top: 2vw;
     }
     .blocks {
-        max-width: 62vw;
-        margin-left: 23vw;
+        max-width: 80vw;
+        margin: 5vw auto;
     }
     .block {
         font-size: 2vw;
-        width: 100%;
+        width: 80%
     }
     .block.second::before {
         font-size: 18vw;
@@ -36,50 +36,47 @@
     .block.first::before {
         font-size: 17.3vw;
     }
-    .block.first::after{
+    .block.first::after {
         width: 3vw;
         height: 5vw;
         bottom: -5vw;
-
     }
     .block.second {
         margin-top: 5.5vw;
     }
-    
-    .block.no-bg p {
-        max-width: 100%;
+    .block.no-bg p, .block.no-bg:last-child p {
+        max-width: 70%;
         margin: auto;
-        
-    font-size: 1.82vw;
+        font-size: 1.82vw;
     }
-    .blocks:first-child::after {
-        right: 12.85vw;
-        width: 15vw;
-        height: 13vw;
+    .orangesAll {
         top: -11vw;
-    }
-    .blocks:first-child::before {
-        left: -4.15vw;
-        width: 13vw;
-        height: 13vw;
-        top: -5vw;
+        margin-bottom: -5vw;
     }
     .block.no-bg h4 {
         font-size: 3.8vw;
     }
-    .block.no-bg:first-child::before, .block.no-bg:last-child::before{
+    .block.no-bg:first-child::before, .block.no-bg:last-child::before {
         height: 7vw;
+    }
+    .blocks:nth-child(2)::after {
+        width: 15vw;
+        height: 15vw;
+        left: 64vw;
+    }
+    .blocks:nth-child(2)::before {
+        width: 15vw;
+        height: 15vw;
+        left: -7vw;
     }
     .mechanics {
         padding: 10vw 0 1vw;
         background: url(../img/mechanics-bg.jpg) repeat, url(../img/snowflakes-bg-mechanics.png) no-repeat center;
         background-size: 7%, 140%
     }
-    
-    .blocks:last-child::after {
-        width: 12vw;
-        height: 12vw;
-        left: 12vw;
+    .prices.oranged {
+        background: url(../img/oranged-bg.jpg), url(../img/snowflakes-bg-prices.png) no-repeat left 9vw;
+        background-size: cover, 90%;
     }
     .mandarined::before, .mandarined::after {
         bottom: -8vw;
@@ -100,7 +97,8 @@
         font-size: 2vw;
     }
     #map {
-        width: 90%;
+        height: 85vw;
+        width: 100%;
         margin: auto;
     }
     .map.oranged {
@@ -117,6 +115,26 @@
         padding: 0 3vw;
         font-size: 1.5vw;
     }
+    .orange-animated {
+        flex: 20%;
+        margin: 0 10vw;
+    }
+    .info {
+        flex: 80% 1;
+        max-width: 50vw;
+        margin: 0 5vw;
+    }
+    .content-raffle .info p {
+        font-size: 2vw;
+        ;
+    }
+    .map h2::after {
+        width: 5vw;
+        height: 5vw;
+    }
+    .tooltip-min {
+        max-width: 2vw;
+    }
 }
 
 /* mobile */
@@ -127,31 +145,31 @@
     }
     main .container.flexing {
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
     main .col {
         max-width: 100%;
         -webkit-box-flex: 100%;
-            -ms-flex: 100%;
-                flex: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     main.oranged {
         background: url(../img/oranged-bg-main-mobile.jpg), url(../img/snowflakes-bg-mobile.png);
@@ -166,7 +184,7 @@
     }
     .logo {
         -ms-flex-item-align: start;
-            align-self: flex-start;
+        align-self: flex-start;
         height: 15vw;
         width: 15vw;
         position: absolute;
@@ -231,8 +249,8 @@
         bottom: 12vw;
         height: 31vw;
         -webkit-transform: rotate(-8deg);
-            -ms-transform: rotate(-8deg);
-                transform: rotate(-8deg);
+        -ms-transform: rotate(-8deg);
+        transform: rotate(-8deg);
     }
     .card {
         position: absolute;
@@ -278,8 +296,8 @@
     .blocks {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         max-width: 100%;
         margin-left: 0;
     }
@@ -292,7 +310,7 @@
         margin: 2vw 0;
         font-size: 3vw;
     }
-    .block.second{
+    .block.second {
         margin-top: 8vw;
     }
     .block.first::before {
@@ -306,18 +324,6 @@
     .block.second::before {
         font-size: 29vw;
     }
-    .blocks:first-child::before {
-        left: -0.5vw;
-        width: 21vw;
-        height: 21vw;
-        top: -9vw;
-    }
-    .blocks:first-child::after {
-        right: 5.85vw;
-        width: 20vw;
-        height: 18vw;
-        top: 15vw;
-    }
     .blocks:first-child .block.first p {
         max-width: 70%;
         margin: 0 auto;
@@ -325,25 +331,17 @@
     .mechanics .blocks:last-child {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
         -ms-flex-pack: distribute;
-            justify-content: space-around;
+        justify-content: space-around;
     }
     .mechanics .blocks:last-child .block.no-bg {
         margin: 5vw 0 0;
         max-width: 50%;
     }
-    .blocks:last-child::after {
-        width: 22vw;
-        height: 18vw;
-        left: 5vw;
-        right: 0;
-        margin: auto;
-        top: -4vw;
-    }
     .block.no-bg h4 {
-        font-size: 4.3vw;
+        font-size: 5.3vw;
     }
     .block.no-bg p {
         font-size: 3vw;
@@ -353,7 +351,6 @@
         width: 8vw;
         top: -12vw;
     }
-
     .price-box .box {
         height: 50vw;
     }
@@ -370,8 +367,8 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         position: relative;
         width: 100%;
         left: 0;
@@ -390,11 +387,11 @@
         color: transparent;
         height: 12vw;
         -webkit-filter: hue-rotate(90deg) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
-                filter: hue-rotate(90deg) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+        filter: hue-rotate(90deg) drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
     }
     .next:hover, .prev:hover {
         -webkit-filter: hue-rotate(90deg) saturate(0.4);
-                filter: hue-rotate(90deg) saturate(0.4);
+        filter: hue-rotate(90deg) saturate(0.4);
     }
     .next {
         left: auto;
@@ -402,18 +399,17 @@
     }
     .prev {
         -webkit-transform: rotateY(180deg);
-                transform: rotateY(180deg);
+        transform: rotateY(180deg);
     }
     .prices a.btn {
         margin-top: -7vw;
     }
-    
     .raffle.oranged::before {
         top: 17.5vw;
         right: 19vw;
     }
     #map {
-        height: 65vw;
+        height: 85vw;
     }
     .map h2::after {
         height: 5vw;
@@ -426,7 +422,7 @@
         padding: 0 6vw;
         font-size: 2.5vw;
     }
-    footer h2{
+    footer h2 {
         font-size: 4.52vw;
         max-width: 88%;
         margin: -5vw auto 5vw;
@@ -447,5 +443,45 @@
         margin: -20vw 0;
         padding: 22vw 0;
         margin-bottom: -10vw;
+    }
+    .prices h2, .raffle.oranged h2, .map h2, .mechanics h2 {
+        font-size: 4.52vw;
+    }
+    .blocks:nth-child(2)::after {
+        width: 18vw;
+        height: 18vw;
+        left: 74vw;
+        top: 12vw;
+    }
+    .blocks:nth-child(2)::before {
+        width: 26vw;
+        height: 19vw;
+        left: -3vw;
+        z-index: 10;
+        top: 10vw;
+    }
+    .blocks:nth-child(3) {
+        max-width: 100%;
+    }
+    .block.no-bg p, .block.no-bg:last-child p {
+        font-size: 2.82vw;
+    }
+    .tooltip-min {
+        max-width: 3vw;
+    }
+    .orangesAll {
+        top: -16vw;
+        margin-bottom: -12vw;
+        max-width: 16vw;
+    }
+    .map.oranged {
+        padding-top: 15vw;
+        padding-bottom: 0;
+    }
+    footer {
+        background-size: 100%;
+        background: #212121 url(../img/footer-snow.png) no-repeat top;
+        background-blend-mode: screen;
+        background-size: 100%;
     }
 }

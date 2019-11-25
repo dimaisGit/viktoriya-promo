@@ -64,22 +64,32 @@ main.oranged {
     position: relative;
 }
 
-.mandarined::before, .mandarined::after {
+.mandarined::before, .mandarined::after, footer::before {
     content: '';
     position: absolute;
     bottom: -6vw;
     left: 0;
     width: 100%;
     height: 11vw;
-    background: url(../img/oranged-after.png) repeat-x 10%;
+    background: url(../img/oranged-after-old.png) repeat-x 10%; 
     background-size: cover;
+    z-index: 15;
 }
 
 .mandarined::before {
     bottom: auto;
     top: -6vw;
+    background: url(../img/oranged-after.png) repeat-x 10%; 
+    background-size: cover;
 }
-
+footer::before {
+    background: url(../img/snow-after.png) repeat-x; 
+    background-size: 80%; 
+    bottom: auto;
+    top: -5vw;
+    height: 5vw;
+    background-position: 0 -75%;
+}
 .flexing {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -155,7 +165,6 @@ main .col .code {
     display: block;
     position: relative;
 }
-
 
 .sales-block .additional {
     font-size: 60%;
@@ -326,7 +335,7 @@ main .col .code {
     background: url(../img/mechanics-bg.jpg) repeat, url(../img/snowflakes-bg-mechanics.png);
     background-size: 7%, 120%;
     background-blend-mode: soft-light;
-    padding: 10vw 0;
+    padding: 0;
     background-position: 90% 60%;
 }
 
@@ -342,7 +351,8 @@ main .col .code {
     align-items: center;
     flex-direction: column;
 }
-.blocks:nth-child(2)::after{
+
+.blocks:nth-child(2)::after {
     content: '';
     position: absolute;
     width: 10vw;
@@ -352,7 +362,8 @@ main .col .code {
     left: 38vw;
     top: 5vw;
 }
-.blocks:nth-child(2)::before{
+
+.blocks:nth-child(2)::before {
     content: '';
     position: absolute;
     width: 10vw;
@@ -362,7 +373,8 @@ main .col .code {
     left: -10vw;
     top: 17vw;
 }
-.blocks:nth-child(3){
+
+.blocks:nth-child(3) {
     max-width: 60vw;
 }
 
@@ -398,11 +410,10 @@ main .col .code {
     vertical-align: bottom;
 }
 
-
-
-.block.second{
+.block.second {
     margin-top: 3.5vw;
 }
+
 .block.second::before {
     content: '2';
     position: absolute;
@@ -426,8 +437,9 @@ main .col .code {
     max-width: 80%;
     margin: auto;
 }
-.block.first::after{
-    content:'';
+
+.block.first::after {
+    content: '';
     position: absolute;
     left: 0;
     right: 0;
@@ -438,14 +450,17 @@ main .col .code {
     width: 2vw;
     height: 3vw;
 }
+
 .block.second p {
     max-width: 65%;
     margin: auto;
 }
-.blocks:last-child{
+
+.blocks:last-child {
     flex-direction: row;
     align-items: flex-start;
 }
+
 .block.no-bg {
     background: transparent;
     border: none;
@@ -453,8 +468,9 @@ main .col .code {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-.block.no-bg:last-child::before{
-    content:'';
+
+.block.no-bg:last-child::before {
+    content: '';
     position: absolute;
     top: -5vw;
     width: 5vw;
@@ -464,8 +480,9 @@ main .col .code {
     background-size: contain;
     left: 2vw;
 }
-.block.no-bg:first-child::before{
-    content:'';
+
+.block.no-bg:first-child::before {
+    content: '';
     position: absolute;
     top: -5vw;
     width: 5vw;
@@ -474,6 +491,7 @@ main .col .code {
     background-size: contain;
     right: 2vw;
 }
+
 .block.no-bg h4 {
     font-family: 'pomidorko';
     color: #ff8200;
@@ -495,18 +513,23 @@ main .col .code {
 .block.no-bg:last-child p {
     max-width: 100%;
 }
-/* .orangesAll{
-    position: absolute;
-    width: 100%;
-    height: 100%;border: 1px solid red;
-    top: 0%;
-    left: 0;
-} */
 
+.orangesAll {
+    max-width: 10vw;
+    position: absolute;
+    bottom: 8vw;
+    margin-bottom: -8vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.orangesAll img{
+    max-width: 100%;
+}
 .price-box .box {
     background: url(../img/price-box.png) no-repeat center;
     background-size: contain;
-    height: 15vw;
+    height: 25vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -526,8 +549,8 @@ main .col .code {
 }
 
 .price-box .box img {
-    margin-bottom: 2.35vw;
-    height: 7vw;
+    margin-bottom: 4.5vw;
+    height: 10vw;
     width: auto;
 }
 
@@ -543,38 +566,56 @@ main .col .code {
     margin: 2vw 0;
     text-transform: uppercase;
 }
-.mechanics h2{
+.mechanics .container{
+    position: relative;
+    z-index: 5;
+    padding: 10vw 0;
+}
+.mechanics .ramka{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.mechanics .ramka::before, .mechanics .ramka::after{
+    content: '';
+    position: absolute;
+    top: 0vw;
+    left: 0;
+    width: 10vw;
+    height: 100%;
+    background: url(../img/fir.png) repeat-y center;
+    background-size: contain;
+}
+.mechanics .ramka::after{
+    left: auto;
+    right: 0;
+    transform: rotateY(180deg);
+}
+.mechanics h2 {
     color: #ff8200;
 }
+
 .raffle.oranged h2 {
     color: #ff8200;
     text-align: left;
 }
 
-.prices a.btn {
+.btn {
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-top: 3vw;
     position: relative;
+    cursor: pointer;
+    transition: all .3s;
+    border: .1vw solid transparent;
 }
 
-a.btn::after {
+.btn:hover {
     background-color: #ff8200;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    border-radius: 2.5vw;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
+    color: #fff;
     transition: all .3s;
-}
-
-a.btn:hover::after {
-    width: 100%;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    border: .1vw solid #fff;
 }
 
 .price-box p {
@@ -582,7 +623,6 @@ a.btn:hover::after {
     text-align: center;
     font-size: 1.2vw;
     text-transform: uppercase;
-    max-width: 70%;
     margin: 1vw auto 0;
 }
 
@@ -629,7 +669,6 @@ a.btn:hover::after {
 }
 
 .content-raffle {
-    max-width: 85%;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -722,7 +761,7 @@ footer::after {
     height: 25vw;
     animation: 5s breathing ease-out infinite normal;
     position: relative;
-    filter: drop-shadow(5px 9px 9px rgba(0,0,0,.3));
+    filter: drop-shadow(5px 9px 9px rgba(0, 0, 0, .3));
 }
 
 .mandarinMain {
@@ -732,7 +771,6 @@ footer::after {
     height: 23vw;
     position: absolute;
     left: 2vw;
-    
 }
 
 .leftHand, .rightHand {
@@ -760,17 +798,18 @@ footer::after {
     background-size: contain;
     top: 3.54vw;
     left: 6.5vw;
-    
 }
-.orange-animated:hover .leftBrow,
-.orange-animated:hover .rightBrow {
-    animation:  .3s raise ease-in-out 2;
+
+.orange-animated:hover .leftBrow, .orange-animated:hover .rightBrow {
+    animation: .3s raise ease-in-out 2;
     cursor: pointer;
 }
-.orange-animated:hover .mouth{
+
+.orange-animated:hover .mouth {
     transform: translate(2vw, 1vw) rotate(-8deg) scale(.8, 1);
     transition: all .3s;
 }
+
 .rightBrow {
     background: url(../img/orangePieces/right-brow.svg) no-repeat center;
     left: auto;
@@ -790,6 +829,7 @@ footer::after {
     position: absolute;
     animation: 4s eyeClosing ease-in-out infinite;
 }
+
 .rightEye {
     background: url(../img/orangePieces/right-eye.svg) no-repeat center;
     width: 9vw;
@@ -799,9 +839,9 @@ footer::after {
     left: 10vw;
     position: absolute;
     animation: 4s eyeClosingRight ease-in-out infinite;
-
 }
-.mouth{
+
+.mouth {
     background: url(../img/orangePieces/mouth.svg) no-repeat center;
     position: absolute;
     width: 12vw;
@@ -811,7 +851,8 @@ footer::after {
     transition: all .3s;
     left: 5.5vw;
 }
-.tail{
+
+.tail {
     position: absolute;
     background: url(../img/orangePieces/tail.svg) no-repeat center;
     background-size: contain;
@@ -820,7 +861,8 @@ footer::after {
     left: 7.51vw;
     top: -.51vw;
 }
-.leave{
+
+.leave-orange {
     background: url(../img/orangePieces/leave.svg) no-repeat center;
     background-size: contain;
     position: absolute;
@@ -829,13 +871,16 @@ footer::after {
     left: 7.8vw;
     top: -2.5vw;
 }
-.tooltip-min{
+
+.tooltip-min {
     max-width: 1vw;
     margin-left: .5vw;
     cursor: pointer;
 }
-.info{
-    max-width: 35vw; 
+
+.info {
+    max-width: 35vw;
     font-size: 1.52vw;
     line-height: 1.5;
+    flex: 50%;
 }
