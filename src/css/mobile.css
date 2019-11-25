@@ -646,13 +646,15 @@
         margin: -5vw auto 5vw;
     }
     .raffle.oranged {
-        background: url(../img/trees-bg-mob.png);
+        background: url(../img/trees-bg-mob.png), url(../img/oranged-bg.jpg);
         margin-top: -34vw;
         padding: 40vw 0 47vw;
+        background-blend-mode: screen;
         margin-bottom: -30vw;
+        background-size: cover;
     }
     .raffle.oranged::before {
-        top: 27vw;
+        top: 26vw;
         right: 62vw;
         width: 15vw;
         height: 15vw;
@@ -738,7 +740,7 @@
         transition: all .3s;
         left: 5.5vw;
     }
-    .map h2{
+    .map h2 {
         margin-bottom: 5vw;
     }
     .map h2::after {
