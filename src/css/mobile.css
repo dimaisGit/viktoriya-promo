@@ -539,8 +539,8 @@
     .mandarin-img {
         height: 61vw;
         width: 67vw;
-        left: 16vw;
-        right: 0;
+        left: auto;
+        right: -27vw;
         margin: auto;
     }
     .list {
