@@ -446,6 +446,8 @@
     }
     .prices h2, .raffle.oranged h2, .map h2, .mechanics h2 {
         font-size: 4.52vw;
+        max-width: 70%;
+        margin: auto;
     }
     .blocks:nth-child(2)::after {
         width: 18vw;
@@ -470,9 +472,10 @@
         max-width: 3vw;
     }
     .orangesAll {
-        top: -16vw;
+        top: auto;
         margin-bottom: -12vw;
-        max-width: 16vw;
+        max-width: 21vw;
+        bottom: 17vw;
     }
     .map.oranged {
         padding-top: 15vw;
@@ -483,5 +486,266 @@
         background: #212121 url(../img/footer-snow.png) no-repeat top;
         background-blend-mode: screen;
         background-size: 100%;
+    }
+    .mechanics .ramka {
+        margin: -5vw auto;
+    }
+    .mechanics .ramka:after, .mechanics .ramka:before {
+        background-size: 160%;
+        background-position: 100% 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h1 {
+        width: 87vw;
+        min-height: 40vw;
+        top: 5vw;
+        position: relative;
+    }
+    .sales-block {
+        width: 66vw;
+        height: 15vw;
+        font-size: 9vw;
+        margin: -2vw auto 2vw;
+        left: -13vw;
+    }
+    .dating {
+        font-size: 5vw;
+        text-shadow: 18px -6px 20px #ff8a03;
+        max-width: 64%;
+        margin: auto;
+        text-align: center;
+    }
+    main.oranged {
+        background: url(../img/oranged-bg-main-mobile-l.png), url(../img/snowflakes-bg-mobile.png);
+        background-position: -23vw -35vw, -10vw -6vw;
+        padding-bottom: 10vw
+    }
+    .btn {
+        font-size: 3.5vw;
+        height: 8vw;
+        width: 68vw;
+        padding: 2vw;
+        border-radius: 3.5vw;
+    }
+    main .col .code {
+        right: 6vw;
+    }
+    .mandarin-img {
+        height: 61vw;
+        width: 67vw;
+    }
+    .list {
+        position: absolute;
+        bottom: -18vw;
+        left: -42vw;
+        height: 33.5vw;
+    }
+    .tour {
+        position: absolute;
+        left: -19vw;
+        bottom: 10vw;
+        height: 40vw;
+    }
+    .mandarin {
+        position: absolute;
+        width: 78vw;
+        right: 14vw;
+        top: 14vw;
+    }
+    .plane {
+        position: absolute;
+        bottom: 12vw;
+        width: 68vw;
+        left: -41vw;
+    }
+    .card {
+        position: absolute;
+        left: 26vw;
+        bottom: 15.5vw;
+        height: 32vw;
+    }
+    .tel {
+        position: absolute;
+        left: 4vw;
+        bottom: 7vw;
+        height: 46vw;
+    }
+    .prices h2, .raffle.oranged h2, .map h2, .mechanics h2 {
+        font-size: 7vw;
+        max-width: 80%;
+        margin: auto;
+    }
+    .block.first, .block.second {
+        font-size: 4vw;
+    }
+    .block p {
+        position: relative;
+        max-width: 65%;
+        margin: auto;
+    }
+    .block.first::before, .block.second::before {
+        font-size: 36vw;
+    }
+    .blocks:nth-child(2)::after {
+        width: 28vw;
+        height: 23vw;
+        left: 68vw;
+        top: 19vw;
+    }
+    .blocks:nth-child(2)::before {
+        width: 31vw;
+        height: 24vw;
+        left: -2vw;
+        z-index: 10;
+        top: 52vw;
+    }
+    .block.no-bg h4 {
+        font-size: 6vw;
+    }
+    .block.no-bg p, .block.no-bg:last-child p {
+        font-size: 3.4vw;
+    }
+    .orangesAll {
+        top: auto;
+        margin-bottom: -9vw;
+        max-width: 25vw;
+        bottom: 8vw;
+        left: -5vw;
+    }
+    .mechanics {
+        padding-bottom: 10vw;
+        ;
+    }
+    .price-box .box {
+        height: 75vw;
+    }
+    .price-box .box img {
+        margin-bottom: 3.35vw;
+        height: 47vw;
+    }
+    .userNav {
+        top: -50vw;
+    }
+    .next, .prev {
+        left: 5vw;
+    }
+    .next {
+        left: auto;
+        right: 5vw;
+    }
+    .price-box p {
+        font-size: 5vw;
+        max-width: 80%;
+    }
+    .owl-dots {
+        display: none;
+    }
+    .prices .btn {
+        margin: -5vw auto 5vw;
+    }
+    .raffle.oranged {
+        background: url(../img/trees-bg-mob.png);
+        margin-top: -34vw;
+        padding: 40vw 0 47vw;
+        margin-bottom: -30vw;
+    }
+    .raffle.oranged::before {
+        top: 27vw;
+        right: 62vw;
+        width: 15vw;
+        height: 15vw;
+        transform: rotate(2.8deg);
+    }
+    .content-raffle {
+        flex-direction: column-reverse;
+    }
+    .orange-animated, .info {
+        max-width: 100%;
+        flex: 100%;
+    }
+    .content-raffle .info p {
+        font-size: 4vw;
+    }
+    .orange-animated {
+        margin: -1vw auto 10vw;
+        width: 50vw;
+        height: 50vw;
+    }
+    .map.oranged {
+        padding-top: 35vw;
+    }
+    .mandarinMain {
+        width: 40vw;
+        height: 45vw;
+        left: 2vw;
+    }
+    .leftHand, .rightHand {
+        width: 18vw;
+        height: 14vw;
+        top: 12vw;
+        position: absolute;
+        left: -7.8vw;
+    }
+    .tail {
+        height: 16vw;
+        width: 6.5vw;
+        left: 14.51vw;
+        top: -4.51vw;
+    }
+    .leave-orange {
+        width: 21vw;
+        height: 19vw;
+        left: 14.8vw;
+        top: -5.5vw;
+    }
+    .rightHand {
+        left: 34.2vw;
+        transform: rotateY(180deg);
+    }
+    .leftBrow, .rightBrow {
+        width: 15vw;
+        height: 10vw;
+        top: 5.54vw;
+        left: 9.5vw;
+    }
+    .rightBrow {
+        left: auto;
+        left: 22.5vw;
+        top: 6.2vw;
+        width: 11vw;
+        height: 11vw;
+    }
+    .leftEye {
+        width: 19vw;
+        height: 21vw;
+        top: 7vw;
+        left: 7.6vw;
+        animation: 4s eyeClosing ease-in-out infinite;
+    }
+    .rightEye {
+        width: 12vw;
+        height: 14.5vw;
+        top: 10.7vw;
+        left: 21vw;
+        animation: 4s eyeClosingRight ease-in-out infinite;
+    }
+    .mouth {
+        width: 32vw;
+        height: 17vw;
+        top: 17.2vw;
+        transition: all .3s;
+        left: 5.5vw;
+    }
+    .map h2{
+        margin-bottom: 5vw;
+    }
+    .map h2::after {
+        height: 7vw;
+        width: 7vw;
+    }
+    #map {
+        height: 105vw;
     }
 }

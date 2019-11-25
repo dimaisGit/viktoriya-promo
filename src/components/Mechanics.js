@@ -2,7 +2,7 @@ import React from 'react'
 import toolt from '../img/tooltip.png'
 import 'react-tippy/dist/tippy.css';
 import { Tooltip } from 'react-tippy';
-import mandarin from '../img/mandarin-block-third.png'
+import mandarin from '../img/mandar.gif'
 import $ from 'jquery'
 import {Mandarin} from './Mandarin'
 
@@ -25,7 +25,7 @@ export default class MechanicsComponent extends React.Component {
                         <h2>Встречай Новый год вместе с нами!</h2>
                         <div className="blocks flexing">
                             <div className="block first">
-                                <p>Соверши покупку ОТ 700<small>₽</small></p> и получи купон (скретч-карту)
+                                <p>Соверши покупку ОТ 700<small>₽</small> и получи купон (скретч-карту)</p> 
                         </div>
                             <div className="block second">
                                 <p>Под защитным слоем ты найдешь один из подарков:</p>
