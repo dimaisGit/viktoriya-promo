@@ -523,7 +523,7 @@
     }
     main.oranged {
         background: url(../img/oranged-bg-main-mobile-l.png), url(../img/snowflakes-bg-mobile.png);
-        background-position: -42vw -62vw,-10vw -6vw;
+        background-position: -42vw -62vw, -10vw -6vw;
         padding-bottom: 10vw
     }
     .btn {
@@ -584,7 +584,7 @@
         max-width: 80%;
         margin: auto;
     }
-    .raffle.oranged h2{
+    .raffle.oranged h2 {
         max-width: 100%;
         text-align: center
     }
@@ -634,6 +634,8 @@
         -webkit-appearance: none;
         transform: translateZ(0);
         background: url(../img/fir-2.png);
+        background-size: 160%;
+        background-position: 0% 0%;
     }
     .price-box .box {
         height: 75vw;
