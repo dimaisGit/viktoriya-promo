@@ -592,7 +592,8 @@ main .col .code {
 .mechanics .ramka::after{
     left: auto;
     right: 0;
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 .mechanics h2 {
     color: #ff8200;

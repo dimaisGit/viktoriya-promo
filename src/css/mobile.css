@@ -630,6 +630,7 @@
     }
     .mechanics .ramka::after {
         z-index: 5;
+        left: 90vw;
     }
     .price-box .box {
         height: 75vw;
