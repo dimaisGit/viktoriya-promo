@@ -539,8 +539,9 @@
     .mandarin-img {
         height: 61vw;
         width: 67vw;
-        left: 27vw;
-        right: 0vw;
+        left: 16vw;
+        right: 0;
+        margin: auto;
     }
     .list {
         position: absolute;
