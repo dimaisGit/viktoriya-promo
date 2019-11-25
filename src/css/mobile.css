@@ -632,7 +632,8 @@
         z-index: 5;
         left: 90vw;
         -webkit-appearance: none;
-        transform: rotateY(180deg) translateZ(0);
+        transform: translateZ(0);
+        background: url(../img/fir-2.png);
     }
     .price-box .box {
         height: 75vw;
