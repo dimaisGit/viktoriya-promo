@@ -655,9 +655,9 @@
         background: url(../img/trees-bg-mob.png);
         margin-top: -34vw;
         padding: 40vw 0 47vw;
-        height: 140vw;
         margin-bottom: -30vw;
-        background-size: 110%;
+        background-size: 120%;
+        height: 150vw;
     }
     .raffle.oranged::before {
         top: 26vw;
