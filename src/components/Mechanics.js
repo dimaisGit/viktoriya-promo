@@ -13,13 +13,6 @@ export default class MechanicsComponent extends React.Component {
         return (
             <section className="mechanics mandarined">
                 <MainModal/>
-                <div className="container">
-                    <div className="blocks flexing">
-                        <div className="block first">
-                            <p>С <b>16.12.2019</b> ПО <b>31.01.2020</b> СОВЕРШИТЕ ПОКУПКУ
-                                НА СУММУ ОТ 700Р*</p>
-                        </div>
-                    </div>
                     <div className="ramka">
                         <div className="container">
                             <h2>Встречай Новый год вместе с нами!</h2>
@@ -54,7 +47,6 @@ export default class MechanicsComponent extends React.Component {
                             {/* <Mandarin /> */}
                         </div>
                     </div>
-                </div>
             </section>
         )
     }

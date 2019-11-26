@@ -1,11 +1,8 @@
 import React from 'react'
-import { initSnowFlakesNew } from '../js/season'
-import ParticleField from 'react-particles-webgl';
+
 
 export default class FooterComponent extends React.Component {
-    componentDidMount() {
-        // initSnowFlakesNew()
-    }
+
     render() {
         return (
             <footer className="darkTh">

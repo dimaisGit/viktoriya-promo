@@ -21,7 +21,6 @@ body {
 a {
     text-decoration: none;
     position: relative;
-    ;
 }
 
 a:hover {
@@ -113,6 +112,7 @@ main .container.flexing {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    max-width: 90%;
 }
 
 main .col:first-child, main .col .code {
@@ -138,8 +138,9 @@ main .col .code {
     font-size: 4vw;
     font-family: 'pomidorko';
     text-align: center;
-    margin: 2vw 0 2vw 1.7vw;
+    margin: 4vw 0 2vw 1.7vw;
     position: relative;
+    box-shadow: 9px 6px 10px #3331317d;
 }
 
 .sales-block::before, .sales-block::after {
@@ -363,6 +364,7 @@ main .col .code {
     background-size: contain;
     left: 38vw;
     top: 5vw;
+    filter: drop-shadow(9px 6px 10px #3331317d);
 }
 
 .blocks:nth-child(2)::before {
@@ -374,6 +376,7 @@ main .col .code {
     background-size: contain;
     left: -10vw;
     top: 17vw;
+    filter: drop-shadow(9px 6px 10px #3331317d);
 }
 
 .blocks:nth-child(3) {
@@ -527,6 +530,7 @@ main .col .code {
 }
 .orangesAll img{
     max-width: 100%;
+    filter: drop-shadow(2px 6px 35px rgba(0,0,0,.25));
 }
 .price-box .box {
     background: url(../img/price-box.png) no-repeat center;
@@ -612,6 +616,8 @@ main .col .code {
     cursor: pointer;
     transition: all .3s;
     border: .1vw solid transparent;
+    font-family: 'Ubuntu', sans-serif;
+
 }
 
 .btn:hover {
@@ -888,6 +894,32 @@ footer::after {
     flex: 50%;
 }
 .contentSnow {
-    width: 100%;
+    width: 200%;
     overflow: hidden;
+
   }
+  .mainModal{
+      position: absolute;
+      z-index: 150;
+      width: 90%;
+      height: 90vh;
+      background-color: #fff;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 0%;
+      display: none;
+  }
+  .mainModal.active{
+      display: block;
+  }
+.heading::before{
+    content: '';
+    position: absolute;
+    top: -2.1vw;
+    left: 0vw;
+    width: 100%;
+    height: 3vw;
+    background: url(../img/snow-1.png);
+    background-size: 50%;
+}

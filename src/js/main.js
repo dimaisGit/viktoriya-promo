@@ -24,5 +24,8 @@ export const initOwl = () => {
         window.$('.prev').click(function(){
             owl.trigger('prev.owl.carousel', [300]);
         })
+        window.$('.btn').on('click', function(){
+            window.$('.mainModal').toggleClass('active')
+        })
     });
 }

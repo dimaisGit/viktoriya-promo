@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import { initSnowFlakesNew } from "./js/season";
+import { initSnowFlakes } from "./js/snowflakes";
 import { initOwl } from "./js/main";
 import MainComponent from "./components/MainComponents";
 import MechanicsComponent from "./components/Mechanics";

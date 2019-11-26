@@ -37,9 +37,9 @@ export default class MainComponent extends React.Component {
                                                      srcSet=""/>
                         </div>
                         <div className="code">
-                            <a href="#" className="btn register">
+                            <div className="btn register">
                                 зарегистрировать код 2020
-                            </a></div>
+                            </div></div>
                     </div>
                 </div>
                 <div className="sky"></div>
