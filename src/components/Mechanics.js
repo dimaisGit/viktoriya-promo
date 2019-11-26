@@ -9,7 +9,21 @@ import {Mandarin} from './Mandarin'
 
 
 export default class MechanicsComponent extends React.Component {
+<<<<<<< HEAD
+    componentDidMount() {
+        let pos = $('.oranged').position().top + $(window).height();
+        let headerPos = $('.mechanics').find('h2').position().top;
+        $(document).on('scroll', function (e) {
+            console.log(pos + ", " + $(this).scrollTop(), headerPos)
+            if ($(this).scrollTop() >= headerPos) {
+                console.log('ready', $(this).scrollTop())
+            }
+        })
+    }
+    render() {
+=======
     render () {
+>>>>>>> e17350346ba022d3d8eca252e663737e6672d5c9
         return (
             <section className="mechanics mandarined">
                 <MainModal/>
