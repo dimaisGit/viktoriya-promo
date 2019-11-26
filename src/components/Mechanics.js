@@ -8,15 +8,16 @@ import {Mandarin} from './Mandarin'
 
 
 export default class MechanicsComponent extends React.Component {
-    // componentDidMount() {
-    //     let pos = $('.oranged').position().top + $(window).height();
-    //     $(document).on('scroll', function (e) {
-    //         console.log(pos + ", " + $(this).scrollTop())
-    //         if ($(this).scrollTop() >= pos) {
-    //             console.log('ready', $(this).scrollTop())
-    //         }
-    //     })
-    // }
+    componentDidMount() {
+        let pos = $('.oranged').position().top + $(window).height();
+        let headerPos = $('.mechanics').find('h2').position().top;
+        $(document).on('scroll', function (e) {
+            console.log(pos + ", " + $(this).scrollTop(), headerPos)
+            if ($(this).scrollTop() >= headerPos) {
+                console.log('ready', $(this).scrollTop())
+            }
+        })
+    }
     render() {
         return (
             <section className="mechanics mandarined">

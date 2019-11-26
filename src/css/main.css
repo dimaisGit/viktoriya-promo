@@ -887,3 +887,7 @@ footer::after {
     line-height: 1.5;
     flex: 50%;
 }
+.contentSnow {
+    width: 100%;
+    overflow: hidden;
+  }
