@@ -104,14 +104,11 @@ export const initSnowFlakesNew = () => {
 
             let particle = particles[i];
             particle.updatePhysics();
-
-            // with (particle.position) {
-            //     if (y < -1000) y += 2000;
-            //     if (x > 1000) x -= 2000;
-            //     else if (x < -1000) x += 2000;
-            //     if (z > 1000) z -= 2000;
-            //     else if (z < -1000) z += 2000;
-            // }
+            if (particle.position.y < -1000) particle.position.y += 2000;
+            if (particle.position.x > 1000) particle.position.x -= 2000;
+            else if (particle.position.x < -1000) particle.position.x += 2000;
+            if (particle.position.z > 1000) particle.position.z -= 2000;
+            else if (particle.position.z < -1000) particle.position.z += 2000;
         }
 
         camera.position.x += (mouseX - camera.position.x) * 0.05;
