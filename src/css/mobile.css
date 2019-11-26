@@ -1,4 +1,7 @@
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 851px) {
+    .container {
+        max-width: 850px;
+    }
     .dating {
         font-size: 2.38vw;
     }
@@ -11,8 +14,8 @@
         width: 33vw;
     }
     main .col .code {
-        right: -10vw;
-        top: 0vw;
+        right: 0;
+        top: -2vw;
         max-width: 30vw;
     }
     main .col:first-child {
@@ -50,8 +53,9 @@
         font-size: 1.82vw;
     }
     .orangesAll {
-        top: -11vw;
-        margin-bottom: -5vw;
+        bottom: 7vw;
+        margin-bottom: 0;
+        max-width: 15vw;
     }
     .block.no-bg h4 {
         font-size: 3.8vw;
@@ -70,9 +74,18 @@
         left: -7vw;
     }
     .mechanics {
-        padding: 10vw 0 1vw;
-        background: url(../img/mechanics-bg.jpg) repeat, url(../img/snowflakes-bg-mechanics.png) no-repeat center;
-        background-size: 7%, 140%
+        padding: 0;
+        background: url(../img/mechanics-bg.jpg) repeat, url(../img/snowflakes-bg-mechanics.png) repeat center;
+        background-size: 7%, 70%;
+        background-position: 0 0, 0 90%;
+    }
+    .owl-item.active {
+        max-width: 30%;
+    }
+    .price-box {
+        flex: 100%;
+        margin: 0 auto;
+        max-width: 75%;
     }
     .prices.oranged {
         background: url(../img/oranged-bg.jpg), url(../img/snowflakes-bg-prices.png) no-repeat left 9vw;
@@ -103,17 +116,21 @@
     }
     .map.oranged {
         padding-top: 9vw;
-        padding-bottom: 10vw;
+        padding-bottom: 0;
     }
     footer h2 {
         font-size: 2.52vw;
     }
-    .prices h2, .raffle.oranged h2, .map h2 {
+    .prices h2, .raffle.oranged h2, .map h2,.mechanics h2 {
         font-size: 5vw;
+    }
+    .mechanics h2{
+        max-width: 70%;
+        margin: auto;
     }
     footer p {
         padding: 0 3vw;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
     .orange-animated {
         -webkit-box-flex: 20%;
@@ -130,7 +147,6 @@
     }
     .content-raffle .info p {
         font-size: 2vw;
-        ;
     }
     .map h2::after {
         width: 5vw;
@@ -138,6 +154,25 @@
     }
     .tooltip-min {
         max-width: 2vw;
+    }
+    .mechanics .ramka::before, .mechanics .ramka::after {
+        top: -3vw;
+        height: 104%;
+        z-index: 0;
+    }
+    .mechanics .ramka::after {
+        background: url(../img/fir-2.png);
+        right: 0;
+        transform: translateZ(0);
+        background-size: 99%;
+    }
+    .owl-carousel .owl-stage {
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        background-size: 57%;
+        background-position: top;
     }
 }
 
@@ -781,5 +816,10 @@
     }
     #map {
         height: 105vw;
+    }
+    footer p {
+        padding: 0 6vw;
+        font-size: 3.2vw;
+        line-height: 1.5;
     }
 }
