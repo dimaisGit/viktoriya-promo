@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27004a1e91b02e16bf5d687336304eb4",
+    "revision": "24eb65c8047dbeafb4bca697f9544bb0",
     "url": "/manda-react/index.html"
   },
   {
@@ -8,20 +8,52 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/manda-react/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "30484986d512fd57b819",
-    "url": "/manda-react/static/css/main.db522db8.chunk.css"
+    "revision": "bec740410d8e8d26513a",
+    "url": "/manda-react/static/css/main.3f9048ff.chunk.css"
   },
   {
     "revision": "dd673a3fa078f00cd9fd",
     "url": "/manda-react/static/js/2.34fa5629.chunk.js"
   },
   {
-    "revision": "30484986d512fd57b819",
+    "revision": "bec740410d8e8d26513a",
     "url": "/manda-react/static/js/main.d8804697.chunk.js"
   },
   {
     "revision": "94f005a0036619d036aa",
     "url": "/manda-react/static/js/runtime-main.48f88ba5.js"
+  },
+  {
+    "revision": "717ac5a4922acb2fdb388c4333de350e",
+    "url": "/manda-react/static/media/1-1.717ac5a4.png"
+  },
+  {
+    "revision": "4efe1d87b0387df70e8133be39327e0b",
+    "url": "/manda-react/static/media/1.4efe1d87.png"
+  },
+  {
+    "revision": "8d1439a0b562859c51961396cf5a7b23",
+    "url": "/manda-react/static/media/2.8d1439a0.png"
+  },
+  {
+    "revision": "dc51005e86b9631c2b4eeea585431882",
+    "url": "/manda-react/static/media/3.dc51005e.png"
+  },
+  {
+    "revision": "927aab23a253da092e3da45e5dc204ee",
+    "url": "/manda-react/static/media/4.927aab23.png"
+  },
+  {
+    "revision": "ef9558ea744b446b7baf7fafabe88e22",
+    "url": "/manda-react/static/media/5.ef9558ea.png"
+  },
+  {
+    "revision": "4eb555d76c43b7a5b50f4409438048fb",
+    "url": "/manda-react/static/media/6-1.4eb555d7.png"
+  },
+  {
+    "revision": "f70967c84d213e0d8c4cfa4ee6b23b1d",
+    "url": "/manda-react/static/media/6.f70967c8.png"
   },
   {
     "revision": "4bba6aa20e86c60d8c5651b2a8e8ce45",
