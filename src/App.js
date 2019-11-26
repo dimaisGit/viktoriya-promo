@@ -21,12 +21,12 @@ export default class App extends React.Component {
     render() {
         return (
           <>
-            <MainComponent />
-            <MechanicsComponent />
-            <PricesComponent />
-            <RaffleComponent />
-            <MapComponent />
-            <FooterComponent />
+              <MainComponent />
+              <MechanicsComponent />
+              <PricesComponent />
+              <RaffleComponent />
+              <MapComponent />
+              <FooterComponent />
           </>
       );
     }

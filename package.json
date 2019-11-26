@@ -2,7 +2,7 @@
   "name": "m_promo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dimaisgit.github.io/",
+  "homepage": "https://dimaisgit.github.io/manda-react",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
@@ -11,7 +11,11 @@
     "react-particles-webgl": "^1.0.10",
     "react-scripts": "3.2.0",
     "react-tippy": "^1.3.1",
-    "three.js": "^0.77.1"
+    "react-redux": "^7.1.3",
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.4",
+    "redux-form": "^8.2.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
