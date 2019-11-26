@@ -1,4 +1,5 @@
 import React from 'react'
+import MainModal from "./MainModal";
 import toolt from '../img/tooltip.png'
 import 'react-tippy/dist/tippy.css';
 import { Tooltip } from 'react-tippy';
@@ -8,24 +9,21 @@ import {Mandarin} from './Mandarin'
 
 
 export default class MechanicsComponent extends React.Component {
-    // componentDidMount() {
-    //     let pos = $('.oranged').position().top + $(window).height();
-    //     $(document).on('scroll', function (e) {
-    //         console.log(pos + ", " + $(this).scrollTop())
-    //         if ($(this).scrollTop() >= pos) {
-    //             console.log('ready', $(this).scrollTop())
-    //         }
-    //     })
-    // }
-    render() {
+    render () {
         return (
             <section className="mechanics mandarined">
+                <MainModal/>
+                <div className="container">
+                    <div className="blocks flexing">
+                        <div className="block first">
+                            <p>С <b>16.12.2019</b> ПО <b>31.01.2020</b> СОВЕРШИТЕ ПОКУПКУ
+                                НА СУММУ ОТ 700Р*</p>
                 <div className="ramka">
                     <div className="container">
                         <h2>Встречай Новый год вместе с нами!</h2>
                         <div className="blocks flexing">
                             <div className="block first">
-                                <p>Соверши покупку ОТ 700<small>₽</small> и получи купон (скретч-карту)</p> 
+                                <p>Соверши покупку ОТ 700<small>₽</small> и получи купон (скретч-карту)</p>
                         </div>
                             <div className="block second">
                                 <p>Под защитным слоем ты найдешь один из подарков:</p>
