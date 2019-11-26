@@ -398,6 +398,7 @@
         background-size: contain;
     }
 }
+
 @keyframes eyeClosingRight {
     0%, 6%, 100% {
         background: url(../img/orangePieces/right-eye.svg) no-repeat center;
@@ -410,13 +411,14 @@
 }
 
 @keyframes mouseMove {
-    0%, 100%{
+    0%, 100% {
         transform: none;
     }
-    10%{
+    10% {
         transform: translate(2vw, 1vw) rotate(-8deg) scale(.8, 1);
     }
 }
+
 @keyframes breathing {
     0% {
         -webkit-transform: scale(0.95);
@@ -449,6 +451,73 @@
     }
     100% {
         transform: translateY(0) scale(1.0);
+    }
+}
+
+@keyframes animatedMand {
+    0%, 100% {
+        background: url(../img/mandarin-2/1.png) no-repeat center;
+        background-size: contain;
+    }
+    .5% {
+        background: url(../img/mandarin-2/2.png) no-repeat center;
+        background-size: contain;
+    }
+    1.0% {
+        background: url(../img/mandarin-2/3.png) no-repeat center;
+        background-size: contain;
+    }
+    1.5% {
+        background: url(../img/mandarin-2/4.png) no-repeat center;
+        background-size: contain;
+    }
+    2.3% {
+        background: url(../img/mandarin-2/5.png) no-repeat center;
+        background-size: contain;
+    }
+    2.5% {
+        background: url(../img/mandarin-2/6.png) no-repeat center;
+        background-size: contain;
+    }
+     30%{
+        background: url(../img/mandarin-2/6-1.png) no-repeat center;
+        background-size: contain;
+    }
+    30.5%{
+        background: url(../img/mandarin-2/6.png) no-repeat center;
+        background-size: contain;
+    }
+    70% {
+        background: url(../img/mandarin-2/6.png) no-repeat center;
+        background-size: contain;
+    }
+    70.2%{
+        background: url(../img/mandarin-2/5.png) no-repeat center;
+        background-size: contain;
+    }
+    70.8%{
+        background: url(../img/mandarin-2/4.png) no-repeat center;
+        background-size: contain;
+    }
+    71%{
+        background: url(../img/mandarin-2/3.png) no-repeat center;
+        background-size: contain;
+    }
+    71.2%{
+        background: url(../img/mandarin-2/1-1.png) no-repeat center;
+        background-size: contain;
+    }
+    71.3%{
+        background: url(../img/mandarin-2/1.png) no-repeat center;
+        background-size: contain;
+    }
+    84%{
+        background: url(../img/mandarin-2/1-1.png) no-repeat center;
+        background-size: contain;
+    }
+    84.2%{
+        background: url(../img/mandarin-2/1.png) no-repeat center;
+        background-size: contain;
     }
 }
 
