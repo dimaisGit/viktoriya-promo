@@ -1,9 +1,11 @@
 import React from 'react'
+import MainModal from "./MainModal";
 
 export default class MechanicsComponent extends React.Component {
     render () {
         return (
             <section className="mechanics mandarined">
+                <MainModal/>
                 <div className="container">
                     <div className="blocks flexing">
                         <div className="block first">
