@@ -14,7 +14,7 @@ import './css/mobile.css'
 
 export default class App extends React.Component {
     componentDidMount() {
-        // initSnowFlakesNew();
+        initSnowFlakesNew();
         initOwl()
     }
 

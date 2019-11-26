@@ -4,7 +4,7 @@ import ParticleField from 'react-particles-webgl';
 
 export default class FooterComponent extends React.Component {
     componentDidMount() {
-        initSnowFlakesNew()
+        // initSnowFlakesNew()
     }
     render() {
         return (

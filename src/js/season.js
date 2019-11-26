@@ -35,7 +35,7 @@ export const initSnowFlakesNew = () => {
     function init() {
         console.log('init')
         container = document.createElement('div');
-        document.getElementsByClassName('.sky')[0].appendChild(container);
+        document.getElementsByClassName('sky')[0].appendChild(container);
 
         camera = new window.THREE.PerspectiveCamera(75, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 10000);
         camera.position.z = 1000;
