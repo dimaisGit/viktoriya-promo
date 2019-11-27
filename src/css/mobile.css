@@ -558,8 +558,9 @@
     }
     main.oranged {
         background: url(../img/oranged-bg-main-mobile-l.png), url(../img/snowflakes-bg-mobile.png);
-        background-position: -42vw -62vw, -10vw -6vw;
-        padding-bottom: 10vw
+        background-position: -21vw -41vw,-10vw -6vw;
+        padding-bottom: 10vw;
+        overflow: hidden;
     }
     .btn {
         font-size: 3.5vw;
@@ -821,5 +822,8 @@
         padding: 0 6vw;
         font-size: 3.2vw;
         line-height: 1.5;
+    }
+    .heading:before{
+        background-position: 0 40%;
     }
 }
