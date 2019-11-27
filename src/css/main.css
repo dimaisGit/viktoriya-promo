@@ -556,7 +556,10 @@ main .col .code {
     -ms-flex-align: end;
     align-items: flex-end;
 }
-
+.price-box .box:hover img{
+    transform: scale(1.5);
+    transition: all .5s
+}
 .price-box {
     -webkit-box-flex: 30%;
     -ms-flex: 30%;
@@ -567,6 +570,7 @@ main .col .code {
 .price-box .box img {
     margin-bottom: 4.5vw;
     height: 10vw;
+    transition: all .5s;
     width: auto;
 }
 
@@ -937,10 +941,11 @@ footer::after {
 .heading::before {
     content: '';
     position: absolute;
-    top: -2.1vw;
-    left: 0vw;
-    width: 100%;
-    height: 3vw;
+    top: -2vw;
+    left: -.81vw;
+    width: 106%;
+    height: 2vw;
     background: url(../img/snow-1.png);
     background-size: 50%;
+    background-position: 0% -33%;
 }

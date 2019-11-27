@@ -1,7 +1,7 @@
 // import * as THREE from 'THREE';
 // import {snow} from './snow.js'
 import ParticleField from 'react-particles-webgl';
-
+import snowflake from '../img/snowflake.png'
 
 
 export const initSnowFlakesNew = () => {
@@ -28,16 +28,15 @@ export const initSnowFlakesNew = () => {
 
     let particles = [];
     let particleImage = new Image();
-    particleImage.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82015/snowflake.png';
+    particleImage.src = snowflake;
 
 
 
     function init() {
-        console.log('init')
         container = document.createElement('div');
         document.getElementsByClassName('sky')[0].appendChild(container);
 
-        camera = new window.THREE.PerspectiveCamera(75, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 10000);
+        camera = new window.THREE.PerspectiveCamera(45, SCREEN_WIDTH / SCREEN_HEIGHT, 1, 10000);
         camera.position.z = 1000;
 
         scene = new window.THREE.Scene();

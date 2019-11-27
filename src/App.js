@@ -9,14 +9,20 @@ import PricesComponent from "./components/PricesComponent";
 import RaffleComponent from "./components/RaffleComponent";
 import MapComponent from "./components/MapComponent";
 import FooterComponent from "./components/FooterComponent";
+import $ from 'jquery'
 import './css/main.css'
 import './css/animations.css'
 import './css/mobile.css'
 
 export default class App extends React.Component {
     componentDidMount() {
+       
         initSnowFlakesNew();
         initOwl()
+        $('.btn').click(function(){
+            initSnowFlakesNew();
+
+        })
     }
 
     render() {
