@@ -6,15 +6,15 @@ class PhoneForm extends React.Component {
 
     onHandleSubmit = values => {
         console.log(values)
+        this.props.handleSendCode(values.userPhone)
     }
 
     render() {
-        const { handleSubmit, submitting } = this.props
+        const { handleSubmit, submitting, handleSendCode } = this.props
+        console.log(this.props)
         return (
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
-                <Field name="firstName" component={RenderField} type="text" placeholder='First Name'/>
-                <Field name="lastName" component={RenderField} type="text" placeholder="Last Name"/>
-                <Field name="email" component={RenderField} type="email" placeholder="Email"/>
+                <Field name="userPhone" component={RenderField} type="phone" placeholder='Телефон'/>
                 <div>
                     <button type="submit" disabled={submitting}>Submit</button>
                 </div>

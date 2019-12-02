@@ -2,7 +2,7 @@
   "name": "m_promo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dimaisgit.github.io/",
+  "homepage": "https://dimaisgit.github.io/manda-react/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",

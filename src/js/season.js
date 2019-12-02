@@ -49,9 +49,9 @@ export const initSnowFlakesNew = () => {
         for (let i = 0; i < 1000; i++) {
 
             particle = new window.Particle3D(material);
-            particle.position.x = Math.random() * 2000 - 1000;
-            particle.position.y = Math.random() * 2000 - 1000;
-            particle.position.z = Math.random() * 2000 - 1000;
+            particle.position.x = Math.random() * 4000 - 1000;
+            particle.position.y = Math.random() * 4000 - 1000;
+            particle.position.z = Math.random() * 4000 - 1000;
             particle.scale.x = particle.scale.y = 1;
             scene.add(particle);
 
