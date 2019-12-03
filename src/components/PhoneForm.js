@@ -27,18 +27,21 @@ class PhoneForm extends React.Component {
         const { handleSubmit, submitting, codeSent, sendError } = this.props
         return (
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
-                <Field name="phoneRegion" component="select">
+                <h2>Введите номер телефона</h2>
+                {/* <Field name="phoneRegion" component="select" className="numberPlus">
                     <option></option>
-                    <option value="+7">+7</option>
+                    <option value="+7" selected>+7</option>
                     <option value="+380">+380</option>
                     <option value="+375">+375</option>
-                </Field>
-                <Field name="userPhone" component={RenderField} placeholder='Телефон'/>
+                </Field> */}
+                <Field name="userPhone" component={RenderField} placeholder=''/>
+                <div>
+                    <button type="submit" disabled={submitting}>Отправить код</button>
+                </div>
                 {codeSent && <Field name='userCode' component={RenderField} placeholder="Код" />}
                 {sendError && <div className='error'>{sendError}</div> }
-                <div>
-                    <button type="submit" disabled={submitting}>Send</button>
-                </div>
+                
+
             </form>
         )
     }
