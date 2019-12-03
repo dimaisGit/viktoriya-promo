@@ -1,5 +1,5 @@
 import React from 'react'
-import MainModal from "./MainModal";
+import MainModalContainer from "../containers/MainModalContainer";
 import toolt from '../img/tooltip.png'
 import 'react-tippy/dist/tippy.css';
 import { Tooltip } from 'react-tippy';
@@ -12,7 +12,7 @@ export default class MechanicsComponent extends React.Component {
     render () {
         return (
             <section className="mechanics mandarined">
-                <MainModal/>
+                <MainModalContainer/>
                     <div className="ramka">
                         <div className="container">
                             <h2>Встречай Новый год вместе с нами!</h2>

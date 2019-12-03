@@ -1,31 +1,37 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { handleSendCode } from "../actions/UserActions";
+import { handleSendCode, handleCheckCode } from "../actions/UserActions";
 import PhoneForm from "../components/PhoneForm";
 
 class PhoneFormContainer extends React.Component {
     render() {
-        const { handleSendCode } = this.props
+        const { handleSendCode, handleCheckCode, codeSent, error } = this.props
+        console.log(error)
         return (
             <>
                 <PhoneForm
                     handleSendCode={handleSendCode}
+                    handleCheckCode={handleCheckCode}
+                    codeSent={codeSent}
+                    sendError={error}
                 />
             </>
         )
     }
 }
 
-// const mapStateToProps = store => {
-//     return {
-//
-//     }
-// }
-
-const mapDispatchToProps = dispatch => {
+const mapStateToProps = store => {
     return {
-        handleSendCode: (userPhone) => dispatch(handleSendCode(userPhone))
+        codeSent: store.user.codeSent,
+        error: store.user.error
     }
 }
 
-export default connect(null, mapDispatchToProps)(PhoneFormContainer)
+const mapDispatchToProps = dispatch => {
+    return {
+        handleSendCode: (userPhone) => dispatch(handleSendCode(userPhone)),
+        handleCheckCode: (userPhone, userCode) => dispatch(handleCheckCode(userPhone, userCode))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PhoneFormContainer)
