@@ -28,6 +28,7 @@ class PhoneForm extends React.Component {
         return (
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
                 <h2>Введите номер телефона</h2>
+                <div className="cancelBut"></div>
                 {/* <Field name="phoneRegion" component="select" className="numberPlus">
                     <option></option>
                     <option value="+7" selected>+7</option>

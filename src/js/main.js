@@ -27,5 +27,8 @@ export const initOwl = () => {
         window.$('.btn').on('click', function(){
             window.$('.mainModal').toggleClass('active')
         })
+        window.$('.cancelBut').on('click', function(){
+            window.$('.mainModal').removeClass('active')
+        })
     });
 }

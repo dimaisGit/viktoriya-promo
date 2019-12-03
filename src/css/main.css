@@ -556,10 +556,12 @@ main .col .code {
     -ms-flex-align: end;
     align-items: flex-end;
 }
-.price-box .box:hover img{
+
+.price-box .box:hover img {
     transform: scale(1.5);
     transition: all .5s
 }
+
 .price-box {
     -webkit-box-flex: 30%;
     -ms-flex: 30%;
@@ -609,7 +611,7 @@ main .col .code {
     height: 100%;
     background: url(../img/fir.png) repeat-y center;
     background-size: contain;
-    filter: drop-shadow(6px 2px 2px rgba(0,0,0,0.5));
+    filter: drop-shadow(6px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .mechanics .ramka::after {
@@ -922,7 +924,7 @@ footer::after {
 .mainModal {
     position: fixed;
     z-index: 150;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
     left: 0;
     right: 0;
     margin: auto;
@@ -953,21 +955,23 @@ footer::after {
     background-size: 50%;
     background-position: 0% -33%;
 }
-.mainModal form{
+
+.mainModal form {
     padding: 3vw;
     background-color: #fff;
     width: 42.5vw;
     height: 32vw;
     border-radius: 1.3vw;
+    position: relative;
 }
-.mainModal form h2{
-    font-size: 2.65vw;
+
+.mainModal form h2 {
+    font-size: 2.35vw;
     font-weight: 100;
     margin: 0;
 }
-.mainModal form select,
-.mainModal form input,
-.mainModal form button {
+
+.mainModal form select, .mainModal form input, .mainModal form button {
     -webkit-appearance: none;
     border: 1px solid #ff8200;
     padding: 1vw;
@@ -978,10 +982,12 @@ footer::after {
     width: 60%;
     outline: none;
 }
-.mainModal form select.numberPlus{
+
+.mainModal form select.numberPlus {
     padding: .51vw
 }
-.mainModal form button{
+
+.mainModal form button {
     background-color: #ff8200;
     color: #fff;
     border-radius: 2vw;
@@ -993,14 +999,69 @@ footer::after {
     margin-top: 1.82vw;
     height: 3.84vw;
     width: 42%;
+    cursor: pointer;
 }
-.mainModal form div{
+.mainModal form button:hover{
+    background-color: #fff;
+    color: #ff8200;
+}
+.mainModal form div:nth-child(2) {
+    width: 100%;
+    height: 5vw;
+    position: relative;
+    margin-top: 2vw;
+}
+.mainModal form div:nth-child(3),
+.mainModal form div:nth-child(4){
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.mainModal form div div {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 1vw;
     height: 5vw;
 }
+
 .mainModal form input[name="userPhone"] {
     width: 76%;
+    padding-left: 3.7vw;
+    font-size: 1.4vw;
+}
+
+.mainModal form div label {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 76%;
+    height: 8.9vw;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.mainModal form div label::before {
+    position: absolute;
+    content: '+7 (';
+    font-family: 'Ubuntu';
+    font-size: 1.4vw;
+    z-index: 20;
+    top: calc(50% - .71vw);
+    left: 1vw;
+    color: #000;
+}
+.mainModal form div.cancelBut{
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    background: url(../img/cancel.svg) no-repeat center;
+    background-size: contain;
+    top: -.5vw;
+    right: 1.5vw;
+    cursor: pointer;
+}
+.mainModal form div.cancelBut:hover{
+    opacity: .7;
 }
