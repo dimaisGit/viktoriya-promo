@@ -11,7 +11,7 @@ class PhoneForm extends React.Component {
             throw new SubmissionError({ userPhone: 'Phone is required', _error: 'Login failed!' })
         }
         if (this.props.codeSent && !values.userCode) {
-            throw new SubmissionError({ userCode: 'Code is required', _error: 'Login failed!'})
+            throw new SubmissionError({ userCode: 'Code is required', _error: 'Login failed!' })
         }
         if (!this.props.codeSent)
             this.props.handleSendCode('+7' + values.userPhone)
@@ -25,13 +25,14 @@ class PhoneForm extends React.Component {
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
                 <h2>Введите номер телефона</h2>
                 <div className="cancelBut"></div>
-                <Field name="userPhone" component={RenderField} placeholder=''/>
+                <Field name="userPhone" component={RenderField} placeholder='' index='1' />
                 <div>
                     <button type="submit" disabled={submitting}>Отправить код</button>
                 </div>
-                {codeSent && <Field name='userCode' component={RenderField} placeholder="Код" />}
-                {sendError && <div className='error'>{sendError}</div> }
-                
+                {codeSent && <p className="formCodeEnt">Введите код</p>}
+                {codeSent && <Field name='userCode' component={RenderField} placeholder=" " />}
+                {sendError && <div className='error'>{sendError}</div>}
+                {codeSent && <p className="formCodeAgain">Отправить код повторно</p>}
 
             </form>
         )

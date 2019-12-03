@@ -29,11 +29,13 @@ class UserForm extends React.Component {
         console.log(initialValues)
         return (
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
+                <h2 className="label-reg">Заполните форму регистрации</h2>
+                <div className="cancelBut"></div>
                 <Field name="userName" component={RenderField} placeholder='Имя'/>
                 <Field name="userLastName" component={RenderField} placeholder='Фамилия'/>
                 <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail'/>
                 <Field name="userBirthDate" component={RenderField} type='date' placeholder='00.00.0000'/>
-                <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен бла бла бла" />
+                {/* <Field name="userConsent" component={RenderField} type='checkbox' label="Заполните форму регистрации" index="reg" /> */}
                 <div>
                     <button type="submit" disabled={submitting}>Send</button>
                 </div>
