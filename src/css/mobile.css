@@ -213,7 +213,7 @@
         font-size: 2.2vw;
         height: 6vw;
     }
-    .mainModal form div.reg-block .label-reg::after {
+    .mainModal form div.reg-block .label-reg.checked::after {
         top: -0.2vw;
         left: -4.25vw;
         width: 3.5vw;
@@ -622,7 +622,7 @@
         height: 4.5vw;
         width: 4.5vw;
     }
-    .mainModal form div.reg-block .label-reg::after {
+    .mainModal form div.reg-block .label-reg.checked::after {
         top: -.8vw;
         left: -4.5vw;
         width: 4.5vw;
@@ -657,7 +657,7 @@
         height: 6vw;
         width: 48%;
     }
-    .mainModal form div:nth-child(4){
+    .mainModal form div:nth-child(4) {
         margin-top: 3vw;
     }
     .formCodeEnt, .formCodeAgain {
@@ -960,5 +960,77 @@
     }
     .heading:before {
         background-position: 0 40%;
+    }
+    .mainModal form {
+        width: 83vw;
+        height: 80vw;
+    }
+    .mainModal form input[name="userPhone"] {
+        padding-left: 7vw;
+        height: 9vw;
+        font-size: 4.5vw;
+    }
+    .mainModal form h2, .label-reg {
+        font-size: 6vw;
+    }
+    .mainModal form div label.label-1::before {
+        top: 4.3vw;
+        left: 1vw;
+        font-size: 4.5vw;
+    }
+    .mainModal form button {
+        margin-top: 6vw;
+        font-size: 4.5vw;
+        height: 8vw;
+        width: 58%;
+    }
+    .mainModal form input[name="userCode"] {
+        font-size: 4.5vw;
+        height: 8vw;
+    }
+    .formCodeEnt, .formCodeAgain {
+        font-size: 4.2vw;
+        margin: 5vw 0 0;
+    }
+    .mainModal form div.cancelBut {
+        width: 7vw;
+        height: 7vw;
+        right: 2vw;
+    }
+    .mainModal form.regForm div:nth-child(4) {
+        margin-top: 0;
+    }
+    .mainModal form div.reg-block div input[type='checkbox'] {
+        height: 5.5vw;
+        width: 5.5vw;
+    }
+    .mainModal form div.reg-block .label-reg.checked::after {
+        width: 5.5vw;
+        height: 5.5vw;
+        top: -1.5vw;
+        left: -7.5vw;
+    }
+    .mainModal form div.reg-block .label-reg {
+        text-align: left;
+        font-size: 3vw;
+        line-height: 1.1;
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        color: black;
+    }
+    .mainModal form div.reg-block {
+        justify-content: flex-end;
+        margin-left: 2vw;
+    }
+    .mainModal form div.reg-block .label-reg{
+        margin-left: 2vw;
+    }
+    .mainModal form .subBut button{
+        width: 40%;
+        font-size: 5.2vw;
+        height: 8vw;
+    }
+    .mainModal form.regForm{
+        height: 95vw;
     }
 }
