@@ -987,6 +987,11 @@ footer::after {
     outline: none;
 }
 
+.inputError {
+    width: 100%;
+    display: block;
+}
+
 .mainModal form select.numberPlus {
     padding: .51vw
 }

@@ -5,7 +5,7 @@ export const RenderField = ({ index, name, input, label, placeholder, type, meta
         <label className={'label-'+index}>{label}</label>
         <div>
             <input {...input} className={name} placeholder={placeholder} type={type}/>
-            {error && <span>{error}</span>}
+            {error && <div className='inputError'>{error}</div>}
         </div>
     </div>
 )
