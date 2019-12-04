@@ -26,18 +26,18 @@ class UserForm extends React.Component {
 
     render() {
         const { handleSubmit, submitting, initialValues } = this.props
-        console.log(initialValues)
+        // console.log(initialValues)
         return (
-            <form onSubmit={handleSubmit(this.onHandleSubmit)}>
+            <form className="regForm" onSubmit={handleSubmit(this.onHandleSubmit)}>
                 <h2 className="label-reg">Заполните форму регистрации</h2>
                 <div className="cancelBut"></div>
-                <Field name="userName" component={RenderField} placeholder='Имя'/>
-                <Field name="userLastName" component={RenderField} placeholder='Фамилия'/>
-                <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail'/>
-                <Field name="userBirthDate" component={RenderField} type='date' placeholder='00.00.0000'/>
+                <Field name="userName" component={RenderField} placeholder='Имя' index="nameField"/>
+                <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
+                <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
+                <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
                 {/* <Field name="userConsent" component={RenderField} type='checkbox' label="Заполните форму регистрации" index="reg" /> */}
-                <div>
-                    <button type="submit" disabled={submitting}>Send</button>
+                <div className="subBut">
+                    <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
                 </div>
             </form>
         )

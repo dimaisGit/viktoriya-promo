@@ -971,6 +971,8 @@ footer::after {
     margin: 0;
     color: #ff8200;
     font-family: 'pomidorko';
+    text-align: center;
+    width: 100%;
 }
 .label-reg{
     font-size: 2vw;
@@ -1087,4 +1089,49 @@ footer::after {
     text-decoration: underline;
     cursor: pointer;
     text-underline-position: under;
+}
+.nameField-block{
+    flex:50%;
+    max-width: 50%;
+}
+.regForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainModal form.regForm{
+    padding: 3vw 1.72vw;
+    background-color: #fff;
+    width: 62vw;
+    height: 32vw;
+    border-radius: 1.3vw;
+    position: relative;
+}
+.mainModal form.regForm .nameField-block{
+    width: 50%;
+    height: 4vw;
+    flex: 50%;
+}
+.mainModal form  .nameField-block input{
+    width: 95%;
+    height: 4vw;
+    margin: 0;
+    font-size: 1.2vw;
+}
+.mainModal form .nameField-block div{
+    height: 4vw;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+.mainModal form.regForm .subBut{
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+}
+.mainModal form .subBut button{
+    text-align: center;
+    margin: 2vw auto 0;
+    display: block;
+    width: 28%;
+    /* color: #fff; */
 }
