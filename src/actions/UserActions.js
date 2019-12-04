@@ -6,6 +6,19 @@ export const VERIFY_CODE_FAIL = 'VERIFY_CODE_FAIL'
 
 export const UPDATE_USER_SUCCESS = 'UPDATE_USER_SUCCESS'
 
+export const handleCheckToken = userToken => {
+    return async dispatch => {
+        let response = await fetch('http://mandarin.mywfc.ru/api/checkToken', {
+            method: 'POST',
+            body: JSON.stringify({
+                user_token: userToken
+            })
+        })
+        let jsR = await response.json();
+        console.log(jsR)
+    }
+}
+
 export const handleSendCode = userPhone => {
     return async dispatch => {
         let response = await fetch('http://mandarin.mywfc.ru/api/getCode', {
@@ -42,6 +55,7 @@ export const handleCheckCode = (userPhone, userCode) => {
         console.log(jsR)
         if (jsR.status === 'ok') {
             const { user_token, user_name, user_last_name, user_email, user_birth_date } = jsR
+            window.localStorage.setItem('userToken', user_token)
             dispatch({
                 type: VERIFY_CODE_SUCCESS,
                 payload: {
