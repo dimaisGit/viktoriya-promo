@@ -4,6 +4,13 @@ import { RenderField } from "./RenderField";
 
 class UserForm extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            isChecked: false
+        }
+    }
+
     onHandleSubmit = values => {
         if (!values.userName) {
             throw new SubmissionError({ userName: 'Name is required', _error: 'Login failed!' })
@@ -23,9 +30,16 @@ class UserForm extends React.Component {
         this.props.handleUpdateUser(this.props.userToken, values.userName, values.userLastName, values.userEmail, values.userBirthDate)
     }
 
+    onConsentChange = e => {
+        console.log(e.target.value)
+        this.setState({
+            isChecked: e.target.value === 'false' ? true : false
+        })
+    }
+
     render() {
         const { handleSubmit, submitting, initialValues } = this.props
-        // console.log(initialValues)
+        console.log(this.state.isChecked)
         return (
             <form className="regForm" onSubmit={handleSubmit(this.onHandleSubmit)}>
                 <h2 className="label-reg">Заполните форму регистрации</h2>
@@ -34,7 +48,7 @@ class UserForm extends React.Component {
                 <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
                 <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
                 <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
-                 <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен на обработку персональных данных" index="reg" />
+                <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен на обработку персональных данных" index="reg" onChange={e => this.onConsentChange(e)} additionalLabelClass={this.state.isChecked ? 'checked' : ''}/>
                 <div className="subBut">
                     <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
                 </div>

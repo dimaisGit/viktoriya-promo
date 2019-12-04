@@ -520,7 +520,7 @@ main .col .code {
     margin: auto;
     font-size: 1.5vw;
     color: #000;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 .block.no-bg:last-child p {
@@ -1170,13 +1170,11 @@ footer::after {
     width: 2.5vw;
     cursor: pointer;
 }
-.mainModal form div.reg-block .label-reg
-/* .checked */
+.mainModal form div.reg-block .label-reg.checked
 {
     position: relative;
 }
-.mainModal form div.reg-block .label-reg::after{
-/* .checked */
+.mainModal form div.reg-block .label-reg.checked::after{
 
     content: '';
     position: absolute;
