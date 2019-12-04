@@ -20,7 +20,6 @@ class UserForm extends React.Component {
         if (!values.userConsent) {
             throw new SubmissionError({userConsent: 'Consent is required', _error: 'Login failed!'})
         }
-
         this.props.handleUpdateUser(this.props.userToken, values.userName, values.userLastName, values.userEmail, values.userBirthDate)
     }
 
@@ -35,7 +34,7 @@ class UserForm extends React.Component {
                 <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
                 <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
                 <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
-                {/* <Field name="userConsent" component={RenderField} type='checkbox' label="Заполните форму регистрации" index="reg" /> */}
+                 <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен бла бла бла" index="reg" />
                 <div className="subBut">
                     <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
                 </div>
