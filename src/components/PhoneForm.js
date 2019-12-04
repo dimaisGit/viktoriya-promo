@@ -27,7 +27,7 @@ class PhoneForm extends React.Component {
                 <div className="cancelBut"></div>
                 <Field name="userPhone" component={RenderField} placeholder='' index='1' />
                 <div>
-                    <button type="submit" disabled={submitting}>Отправить код</button>
+                    <button type="submit" disabled={submitting}>{!codeSent ? 'Отправить код' : 'Подтвердить код'}</button>
                 </div>
                 {codeSent && <p className="formCodeEnt">Введите код</p>}
                 {codeSent && <Field name='userCode' component={RenderField} placeholder=" " />}

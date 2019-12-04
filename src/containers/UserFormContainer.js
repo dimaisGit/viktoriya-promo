@@ -15,7 +15,8 @@ class UserFormContainer extends React.Component {
                         userName: userName,
                         userLastName: userLastName,
                         userEmail: userEmail,
-                        userBirthDate: userBirthDate
+                        userBirthDate: userBirthDate,
+                        userConsent: false
                     }}
                 />
             </>
