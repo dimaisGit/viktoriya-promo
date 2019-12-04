@@ -934,6 +934,7 @@ footer::after {
     display: flex;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .mainModal.active {
@@ -1113,8 +1114,8 @@ footer::after {
 }
 .mainModal form.regForm .nameField-block{
     width: 50%;
-    height: 4vw;
-    flex: 50%;
+    height: auto;
+    flex: 50% 1;
 }
 .mainModal form  .nameField-block input{
     width: 95%;
@@ -1138,5 +1139,55 @@ footer::after {
     margin: 2vw auto 0;
     display: block;
     width: 28%;
-    /* color: #fff; */
+}
+.mainModal form div.reg-block label{
+    position: static;
+    width: auto;
+    height: auto;
+    left: auto;
+    right: auto;
+    display: inline;
+    margin: 0;
+}
+.mainModal form div.reg-block{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex: 100%;
+    max-width: 100%;
+    justify-content: center;
+    margin-top: 2vw;
+    height: auto;
+}
+.mainModal form div.reg-block div{
+    width: auto;
+    justify-content: flex-start;
+    margin-right: 1vw;
+
+}
+.mainModal form div.reg-block div input[type='checkbox']{
+    height: 2.5vw;
+    width: 2.5vw;
+    cursor: pointer;
+}
+.mainModal form div.reg-block .label-reg
+/* .checked */
+{
+    position: relative;
+}
+.mainModal form div.reg-block .label-reg::after{
+/* .checked */
+
+    content: '';
+    position: absolute;
+    top: -0.2vw;
+    left: -3.25vw;
+    font-size: 2vw;
+    color: orange;
+    margin: auto;
+    width: 2.5vw;
+    height: 2.5vw;
+    background: url(../img/agree.png) no-repeat center;
+    background-size: contain;
+    /* display: none; */
 }

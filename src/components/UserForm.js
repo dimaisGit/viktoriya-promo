@@ -34,7 +34,7 @@ class UserForm extends React.Component {
                 <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
                 <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
                 <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
-                 <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен бла бла бла" index="reg" />
+                 <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен на обработку персональных данных" index="reg" />
                 <div className="subBut">
                     <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
                 </div>
