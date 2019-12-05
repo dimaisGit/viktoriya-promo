@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Field, reduxForm, SubmissionError, formValueSelector } from "redux-form";
 import { RenderField } from "./RenderField";
 
+
 class UserForm extends React.Component {
 
     constructor(props) {
@@ -11,6 +12,11 @@ class UserForm extends React.Component {
             isChecked: false,
             couponCodeError: ''
         }
+    }
+    componentDidMount (){
+        window.$('.cancelBut').click(function(){
+            window.$('.mainModal').removeClass('active')
+        })
     }
 
     componentDidUpdate() {
@@ -103,7 +109,7 @@ class UserForm extends React.Component {
         return (
             <div className='userForm'>
                 <form className="regForm" onSubmit={handleSubmit(this.onHandleSubmit)}>
-                    <h2 className="label-reg">Заполните форму регистрации</h2>
+                    <h2 className="label-reg ">Заполните форму регистрации</h2>
                     <div className="cancelBut"></div>
                     <Field name="userName" component={RenderField} placeholder='Имя' index="nameField"/>
                     <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
