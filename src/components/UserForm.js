@@ -13,19 +13,19 @@ class UserForm extends React.Component {
 
     onHandleSubmit = values => {
         if (!values.userName) {
-            throw new SubmissionError({ userName: 'Name is required', _error: 'Login failed!' })
+            throw new SubmissionError({ userName: 'Укажите имя', _error: 'Login failed!' })
         }
         if (!values.userLastName) {
-            throw new SubmissionError({ userLastName: 'Last name is required', _error: 'Login failed!'})
+            throw new SubmissionError({ userLastName: 'Укажите фамилию', _error: 'Login failed!'})
         }
         if (!values.userEmail) {
-            throw new SubmissionError({ userEmail: 'Email is required', _error: 'Login failed!'})
+            throw new SubmissionError({ userEmail: 'Укажите Email', _error: 'Login failed!'})
         }
         if (!values.userBirthDate) {
-            throw new SubmissionError({ userBirthDate: 'Birth date is required', _error: 'Login failed!'})
+            throw new SubmissionError({ userBirthDate: 'Укажите дату рождения', _error: 'Login failed!'})
         }
         if (!values.userConsent) {
-            throw new SubmissionError({userConsent: 'Consent is required', _error: 'Login failed!'})
+            throw new SubmissionError({userConsent: 'Необходимо разрешение на обработку персональных данных', _error: 'Login failed!'})
         }
         this.props.handleUpdateUser(this.props.userToken, values.userName, values.userLastName, values.userEmail, values.userBirthDate)
     }

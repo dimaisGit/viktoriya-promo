@@ -8,10 +8,10 @@ class PhoneForm extends React.Component {
 
     onHandleSubmit = values => {
         if (!values.userPhone) {
-            throw new SubmissionError({ userPhone: 'Phone is required', _error: 'Login failed!' })
+            throw new SubmissionError({ userPhone: 'Укажите корректный номер', _error: 'Login failed!' })
         }
         if (this.props.codeSent && !values.userCode) {
-            throw new SubmissionError({ userCode: 'Code is required', _error: 'Login failed!' })
+            throw new SubmissionError({ userCode: 'Введите полученный код', _error: 'Login failed!' })
         }
         if (!this.props.codeSent)
             this.props.handleSendCode('+7' + values.userPhone)
