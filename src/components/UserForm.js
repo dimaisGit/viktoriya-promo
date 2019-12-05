@@ -103,14 +103,14 @@ class UserForm extends React.Component {
                     <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
                     <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
                     <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен на обработку персональных данных" index="reg" onChange={e => this.onConsentChange(e)} additionalLabelClass={this.state.isChecked ? 'checked' : ''}/>
-                    <div className="subBut">
+                    <div className="subBut saveUnder">
                         <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
                     </div>
                     <Field name='couponCode' component={RenderField} couponError={couponError}/>
-                    <div className='subBut'>
-                        <div className='divButton' onClick={this.onCouponSend}>Добавить купон</div>
+                    <div className='subBut addCoup'>
+                        <div className='divButton ' onClick={this.onCouponSend}>Добавить купон</div>
                     </div>
-                    <h2 className="label-reg">Ваши купоны</h2>
+                    <h2 className="label-reg secHeading">Мои купоны</h2>
                     {this.getPrizesComponent(userPrizes)}
                 </form>
             </div>

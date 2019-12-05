@@ -983,7 +983,7 @@ footer::after {
 .label-reg{
     font-size: 2vw;
 }
-.mainModal form select, .mainModal form input, .mainModal form button{
+.mainModal form select, .mainModal form input, .mainModal form button, .mainModal form .subBut .divButton{
     -webkit-appearance: none;
     border: 1px solid #ff8200;
     padding: 1vw;
@@ -1004,7 +1004,7 @@ footer::after {
     padding: .51vw
 }
 
-.mainModal form button {
+.mainModal form button, .mainModal form .subBut .divButton {
     background-color: #ff8200;
     color: #fff;
     border-radius: 2vw;
@@ -1015,12 +1015,16 @@ footer::after {
     font-weight: 100;
     margin-top: 1.82vw;
     height: 3.84vw;
-    width: 42%;
+    width: 45%;
     cursor: pointer;
 }
-.mainModal form button:hover{
+.mainModal form button:hover, .mainModal form .subBut .divButton:hover{
     background-color: #fff;
     color: #ff8200;
+}
+.mainModal form .subBut .divButton{
+    width: 40% !important;
+    margin: 2vw 0 0!important;
 }
 .mainModal form div:nth-child(2) {
     width: 100%;
@@ -1112,10 +1116,11 @@ footer::after {
 .mainModal form.regForm{
     padding: 3vw 1.72vw;
     background-color: #fff;
-    width: 62vw;
-    height: 32vw;
+    width: 72vw;
+    min-height: 32vw;
     border-radius: 1.3vw;
     position: relative;
+    height: auto;
 }
 .mainModal form.regForm .nameField-block{
     width: 50%;
@@ -1139,7 +1144,7 @@ footer::after {
         justify-self: center;
         margin: auto;
 }
-.mainModal form .subBut button{
+.mainModal form .subBut button, .mainModal form .subBut .divButton{
     text-align: center;
     margin: 2vw auto 0;
     display: block;
@@ -1153,6 +1158,11 @@ footer::after {
     right: auto;
     display: inline;
     margin: 0;
+    position: relative;
+    color: black;
+    font-family: 'Ubuntu';
+    font-size: 1.2vw;
+    font-weight: 400;
 }
 .mainModal form div.reg-block{
     display: flex;
@@ -1168,7 +1178,8 @@ footer::after {
     width: auto;
     justify-content: flex-start;
     margin-right: 1vw;
-
+    height: auto;
+    margin-top: 0;
 }
 .mainModal form div.reg-block div input[type='checkbox']{
     height: 2.5vw;
@@ -1182,7 +1193,7 @@ footer::after {
 .mainModal form div.reg-block .label-reg.checked::after{
     content: '';
     position: absolute;
-    top: -0.2vw;
+    top: -0.8vw;
     left: -3.25vw;
     font-size: 2vw;
     color: orange;
@@ -1194,7 +1205,7 @@ footer::after {
 }
 .mainModal form div:nth-child(2).inputError, .inputError{
     position: absolute!important;
-    bottom: -1vw;
+    bottom: 1vw;
     margin: 0;
     padding: 0;
     height: auto;
@@ -1203,7 +1214,8 @@ footer::after {
     font-family: 'Ubuntu';
     font-weight: 600;
 }
-.mainModal form div:nth-child(2).error, .error{
+.mainModal form div:nth-child(2).error, 
+.error{
     position: absolute !important;
     width: 30vw;
     height: auto;
@@ -1214,9 +1226,84 @@ footer::after {
     left: 0;
     right: 0;
     margin: auto;
-    top: 10vw;
-    font-size: 3vw;
+    top: 22vw;
+    font-size: 2vw;
     text-align: center;
     z-index: 30;
+    text-transform: uppercase;
+}
+.mainModal form div.reg-block div.inputError{
+    width: 40vw;
+    bottom: -1.15vw;
+    font-weight: 400;
+    font-size: 1.02vw;
+}
+
+.haveNoPrizesDiv, .couponDiv{
+    position: relative;
+    width: 100%;
+    flex: 100% 1;
+    overflow-y: scroll;
+    max-height: 10vw;
+}
+.couponDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.couponDiv::-webkit-scrollbar{
+    position: relative;
+    width: 5px
+}
+.couponDiv::-webkit-scrollbar,
+.couponDiv::-webkit-scrollbar-track,
+.couponDiv::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+
+.couponDiv::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+}
+
+.couponDiv::-webkit-scrollbar-thumb {
+    background: rgb(247, 147, 30);
+    outline: 1px solid slategrey
+}
+
+.regForm .couponDiv .coupon{
+    flex: 50%;
+    font-size: 1.8vw;
+    margin-top: 1vw;
+    height: auto;
+    max-width: 50%;
+}
+.regForm .couponDiv .coupon span{
+    font-family: 'pomidorko';
     color: #ff8200;
+    font-size: 1.8vw;
+    margin-right: 1vw;
+}
+.haveNoPrizesDiv::before, .couponDiv::before{
+    position: absolute;
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: #e9e9e9;
+    left: 0;
+    right: 0;
+    top: -12.6vw;
+    margin: auto;
+}
+.mainModal form h2.secHeading{
+    margin-top: 3vw;
+}
+.mainModal form .subBut.addCoup{
+    flex: 50%;
+}
+.mainModal form.regForm .subBut.saveUnder{
+    margin-bottom: 3vw;
+}
+.mainModal form input[name='couponCode']{
+    font-size: 1.2vw;
 }
