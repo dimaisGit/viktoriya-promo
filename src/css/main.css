@@ -1194,3 +1194,31 @@ footer::after {
     background-size: contain;
     /* display: none; */
 }
+.inputError{
+    position: absolute;
+    bottom: -1vw;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    color: red;
+    font-family: 'Ubuntu';
+    font-weight: 600;
+}
+.error{
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ff8200;
+    padding: 1vw;
+    border-radius: .5vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10vw;
+    font-size: 3vw;
+    text-align: center;
+    z-index: 30;
+    color: #ff8200;
+}
