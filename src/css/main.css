@@ -1192,7 +1192,7 @@ footer::after {
     background: url(../img/agree.png) no-repeat center;
     background-size: contain;
 }
-.inputError{
+.mainModal form div:nth-child(2).inputError, .inputError{
     position: absolute!important;
     bottom: -1vw;
     margin: 0;
@@ -1203,7 +1203,7 @@ footer::after {
     font-family: 'Ubuntu';
     font-weight: 600;
 }
-.error{
+.mainModal form div:nth-child(2).error, .error{
     position: absolute !important;
     width: 30vw;
     height: auto;

@@ -21,7 +21,6 @@ class PhoneForm extends React.Component {
 
     render() {
         const { handleSubmit, submitting, codeSent, sendError } = this.props
-        console.log(sendError)
         return (
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
                 <h2>Введите номер телефона</h2>
