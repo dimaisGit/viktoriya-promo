@@ -983,7 +983,7 @@ footer::after {
 .label-reg{
     font-size: 2vw;
 }
-.mainModal form select, .mainModal form input, .mainModal form button {
+.mainModal form select, .mainModal form input, .mainModal form button{
     -webkit-appearance: none;
     border: 1px solid #ff8200;
     padding: 1vw;

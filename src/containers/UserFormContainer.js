@@ -1,16 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import UserForm from "../components/UserForm";
-import { handleUpdateUser } from "../actions/UserActions";
+import { handleUpdateUser, handleGetMyPrizes, handleAddBarcode } from "../actions/UserActions";
 
 class UserFormContainer extends React.Component {
     render() {
-        const { handleUpdateUser, userToken, userName, userLastName, userEmail, userBirthDate } = this.props
+        const { handleUpdateUser, handleAddBarcode, userToken, userName, userLastName, userEmail, userBirthDate, handleGetMyPrizes, userPrizes } = this.props
+        console.log(userToken)
         return (
             <>
                 <UserForm
                     userToken={userToken}
                     handleUpdateUser={handleUpdateUser}
+                    handleAddBarcode={handleAddBarcode}
+                    handleGetMyPrizes={handleGetMyPrizes}
+                    userPrizes={userPrizes}
                     initialValues={{
                         userName: userName,
                         userLastName: userLastName,
@@ -30,13 +34,16 @@ const mapStateToProps = store => {
         userName: store.user.userName,
         userLastName: store.user.userLastName,
         userEmail: store.user.userEmail,
-        userBirthDate: store.user.userBirthDate
+        userBirthDate: store.user.userBirthDate,
+        userPrizes: store.user.userPrizes
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleUpdateUser: (userToken, userName, userLastName, userEmail, userBirthDate) => dispatch(handleUpdateUser(userToken, userName, userLastName, userEmail, userBirthDate))
+        handleUpdateUser: (userToken, userName, userLastName, userEmail, userBirthDate) => dispatch(handleUpdateUser(userToken, userName, userLastName, userEmail, userBirthDate)),
+        handleGetMyPrizes: userToken => dispatch(handleGetMyPrizes(userToken)),
+        handleAddBarcode: (userToken, barcode) => dispatch(handleAddBarcode(userToken, barcode))
     }
 }
 
