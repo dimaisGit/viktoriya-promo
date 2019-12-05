@@ -103,7 +103,7 @@ export const handleSendCode = userPhone => {
             dispatch({
                 type: CODE_REQUEST_SUCCESS
             })
-        } 
+        }
     }
 }
 

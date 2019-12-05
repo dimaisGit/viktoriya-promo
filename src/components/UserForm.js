@@ -49,7 +49,9 @@ class UserForm extends React.Component {
     onCouponSend = () => {
         const { userName, userLastName, userBirthDate, userEmail, couponCode, handleAddBarcode, userToken } = this.props
         console.log(couponCode)
-        if (!userName || !userLastName || !userEmail)
+        let differenceInYears = ((new Date()).getTime() - (new Date(userBirthDate)).getTime()) / (1000 * 3600 * 24) / 365
+        console.log(differenceInYears)
+        if (!userName || !userLastName || !userEmail || !userBirthDate)
             this.setState({
                 couponError: 'Заполните все поля!'
             })
@@ -57,6 +59,11 @@ class UserForm extends React.Component {
             this.setState({
                 couponError: 'Введите номер купона!'
             })
+        else if (differenceInYears < 18) {
+            this.setState({
+                couponError: 'Ваш возраст <18'
+            })
+        }
         else {
             handleAddBarcode(userToken, couponCode)
             this.setState({
