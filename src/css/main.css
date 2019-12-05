@@ -1083,7 +1083,7 @@ footer::after {
     height: 2vw;
     background: url(../img/cancel.svg) no-repeat center;
     background-size: contain;
-    top: -.5vw;
+    top: 1.5vw;
     right: 1.5vw;
     cursor: pointer;
 }
