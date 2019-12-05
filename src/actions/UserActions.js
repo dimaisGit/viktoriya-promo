@@ -103,12 +103,7 @@ export const handleSendCode = userPhone => {
             dispatch({
                 type: CODE_REQUEST_SUCCESS
             })
-        } else {
-            dispatch({
-                type: CODE_REQUEST_FAIL,
-                payload: jsR.message_text
-            })
-        }
+        } 
     }
 }
 
