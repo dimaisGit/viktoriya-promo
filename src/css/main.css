@@ -1180,7 +1180,6 @@ footer::after {
     position: relative;
 }
 .mainModal form div.reg-block .label-reg.checked::after{
-
     content: '';
     position: absolute;
     top: -0.2vw;
@@ -1192,10 +1191,9 @@ footer::after {
     height: 2.5vw;
     background: url(../img/agree.png) no-repeat center;
     background-size: contain;
-    /* display: none; */
 }
 .inputError{
-    position: absolute;
+    position: absolute!important;
     bottom: -1vw;
     margin: 0;
     padding: 0;
@@ -1206,7 +1204,7 @@ footer::after {
     font-weight: 600;
 }
 .error{
-    position: absolute;
+    position: absolute !important;
     width: 30vw;
     height: auto;
     background-color: #fff;
