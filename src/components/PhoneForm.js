@@ -25,7 +25,7 @@ class PhoneForm extends React.Component {
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
                 <h2>Введите номер телефона</h2>
                 <div className="cancelBut"></div>
-                <Field name="userPhone" component={RenderField} type="tel" placeholder='' index='1' pattern="[0-9]{10}" />
+                <Field name="userPhone" component={RenderField} type="tel" placeholder='9990000000' index='1' pattern="[0-9]{10}" />
                 <div>
                     <button type="submit" disabled={submitting}>{!codeSent ? 'Отправить код' : 'Подтвердить код'}</button>
                 </div>
