@@ -10,7 +10,8 @@ class UserForm extends React.Component {
         super(props)
         this.state = {
             isChecked: false,
-            couponCodeError: ''
+            couponCodeError: '',
+            isFormHidden: true
         }
     }
     componentDidMount (){
@@ -43,6 +44,7 @@ class UserForm extends React.Component {
         }
         console.log()
         this.props.handleUpdateUser(this.props.userToken, values.userName, values.userLastName, values.userEmail, values.userBirthDate)
+        setTimeout(() => this.setState({isFormHidden: true}), 1000)
     }
 
     onConsentChange = e => {
@@ -102,23 +104,30 @@ class UserForm extends React.Component {
     }
 
     render() {
-        const { handleSubmit, submitting, userPrizes } = this.props
+        const { handleSubmit, submitting, userPrizes, userName, userLastName, userBirthDate, userEmail} = this.props
         console.log(userPrizes)
-        const { couponError } = this.state
-        console.log(this.state.isChecked)
+        const { couponError, isFormHidden } = this.state
+        const resultIsFormHidden = isFormHidden || !userName || !userLastName || !userEmail || !userBirthDate
+        console.log(resultIsFormHidden)
+        console.log(this.state.isFormHidden)
         return (
             <div className='userForm'>
                 <form className="regForm" onSubmit={handleSubmit(this.onHandleSubmit)}>
-                    <h2 className="label-reg ">Заполните форму регистрации</h2>
                     <div className="cancelBut"></div>
-                    <Field name="userName" component={RenderField} placeholder='Имя' index="nameField"/>
-                    <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
-                    <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
-                    <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
-                    <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен на обработку персональных данных" index="reg" onChange={e => this.onConsentChange(e)} additionalLabelClass={this.state.isChecked ? 'checked' : ''}/>
-                    <div className="subBut saveUnder">
-                        <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
-                    </div>
+                    { resultIsFormHidden && <h3 className='label-reg ' onClick={() => this.setState({isFormHidden: false})}>Нажмите для редактирования личних данных</h3>}
+                    { !resultIsFormHidden &&
+                        <>
+                            <h2 className="label-reg ">{ !userName || !userLastName || !userEmail || !userBirthDate ? 'Заполните форму регистрации' : 'Привет, ' + userName + '!'}</h2>
+                            <Field name="userName" component={RenderField} placeholder='Имя' index="nameField"/>
+                            <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
+                            <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
+                            <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
+                            <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен на обработку персональных данных" index="reg" onChange={e => this.onConsentChange(e)} additionalLabelClass={this.state.isChecked ? 'checked' : ''}/>
+                            <div className="subBut saveUnder">
+                                <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
+                            </div>
+                        </>
+                    }
                     <Field name='couponCode' component={RenderField} couponError={couponError}/>
                     <div className='subBut addCoup'>
                         <div className='divButton ' onClick={this.onCouponSend}>Добавить купон</div>
