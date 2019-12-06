@@ -39,12 +39,11 @@ class UserForm extends React.Component {
         if (!values.userBirthDate) {
             throw new SubmissionError({ userBirthDate: 'Укажите дату рождения', _error: 'Login failed!'})
         }
-        if (!values.userConsent) {
+        if (!this.state.isChecked) {
             throw new SubmissionError({userConsent: 'Необходимо разрешение на обработку персональных данных', _error: 'Login failed!'})
         }
         console.log()
         this.props.handleUpdateUser(this.props.userToken, values.userName, values.userLastName, values.userEmail, values.userBirthDate)
-        setTimeout(() => this.setState({isFormHidden: true}), 1000)
     }
 
     onConsentChange = e => {
@@ -104,17 +103,18 @@ class UserForm extends React.Component {
     }
 
     render() {
-        const { handleSubmit, submitting, userPrizes, userName, userLastName, userBirthDate, userEmail} = this.props
+        const { handleSubmit, submitting, userPrizes, userData} = this.props
+        const { userName, userLastName, userBirthDate, userEmail } = userData
         console.log(userPrizes)
         const { couponError, isFormHidden } = this.state
-        const resultIsFormHidden = isFormHidden || !userName || !userLastName || !userEmail || !userBirthDate
+        const resultIsFormHidden = isFormHidden && userName && userLastName && userEmail && userBirthDate
         console.log(resultIsFormHidden)
         console.log(this.state.isFormHidden)
         return (
             <div className='userForm'>
                 <form className="regForm" onSubmit={handleSubmit(this.onHandleSubmit)}>
                     <div className="cancelBut"></div>
-                    { resultIsFormHidden && <h3 className='label-reg ' onClick={() => this.setState({isFormHidden: false})}>Нажмите для редактирования личних данных</h3>}
+                    { resultIsFormHidden && <h3 className='label-reg ' onClick={() => this.setState({isFormHidden: false})}>Нажмите для редактирования личных данных</h3>}
                     { !resultIsFormHidden &&
                         <>
                             <h2 className="label-reg ">{ !userName || !userLastName || !userEmail || !userBirthDate ? 'Заполните форму регистрации' : 'Привет, ' + userName + '!'}</h2>
@@ -128,9 +128,11 @@ class UserForm extends React.Component {
                             </div>
                         </>
                     }
-                    <Field name='couponCode' component={RenderField} couponError={couponError}/>
-                    <div className='subBut addCoup'>
-                        <div className='divButton ' onClick={this.onCouponSend}>Добавить купон</div>
+                    <div className='addCouponDiv'>
+                        <Field name='couponCode' component={RenderField} couponError={couponError}/>
+                        <div className='subBut addCoup'>
+                            <div className='divButton ' onClick={this.onCouponSend}>ДОБАВИТЬ КУПОН</div>
+                        </div>
                     </div>
                     <h2 className="label-reg secHeading">Мои купоны</h2>
                     {this.getPrizesComponent(userPrizes)}

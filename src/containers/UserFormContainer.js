@@ -15,6 +15,12 @@ class UserFormContainer extends React.Component {
                     handleAddBarcode={handleAddBarcode}
                     handleGetMyPrizes={handleGetMyPrizes}
                     userPrizes={userPrizes}
+                    userData = {{
+                        userName: userName,
+                        userLastName: userLastName,
+                        userEmail: userEmail,
+                        userBirthDate: userBirthDate
+                    }}
                     initialValues={{
                         userName: userName,
                         userLastName: userLastName,

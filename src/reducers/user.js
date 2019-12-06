@@ -5,7 +5,8 @@ import {
     VERIFY_CODE_FAIL,
     SET_TOKEN_TO_REDUX_SUCCESS,
     SET_TOKEN_TO_REDUX_FAIL,
-    GET_MY_PRIZES_SUCCESS
+    GET_MY_PRIZES_SUCCESS,
+    UPDATE_USER_SUCCESS
 } from "../actions/UserActions";
 
 export const initialState = {
@@ -33,6 +34,8 @@ export const userReducer = (state = initialState, action) => {
             return { ...state, userToken: action.payload}
         case GET_MY_PRIZES_SUCCESS:
             return { ...state, userPrizes: action.payload}
+        case UPDATE_USER_SUCCESS:
+            return  { ...state, userName: action.payload.userName, userLastName: action.payload.userLastName, userEmail: action.payload.userEmail, userBirthDate: action.payload.userBirthDate}
         default:
             return state
     }

@@ -91,6 +91,7 @@ export const handleGetTokenFromLocalStorage = () => {
 
 export const handleSendCode = userPhone => {
     return async dispatch => {
+        console.log(userPhone)
         let response = await fetch('http://mandarin.mywfc.ru/api/getCode', {
             method: 'POST',
             body: JSON.stringify({
@@ -152,7 +153,13 @@ export const handleUpdateUser = (userToken, userName, userLastName, userEmail, u
         console.log(jsR)
         if (jsR.status === 'ok') {
             dispatch({
-                type: UPDATE_USER_SUCCESS
+                type: UPDATE_USER_SUCCESS,
+                payload: {
+                    userName: userName,
+                    userLastName: userLastName,
+                    userEmail: userEmail,
+                    userBirthDate: userBirthDate
+                }
             })
         }
     }

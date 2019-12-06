@@ -983,7 +983,7 @@ footer::after {
 .label-reg{
     font-size: 2vw;
 }
-.mainModal form select, .mainModal form input, .mainModal form button, .mainModal form .subBut .divButton{
+.mainModal form select, .mainModal form input, .mainModal form button, .divButton{
     -webkit-appearance: none;
     border: 1px solid #ff8200;
     padding: 1vw;
@@ -1004,7 +1004,7 @@ footer::after {
     padding: .51vw
 }
 
-.mainModal form button, .mainModal form .subBut .divButton {
+.mainModal form button, .divButton {
     background-color: #ff8200;
     color: #fff;
     border-radius: 2vw;
@@ -1018,11 +1018,11 @@ footer::after {
     width: 45%;
     cursor: pointer;
 }
-.mainModal form button:hover, .mainModal form .subBut .divButton:hover{
+.mainModal form button:hover, .divButton:hover{
     background-color: #fff;
     color: #ff8200;
 }
-.mainModal form .subBut .divButton{
+.divButton{
     width: 40% !important;
     margin: 2vw 0 0!important;
 }
@@ -1044,6 +1044,11 @@ footer::after {
     width: 100%;
     margin-top: 1vw;
     height: 5vw;
+}
+
+.addCouponDiv {
+    margin: auto !important;
+    width: 80vw;
 }
 
 .mainModal form input[name="userPhone"] {
@@ -1068,6 +1073,7 @@ footer::after {
 }
 
 .mainModal form div label.label-1::before {
+    opacity: 1;
     position: absolute;
     content: '+7';
     font-family: 'Ubuntu';
@@ -1131,10 +1137,10 @@ footer::after {
     width: 95%;
     height: 4vw;
     margin: 0;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 .mainModal form .nameField-block div{
-    height: 4vw;
+    height: 100%;
     margin-top: 1vw;
     font-size: 1.5vw;
 }
@@ -1144,7 +1150,14 @@ footer::after {
         justify-self: center;
         margin: auto;
 }
-.mainModal form .subBut button, .mainModal form .subBut .divButton{
+.divButton {
+    height: auto !important;
+    display: block !important;
+    width: 18vw !important;
+    padding-bottom: 3vw;
+    margin-top: 3vw !important;
+}
+.mainModal form .subBut button, .divButton{
     text-align: center;
     margin: 2vw auto 0;
     display: block;
@@ -1161,7 +1174,7 @@ footer::after {
     position: relative;
     color: black;
     font-family: 'Ubuntu';
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: 400;
 }
 .mainModal form div.reg-block{
@@ -1237,6 +1250,13 @@ footer::after {
     bottom: -1.15vw;
     font-weight: 400;
     font-size: 1.02vw;
+}
+
+.haveNoPrizesDiv {
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'pomidorko';
+    color: #ff8200;
 }
 
 .haveNoPrizesDiv, .couponDiv{
