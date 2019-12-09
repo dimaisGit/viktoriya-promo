@@ -249,6 +249,10 @@
 /* mobile */
 
 @media screen and (max-width: 630px) {
+    .regForm .couponDiv .coupon {
+        flex: 100% 2 !important;
+        max-width: 100% !important;
+    }
     .addCouponDiv input {
         width: 40vw !important;
         height: 5vw !important;
