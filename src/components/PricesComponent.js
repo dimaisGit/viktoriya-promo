@@ -1,7 +1,8 @@
 import React from 'react'
-import tour from '../img/tour.png'
-import tel from '../img/tel.png'
-import card from '../img/card.png'
+import tv from '../img/tvPrize.png'
+import tel from '../img/phonePrize.png'
+import coffee from '../img/coffeePrize.png'
+import fitnes from '../img/fitnesPrize.png'
 
 
 export default class PricesComponent extends React.Component {
@@ -15,19 +16,25 @@ export default class PricesComponent extends React.Component {
                             <div className="box">
                                 <img src={tel} alt="tel" />
                             </div>
-                            <p>iPad или iPhone 11</p>
+                            <p>Смартфон</p>
                         </div>
                         <div className="price-box">
                             <div className="box">
-                                <img src={card} alt="card" />
+                                <img src={coffee} alt="card" />
                             </div>
-                            <p>Сертификат на покупку бытовой техники</p>
+                            <p>Кофемашина</p>
                         </div>
                         <div className="price-box">
                             <div className="box">
-                                <img src={tour} alt="tour" />
+                                <img src={tv} alt="tv" />
                             </div>
-                            <p>Одно из трех путешествий</p>
+                            <p>Телевизор</p>
+                        </div>
+                        <div className="price-box">
+                            <div className="box">
+                                <img src={fitnes} alt="fitnes" />
+                            </div>
+                            <p>Фитнес браслеты</p>
                         </div>
                     </div>
                     <div className="userNav">

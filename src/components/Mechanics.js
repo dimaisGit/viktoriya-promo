@@ -15,25 +15,20 @@ export default class MechanicsComponent extends React.Component {
                 <MainModalContainer/>
                     <div className="ramka">
                         <div className="container">
-                            <h2>Встречай Новый год вместе с нами!</h2>
                             <div className="blocks flexing">
                                 <div className="block first">
-                                    <p>Соверши покупку ОТ 700<small>₽</small> и получи купон (скретч-карту)</p>
+                                    <p>с <b>16.12.2019</b> по <b>31.01.2020</b> совершите покупку на 1000руб*</p>
                             </div>
                                 <div className="block second">
-                                    <p>Под защитным слоем ты найдешь один из подарков:</p>
+                                    <p>получите <b>карту</b> на кассе, сотрите защитный слой и получите...</p>
                                 </div>
                             </div>
                             <div className="blocks flexing">
                                 <div className="block no-bg">
                                     <h4>скидку до 20%</h4>
-                                    <p>На следующую покупку от 700<small>₽</small> в <b>«ДИКСИ»</b>
-                                        <Tooltip
-                                            title="Без учета табака, табачной продукции, табачных изделий, курительных принадлежностей, алкогольной продукции с установленной минимальной розничной ценой"
-                                            position="top"
-                                            trigger="click" >
-                                            <img className="tooltip-min" src={toolt} />
-                                        </Tooltip>
+                                    <p>
+                                        Используйте купон
+                                        при следующей покупке
                                     </p>
                                 </div>
                                 <div className="block no-bg">

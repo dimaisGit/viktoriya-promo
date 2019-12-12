@@ -88,7 +88,7 @@ main.oranged {
 .mandarined::before {
     bottom: auto;
     top: -6vw;
-    background: url(../img/oranged-after.png) repeat-x 10%;
+    background: url(../img/elBack.png) repeat-x 10%;
     background-size: cover;
 }
 
@@ -141,7 +141,7 @@ main .col .code {
 .sales-block {
     background: #fff;
     border-radius: 1vw;
-    color: #c81c25;
+    color: #2a4a30;
     -webkit-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
@@ -185,7 +185,7 @@ main .col .code {
 }
 
 .btn {
-    color: #ff8200;
+    color: #2a4a30;
     background: #fff;
     border-radius: 2.5vw;
     width: 20vw;
@@ -201,12 +201,10 @@ main .col .code {
 }
 
 .logo-inner {
-    background: url(../img/Logo-Dixy.png) no-repeat center;
+    background: url(../img/viktoriyaLogo.png) no-repeat center;
     background-size: contain;
-    border: .31vw solid #fff;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
     position: relative;
     z-index: 10;
 }
@@ -215,37 +213,9 @@ main .col .code {
     position: relative;
     width: 5vw;
     height: 5vw;
-    margin-bottom: 3.5vw;
-    margin-top: -2vw;
+    margin-bottom: 12.5vw;
+    margin-top: -6vw;
     display: block;
-}
-
-.logo::before {
-    content: '';
-    position: absolute;
-    top: -4.2vw;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 3vw;
-    height: 5vw;
-    background: url(../img/logo-before.png) no-repeat center;
-    background-size: contain;
-    z-index: 8;
-}
-
-.logo::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1vw;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 7vw;
-    height: 7vw;
-    background: url(../img/logo-after.png) no-repeat center;
-    background-size: contain;
 }
 
 .dating {
@@ -284,8 +254,8 @@ main .col .code {
 
 .tel {
     position: absolute;
-    left: 18vw;
-    bottom: 12vw;
+    left: 16vw;
+    bottom: 15vw;
     height: 21vw;
     -webkit-transform: rotate(-8deg);
     -ms-transform: rotate(-8deg);
@@ -301,9 +271,9 @@ main .col .code {
 
 .plane {
     position: absolute;
-    bottom: 13vw;
-    width: 33vw;
-    left: -5vw;
+    bottom: 3vw;
+    width: 24vw;
+    left: 2vw;
 }
 
 .mandarin {
@@ -315,9 +285,9 @@ main .col .code {
 
 .list {
     position: absolute;
-    bottom: 3.5vw;
-    left: 1vw;
-    height: 13.5vw;
+    bottom: 7.5vw;
+    left: 6vw;
+    height: 7.5vw;
 }
 
 .mandarin-img::after {
@@ -405,7 +375,7 @@ main .col .code {
     line-height: 1.5;
     position: relative;
     box-shadow: 5px 5px 16px #9c9c9c;
-    background-color: #ff8200;
+    background-color: #2a4a30;
     color: #fff;
     width: 100%;
 }
@@ -415,7 +385,7 @@ main .col .code {
     position: absolute;
     left: 0;
     font-size: 13.5vw;
-    color: #ff9e4f;
+    color: #556e59;
     line-height: .71;
     top: 0;
     bottom: 0;
@@ -437,7 +407,7 @@ main .col .code {
     position: absolute;
     left: 0;
     font-size: 13.5vw;
-    color: #ff9e4f;
+    color: #556e59;
     line-height: .71;
     top: 0;
     bottom: 0;
@@ -631,7 +601,7 @@ main .col .code {
 }
 
 .raffle.oranged h2 {
-    color: #ff8200;
+    color: #2a4a30;
     text-align: left;
 }
 
@@ -680,7 +650,7 @@ main .col .code {
 }
 
 .map.oranged {
-    padding-top: 13vw;
+    padding-top: 14vw;
     background: url(../img/oranged-bg.jpg), url(../img/map-snow-bg.png) no-repeat center;
     background-blend-mode: overlay;
     background-size: 100%;
@@ -734,16 +704,6 @@ main .col .code {
     position: relative;
 }
 
-.map h2::after {
-    content: '';
-    position: absolute;
-    margin-left: 2vw;
-    bottom: .5vw;
-    height: 3vw;
-    width: 3vw;
-    background: url(../img/logo-wh.svg) no-repeat center;
-    background-size: contain;
-}
 
 footer {
     background: #212121 url(../img/footer-snow.png) no-repeat center;
@@ -993,6 +953,52 @@ footer::after {
     margin: .5vw 0;
     width: 60%;
     outline: none;
+}
+
+.geoSelectMap {
+    text-align-last: right;
+    padding: 1vw;
+    float: right;
+    font-family: 'Ubuntu';
+    color: white;
+    width: 22vw;
+    outline: none;
+    border: none;
+    height: 4vw;
+    z-index: 1000000;
+    font-size: 1vw;
+    background: transparent;
+    margin-top: -6vw;
+
+}
+.geoSelectMap:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.geoSelect {
+    text-align-last: right;
+    padding: 1vw;
+    font-family: 'Ubuntu';
+    color: white;
+    width: 22vw;
+    outline: none;
+    border: none;
+    height: 4vw;
+    position: absolute;
+    z-index: 1000000;
+    right: 0;
+    font-size: 1vw;
+    background: transparent;
+    top: 1vw;
+}
+.geoSelect option {
+    text-align: right;
+    background: black;
+    border: 1px solid #ff8200;
 }
 
 .inputError {

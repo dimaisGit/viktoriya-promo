@@ -12,7 +12,7 @@ export const initOwl = () => {
                     // autoplay: true
                 },
                 632: {
-                    items : 3,
+                    items : 4,
                     nav: false,
                     mouseDrag:false
                 }

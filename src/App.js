@@ -13,27 +13,62 @@ import $ from 'jquery'
 import './css/main.css'
 import './css/animations.css'
 import './css/mobile.css'
-
+import leImg from './img/agree.png'
 export default class App extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            latitude: 0,
+            longitude: 0,
+            region: 'Москва, Россия'
+        }
+    }
+
+    handleChangeRegion = region => {
+        this.setState({
+            region: region
+        })
+    }
+
     componentDidMount() {
-       
         initSnowFlakesNew();
         initOwl()
         $('.btn').click(function(){
             initSnowFlakesNew();
 
         })
+        navigator.geolocation.getCurrentPosition(position => {
+            const { latitude, longitude } = position.coords
+            this.setState({
+                latitude: latitude,
+                longitude: longitude
+            })
+            console.log(latitude, longitude)
+        }, error => {
+            console.log(error)
+        })
     }
 
     render() {
+        const { longitude, latitude } = this.state
         return (
           <>
-              <MainComponent />
+              <MainComponent
+                region={this.state.region}
+                handleChangeRegion={this.handleChangeRegion}
+              />
               <MechanicsComponent />
               <PricesComponent />
               <RaffleComponent />
-              <MapComponent />
-              <FooterComponent />
+              <MapComponent
+                longitude={longitude}
+                latitude={latitude}
+                handleChangeRegion={this.handleChangeRegion}
+                region={this.state.region}
+              />
+              <FooterComponent
+                region={this.state.region}
+              />
           </>
       );
     }

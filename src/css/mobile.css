@@ -1,4 +1,9 @@
 @media screen and (max-width: 851px) {
+    .geoSelect, .geoSelectMap {
+        font-size: 2vw;
+        height: 4vw;
+        width: 30vw;
+    }
     .haveNoPrizesDiv {
         font-size: 3.35vw;
     }
@@ -76,6 +81,7 @@
         width: 15vw;
         height: 15vw;
         left: 64vw;
+        top: 14vw;
     }
     .blocks:nth-child(2)::before {
         width: 15vw;
@@ -361,10 +367,8 @@
         top: 7vw;
     }
     .list {
-        position: absolute;
-        bottom: -50px;
-        left: -27vw;
-        height: 23.5vw;
+        left: -13vw;
+        height: 11.5vw;
     }
     .tour {
         position: absolute;
@@ -374,7 +378,7 @@
     }
     .tel {
         position: absolute;
-        left: 10vw;
+        left: 5vw;
         bottom: 12vw;
         height: 31vw;
         -webkit-transform: rotate(-8deg);
@@ -389,9 +393,9 @@
     }
     .plane {
         position: absolute;
-        bottom: 11vw;
-        width: 62vw;
-        left: -26vw;
+        bottom: -5vw;
+        width: 40vw;
+        left: -20vw;
     }
     .btn {
         font-size: 2.8vw;
@@ -582,7 +586,7 @@
         width: 18vw;
         height: 18vw;
         left: 74vw;
-        top: 12vw;
+        top: 28vw;
     }
     .blocks:nth-child(2)::before {
         width: 26vw;
@@ -698,6 +702,11 @@
 }
 
 @media screen and (max-width:450px) {
+    .geoSelect, geoSelectMap {
+        font-size: 3vw;
+        height: 5vw;
+        width: 35vw;
+    }
     h1 {
         width: 87vw;
         min-height: 40vw;
@@ -742,10 +751,8 @@
         margin: auto;
     }
     .list {
-        position: absolute;
-        bottom: -18vw;
-        left: -42vw;
-        height: 33.5vw;
+        height: 15.5vw;
+        left: -15vw;
     }
     .tour {
         position: absolute;
@@ -801,7 +808,7 @@
         width: 28vw;
         height: 23vw;
         left: 68vw;
-        top: 19vw;
+        top: 38vw;
     }
     .blocks:nth-child(2)::before {
         width: 31vw;
