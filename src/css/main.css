@@ -996,9 +996,11 @@ footer::after {
     top: 1vw;
 }
 .geoSelect option {
+    color: black;
     text-align: right;
-    background: black;
+    background: white;
     border: 1px solid #ff8200;
+    outline: none;
 }
 
 .inputError {

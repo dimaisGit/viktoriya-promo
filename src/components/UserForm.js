@@ -121,7 +121,7 @@ class UserForm extends React.Component {
                             <Field name="userName" component={RenderField} placeholder='Имя' index="nameField"/>
                             <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
                             <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
-                            <Field name="userBirthDate" component={RenderField} type='date' placeholder='дд.мм.гггг' index="nameField"/>
+                            <Field name="userBirthDate" component={RenderField} type='date' placeholder='Дата рождения' index="nameField"/>
                             <Field name="userConsent" component={RenderField} type='checkbox' label="Я согласен на обработку персональных данных" index="reg" onChange={e => this.onConsentChange(e)} additionalLabelClass={this.state.isChecked ? 'checked' : ''}/>
                             <div className="subBut saveUnder">
                                 <button type="submit" disabled={submitting} value="Сохранить">Сохранить</button>
