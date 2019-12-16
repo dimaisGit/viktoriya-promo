@@ -32,7 +32,7 @@ export const handleAddBarcode = (userToken, barcode) => {
         } else {
             dispatch({
                 type: CODE_ERROR,
-                payload: 'Купон уже занят либо не существует'
+                payload: 'Некорректный купон'
             })
         }
     }
