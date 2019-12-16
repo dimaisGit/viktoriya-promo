@@ -402,6 +402,8 @@
         height: 7vw;
         width: 54vw;
         padding: 2vw;
+        margin-top: -10vw;
+        margin-bottom: 5vw;
     }
     main .col .code {
         right: -10vw;
@@ -867,7 +869,8 @@
         display: none;
     }
     .prices .btn {
-        margin: -5vw auto 5vw;
+        margin-bottom: 20vw;
+        margin-top: 5vw;
     }
     .raffle.oranged {
         background: url(../img/trees-bg-mob.png);
