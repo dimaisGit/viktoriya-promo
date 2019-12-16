@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "419996854534381a9a00614ddf7ffee4",
+    "revision": "cce0829d8869bf9d1e001922d65c244f",
     "url": "/index.html"
   },
   {
-    "revision": "afcd7d6af02bdb01bfcb",
+    "revision": "636a3f1a4928c4cc002c",
     "url": "/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "07c50191f41e88657bb0",
-    "url": "/static/css/main.18766edc.chunk.css"
+    "revision": "a8e4fb2ad18e37d3afa3",
+    "url": "/static/css/main.5ee6a12c.chunk.css"
   },
   {
-    "revision": "afcd7d6af02bdb01bfcb",
-    "url": "/static/js/2.cfb745a5.chunk.js"
+    "revision": "636a3f1a4928c4cc002c",
+    "url": "/static/js/2.dc9a60c6.chunk.js"
   },
   {
-    "revision": "07c50191f41e88657bb0",
-    "url": "/static/js/main.fcadf9ab.chunk.js"
+    "revision": "a8e4fb2ad18e37d3afa3",
+    "url": "/static/js/main.5bf85081.chunk.js"
   },
   {
     "revision": "3c343c5daffbc137b225",
@@ -72,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/arr-next.345a6e0b.png"
   },
   {
+    "revision": "cce3925790eab035c15dfe65f805ac09",
+    "url": "/static/media/balls.cce39257.png"
+  },
+  {
     "revision": "ef06452f0c3ed285ab6a473d348a711e",
     "url": "/static/media/cancel.ef06452f.svg"
   },
@@ -112,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/footer-after.31bbe7e7.png"
   },
   {
-    "revision": "401fd647634f0b478d1abc8380a592d7",
-    "url": "/static/media/h1.401fd647.svg"
+    "revision": "41f6565dc88fdf89083cb13f80fce0b4",
+    "url": "/static/media/h1.41f6565d.svg"
   },
   {
     "revision": "6249edee3e9a7f206729786810206d2f",
@@ -134,6 +138,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "531e69949eb303c48033a16399d6b288",
     "url": "/static/media/left-hand.531e6994.svg"
+  },
+  {
+    "revision": "b589ca41ff618cfb514a4e84bdead1e5",
+    "url": "/static/media/lights.b589ca41.png"
   },
   {
     "revision": "25bf045ca257e971124f3997d89f321c",
@@ -194,6 +202,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b9b42f2eafaa27f78d2a6b2dca3b15d9",
     "url": "/static/media/phonePrize.b9b42f2e.png"
+  },
+  {
+    "revision": "29b748086973c650108cad163ad9fb89",
+    "url": "/static/media/placemark.29b74808.svg"
   },
   {
     "revision": "c07d54a0f2b12c0557e0a9904f6329ee",
@@ -258,6 +270,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "591d6818534f2173e422cae762e4630c",
     "url": "/static/media/trees-bg.591d6818.svg"
+  },
+  {
+    "revision": "a999024da7deed536e4876fff1569594",
+    "url": "/static/media/trees-bg.a999024d.png"
   },
   {
     "revision": "a8d28772fbb60c4f8901133fe018473f",

@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.18766edc.chunk.css",
-    "main.js": "/static/js/main.fcadf9ab.chunk.js",
-    "main.js.map": "/static/js/main.fcadf9ab.chunk.js.map",
+    "main.css": "/static/css/main.5ee6a12c.chunk.css",
+    "main.js": "/static/js/main.5bf85081.chunk.js",
+    "main.js.map": "/static/js/main.5bf85081.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.022fc79d.js",
     "runtime-main.js.map": "/static/js/runtime-main.022fc79d.js.map",
     "static/css/2.4c9116bc.chunk.css": "/static/css/2.4c9116bc.chunk.css",
-    "static/js/2.cfb745a5.chunk.js": "/static/js/2.cfb745a5.chunk.js",
-    "static/js/2.cfb745a5.chunk.js.map": "/static/js/2.cfb745a5.chunk.js.map",
+    "static/js/2.dc9a60c6.chunk.js": "/static/js/2.dc9a60c6.chunk.js",
+    "static/js/2.dc9a60c6.chunk.js.map": "/static/js/2.dc9a60c6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.539f29c078a6f36250ed5f50784e7871.js": "/precache-manifest.539f29c078a6f36250ed5f50784e7871.js",
+    "precache-manifest.4d9af446b7435262799c85ca2e835436.js": "/precache-manifest.4d9af446b7435262799c85ca2e835436.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4c9116bc.chunk.css.map": "/static/css/2.4c9116bc.chunk.css.map",
-    "static/css/main.18766edc.chunk.css.map": "/static/css/main.18766edc.chunk.css.map",
+    "static/css/main.5ee6a12c.chunk.css.map": "/static/css/main.5ee6a12c.chunk.css.map",
     "static/media/animations.css": "/static/media/right-eye.b6356b0b.svg",
     "static/media/main.css": "/static/media/viktoriyaLogo.bc2aa8ea.png",
     "static/media/mobile.css": "/static/media/trees-bg.591d6818.svg",
@@ -26,6 +26,7 @@
     "static/media/mandarin-raffle.svg": "/static/media/mandarin-raffle.0016dba0.svg",
     "static/media/mandarin.png": "/static/media/mandarin.c3b8fb0d.png",
     "static/media/phonePrize.png": "/static/media/phonePrize.b9b42f2e.png",
+    "static/media/placemark.svg": "/static/media/placemark.29b74808.svg",
     "static/media/salute.png": "/static/media/salute.1fba3bcc.png",
     "static/media/tel.png": "/static/media/tel.c65edbaa.png",
     "static/media/tvPrize.png": "/static/media/tvPrize.a8d28772.png"
@@ -33,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.022fc79d.js",
     "static/css/2.4c9116bc.chunk.css",
-    "static/js/2.cfb745a5.chunk.js",
-    "static/css/main.18766edc.chunk.css",
-    "static/js/main.fcadf9ab.chunk.js"
+    "static/js/2.dc9a60c6.chunk.js",
+    "static/css/main.5ee6a12c.chunk.css",
+    "static/js/main.5bf85081.chunk.js"
   ]
 }
