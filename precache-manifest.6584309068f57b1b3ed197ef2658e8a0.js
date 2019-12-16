@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4f58a5090662ef9657c4a5ad0ebd0cc",
+    "revision": "82e53dfbe654b6c5215193c348dc251a",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "7ebd223cb27ce64a595a",
-    "url": "/static/css/main.8034abeb.chunk.css"
+    "revision": "1911bc4ce03973c1b6a0",
+    "url": "/static/css/main.d0329c92.chunk.css"
   },
   {
     "revision": "afcd7d6af02bdb01bfcb",
     "url": "/static/js/2.cfb745a5.chunk.js"
   },
   {
-    "revision": "7ebd223cb27ce64a595a",
-    "url": "/static/js/main.4d8e278c.chunk.js"
+    "revision": "1911bc4ce03973c1b6a0",
+    "url": "/static/js/main.1f8eb06d.chunk.js"
   },
   {
     "revision": "3c343c5daffbc137b225",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/coffePrize.5b76a5d9.png"
   },
   {
-    "revision": "6fb5fee34cf7d69741add947b24fd5dc",
-    "url": "/static/media/coffeePrize.6fb5fee3.png"
+    "revision": "786c48f58ef9024ac9147f687093690c",
+    "url": "/static/media/coffeePrize.786c48f5.png"
   },
   {
     "revision": "dfb439e4aded6ed2e813e9df7f665e37",
@@ -104,8 +104,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fitnes2.7b4d4ec4.png"
   },
   {
-    "revision": "bde7976e8e7d963c54c09626043bbd54",
-    "url": "/static/media/fitnesPrize.bde7976e.png"
+    "revision": "b22cb415cd24f549f6068516a0b37b65",
+    "url": "/static/media/fitnesPrize.b22cb415.png"
   },
   {
     "revision": "31bbe7e7920cf77319aed80b5d832fb4",
@@ -192,8 +192,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/oranged-bg.b45bf553.jpg"
   },
   {
-    "revision": "04b88a13d3afc06e32b930305ca8c45b",
-    "url": "/static/media/phonePrize.04b88a13.png"
+    "revision": "b9b42f2eafaa27f78d2a6b2dca3b15d9",
+    "url": "/static/media/phonePrize.b9b42f2e.png"
   },
   {
     "revision": "c07d54a0f2b12c0557e0a9904f6329ee",
@@ -260,8 +260,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/trees-bg.591d6818.svg"
   },
   {
-    "revision": "46a4032e8386ecaf55a269fb490315b0",
-    "url": "/static/media/tvPrize.46a4032e.png"
+    "revision": "a8d28772fbb60c4f8901133fe018473f",
+    "url": "/static/media/tvPrize.a8d28772.png"
   },
   {
     "revision": "bc2aa8ea4041add62a99a0d0ff196bfe",
