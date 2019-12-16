@@ -13,6 +13,8 @@ export const GET_MY_PRIZES_SUCCESS = 'GET_MY_PRIZES_SUCCESS'
 
 export const ADD_BARCODE_SUCCESS = 'ADD_BARCODE_SUCCESS'
 
+export const CODE_ERROR = 'CODE_ERROR'
+
 export const handleAddBarcode = (userToken, barcode) => {
     return async dispatch => {
         console.log(userToken, barcode)
@@ -27,6 +29,11 @@ export const handleAddBarcode = (userToken, barcode) => {
         console.log(jsR)
         if (jsR.status === 'ok') {
             dispatch(handleGetMyPrizes(userToken))
+        } else {
+            dispatch({
+                type: CODE_ERROR,
+                payload: 'Купон уже занят либо не существует'
+            })
         }
     }
 }
@@ -46,6 +53,10 @@ export const handleGetMyPrizes = userToken => {
                 type: GET_MY_PRIZES_SUCCESS,
                 payload: jsR.list
             })
+            setTimeout(() => dispatch({
+                type: CODE_ERROR,
+                payload: ''
+            }), 2000)
         }
     }
 }

@@ -6,7 +6,8 @@ import {
     SET_TOKEN_TO_REDUX_SUCCESS,
     SET_TOKEN_TO_REDUX_FAIL,
     GET_MY_PRIZES_SUCCESS,
-    UPDATE_USER_SUCCESS
+    UPDATE_USER_SUCCESS,
+    CODE_ERROR
 } from "../actions/UserActions";
 
 export const initialState = {
@@ -24,18 +25,20 @@ export const initialState = {
 export const userReducer = (state = initialState, action) => {
     switch (action.type) {
         case CODE_REQUEST_SUCCESS:
-            return { ...state, codeSent: true, error: '' }
+            return { ...state, codeError: '', codeSent: true, error: '' }
         case CODE_REQUEST_FAIL:
-            return { ...state, error: action.payload}
+            return { ...state, codeError: '', error: action.payload}
         case VERIFY_CODE_SUCCESS:
             const { userToken, userName, userLastName, userEmail, userBirthDate } = action.payload
-            return { ...state, codeVerified: true, userToken: userToken, userName: userName, userLastName: userLastName, userEmail: userEmail, userBirthDate: userBirthDate}
+            return { ...state, codeError: '', codeVerified: true, userToken: userToken, userName: userName, userLastName: userLastName, userEmail: userEmail, userBirthDate: userBirthDate}
         case SET_TOKEN_TO_REDUX_SUCCESS:
-            return { ...state, userToken: action.payload}
+            return { ...state, codeError: '', userToken: action.payload}
         case GET_MY_PRIZES_SUCCESS:
             return { ...state, userPrizes: action.payload}
         case UPDATE_USER_SUCCESS:
-            return  { ...state, userName: action.payload.userName, userLastName: action.payload.userLastName, userEmail: action.payload.userEmail, userBirthDate: action.payload.userBirthDate}
+            return  { ...state, codeError: '', userName: action.payload.userName, userLastName: action.payload.userLastName, userEmail: action.payload.userEmail, userBirthDate: action.payload.userBirthDate}
+        case CODE_ERROR:
+            return { ...state, codeError: action.payload }
         default:
             return state
     }

@@ -5,7 +5,7 @@ import { handleUpdateUser, handleGetMyPrizes, handleAddBarcode } from "../action
 
 class UserFormContainer extends React.Component {
     render() {
-        const { handleUpdateUser, handleAddBarcode, userToken, userName, userLastName, userEmail, userBirthDate, handleGetMyPrizes, userPrizes } = this.props
+        const { handleUpdateUser, handleAddBarcode, userToken, userName, userLastName, userEmail, userBirthDate, handleGetMyPrizes, userPrizes, codeError } = this.props
         console.log(userToken)
         return (
             <>
@@ -21,6 +21,7 @@ class UserFormContainer extends React.Component {
                         userEmail: userEmail,
                         userBirthDate: userBirthDate
                     }}
+                    codeError={codeError}
                     initialValues={{
                         userName: userName,
                         userLastName: userLastName,
@@ -41,7 +42,8 @@ const mapStateToProps = store => {
         userLastName: store.user.userLastName,
         userEmail: store.user.userEmail,
         userBirthDate: store.user.userBirthDate,
-        userPrizes: store.user.userPrizes
+        userPrizes: store.user.userPrizes,
+        codeError: store.user.codeError
     }
 }
 

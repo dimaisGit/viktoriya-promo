@@ -262,9 +262,19 @@
     .addCouponDiv input {
         width: 40vw !important;
         height: 5vw !important;
+        font-size: 3vw !important;
+        z-index: 10;
+    }
+    .addCouponDiv .inputError {
+        top: -5vw !important;
+        z-index: 0;
     }
     .coupon, .coupon span {
         font-size: 3.5vw !important;
+    }
+    .mainModal form div:nth-child(2).inputError, .inputError {
+        font-size: 3vw;
+        bottom: 0.5vw
     }
     .divButton {
         width: 30vw !important;

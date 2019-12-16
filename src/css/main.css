@@ -1237,6 +1237,7 @@ footer::after {
     color: red;
     font-family: 'Ubuntu';
     font-weight: 600;
+    font-size: 1vw;
 }
 .mainModal form div:nth-child(2).error, 
 .error{
