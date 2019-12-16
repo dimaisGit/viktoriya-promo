@@ -717,6 +717,15 @@
 }
 
 @media screen and (max-width:450px) {
+    .addCouponDiv input {
+        width: 45vw !important;
+        height: 6vw !important;
+        font-size: 3.5vw !important;
+    }
+    .divButton {
+        height: 6vw !important;
+        font-size: 3.5vw !important;
+    }
     .geoSelect, geoSelectMap {
         font-size: 3vw;
         height: 5vw;
