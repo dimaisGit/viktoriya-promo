@@ -198,6 +198,8 @@ main .col .code {
     padding: 1vw 1vw;
     font-weight: bold;
     margin: auto;
+    position: relative;
+    z-index: 10000000;
 }
 
 .logo-inner {
