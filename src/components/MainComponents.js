@@ -24,7 +24,7 @@ export default class MainComponent extends React.Component {
                         <span className="dating">с 16 декабря 2019 по 31 января 2020</span>
                         <h1>Мандарим в "виктории"</h1>
                         <div className="sales-block">
-                            <div className="heading">скидки до 20%
+                            <div className="heading">скидки
                             </div>
                             <div className="additional">и суперпризы</div>
                         </div>
