@@ -67,12 +67,22 @@ p, span, a, h4 {
 }
 
 main.oranged {
-    background: url(../img/oranged-bg-main.jpg) 2% 42%, url(../img/snowflakes-bg.png) 100%;
+    background: url(../img/oranged-bg-main.jpg) -18vw 5vw,  url(../img/snowflakes-bg.png) 100%;
     background-blend-mode: overlay;
-    background-size: 95%, 100%;
+    background-size: 116%,  100%;
     position: relative;
 }
-
+main.oranged::after{
+    content:'';
+    position: absolute;
+    top: 3vw;
+    transform: rotate(-20deg);
+    left: 0;
+    background: url(../img/lights.png) no-repeat 50% 0%;
+    background-size: contain;
+    width: 10vw;
+    height: 3vw;
+}
 .mandarined::before, .mandarined::after, footer::before {
     content: '';
     position: absolute;
@@ -212,10 +222,11 @@ main .col .code {
 .logo {
     position: relative;
     width: 5vw;
-    height: 5vw;
     margin-bottom: 12.5vw;
     margin-top: -6vw;
     display: block;
+    height: 0;
+    cursor: pointer;
 }
 
 .dating {
@@ -280,7 +291,7 @@ main .col .code {
     position: absolute;
     width: 33vw;
     right: 8vw;
-    top: 10vw;
+    top: 7vw;
 }
 
 .list {
@@ -979,8 +990,6 @@ footer::after {
     background-position: 1vw 0;
     width: auto;
     color: #fff;
-    /* -webkit-appearance: none; */
-    padding-right: 2vw;
 }
 
 .geoSelectMap option{
