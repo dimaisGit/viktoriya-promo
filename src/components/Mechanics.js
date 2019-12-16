@@ -17,7 +17,7 @@ export default class MechanicsComponent extends React.Component {
                         <div className="container">
                             <div className="blocks flexing">
                                 <div className="block first">
-                                    <p>с <b>16.12.2019</b> по <b>31.01.2020</b> совершите покупку на 1000руб*</p>
+                                    <p>с <b>16.12.2019</b> по <b>31.01.2020</b> совершите покупку от 1000руб*</p>
                             </div>
                                 <div className="block second">
                                     <p>получите <b>карту</b> на кассе, сотрите защитный слой и получите...</p>
