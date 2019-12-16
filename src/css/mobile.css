@@ -4,6 +4,9 @@
         height: 4vw;
         width: 30vw;
     }
+    .geoSelect {
+        top: 5vw;
+    }
     .haveNoPrizesDiv {
         font-size: 3.35vw;
     }
@@ -718,6 +721,9 @@
         font-size: 3vw;
         height: 5vw;
         width: 35vw;
+    }
+    .geoSelectMap {
+        font-size: 3.5vw;
     }
     h1 {
         width: 87vw;
