@@ -126,11 +126,11 @@ export default class MapComponent extends React.Component {
         return (
             <section className="map oranged">
                 <select className='geoSelectMap' value={region} onChange={e => handleChangeRegion(e.target.value)}>
-                    <option value='Москва, Россия'>Москва и Московская область</option>
-                    <option value='Калининград, Россия'>Калининград и Калининградская область</option>
+                    <option value='Москва, Россия'>Москва и МО</option>
+                    <option value='Калининград, Россия'>Калининград и КО</option>
                 </select>
                 <div className="container">
-                    <h2>{region === 'Москва, Россия' ? 'За призами в магазины "Виктория"' : 'За призами в магазины "Виктория", "Виктория Квартал" и "Дешево"'}</h2>
+                    <h2>{region === 'Москва, Россия' ? 'За призами в магазины «Виктория»' : 'За призами в магазины «Виктория», «Виктория Квартал» и «Дешево»'}</h2>
                     <div id="map"></div>
                 </div>
             </section>

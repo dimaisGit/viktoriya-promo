@@ -633,24 +633,26 @@ main .col .code {
 }
 
 .prices.oranged {
-    background: url(../img/oranged-bg.jpg), url(../img/snowflakes-bg-prices.png) no-repeat center;
-    background-size: cover, 90%;
+    background: url(../img/oranged-bg.jpg), url(../img/snowflakes-bg-prices.png) no-repeat center, url(../img/balls.png) no-repeat center -5vw;
+    background-size: cover, 90%, 66%;
     background-blend-mode: overlay;
     padding-bottom: 16vw;
+    /* position: relative; */
+    /* z-index: 0; */
 }
 
 .raffle.oranged {
-    background: url(../img/trees-bg.svg) no-repeat, url(../img/raffle-snowflakes-bg.png) no-repeat 54%;
-    background-size: 120%, 100%;
+    background: url(../img/trees-bg.png) no-repeat -10%, url(../img/raffle-snowflakes-bg.png) no-repeat 54%;
+    background-size: 130%, 100%;
     background-blend-mode: multiply;
-    background-position: 0 0vw, center;
+    background-position: -20vw 0vw, center;
     position: relative;
-    margin: -14vw -.21vw;
-    padding: 17vw 0;
+    margin: -19vw -.21vw;
+    padding: 11vw 0;
 }
 
 .map.oranged {
-    padding-top: 14vw;
+    padding-top: 19vw;
     background: url(../img/oranged-bg.jpg), url(../img/map-snow-bg.png) no-repeat center;
     background-blend-mode: overlay;
     background-size: 100%;
@@ -667,10 +669,11 @@ main .col .code {
     content: '';
     position: absolute;
     right: 31vw;
-    top: 12.41vw;
+    top: 12.61vw;
     width: 8vw;
     height: 7vw;
-    background: url(../img/mandarin-rafl-before.png) no-repeat center;
+    background: url(../img/mandarin-rafl-before.png) no-repeat;
+    background-position: 0 0;
     background-size: contain;
 }
 
@@ -958,20 +961,43 @@ footer::after {
 
 .geoSelectMap, .geoSelect {
     font-family: 'Ubuntu';
-    min-width: 22vw;
+    padding-left:3vw;
     outline: none;
     border: none;
-    height: 4vw;
     z-index: 1000000;
     font-size: 1.2vw;
     background: transparent;
     margin-top: -3vw;
-    color: #2a4a30;
     position: absolute;
     text-align-last: right;
     right: 3vw;
     font-weight: 600;
     cursor: pointer;
+    /* background: url(../img/placemark.svg) no-repeat left; */
+    background-size: contain;
+    height: auto;
+    background-position: 1vw 0;
+    width: auto;
+    color: #fff;
+    /* -webkit-appearance: none; */
+    padding-right: 2vw;
+}
+
+.geoSelectMap option{
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+    text-align: left;
+    width: 80%;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: 'Ubuntu';
+    text-align-last: left;
+    /* -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; */
 }
 
 .geoSelectMap:hover{
@@ -988,11 +1014,10 @@ footer::after {
 .geoSelect option {
     color: black;
     text-align: right;
-    background: white;
-    border: 1px solid #ff8200;
+    background: transparent;
     outline: none;
+    box-shadow: none;
 }
-
 .inputError {
     width: 100%;
     display: block;
