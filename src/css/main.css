@@ -72,17 +72,7 @@ main.oranged {
     background-size: 116%,  100%;
     position: relative;
 }
-main.oranged::after{
-    content:'';
-    position: absolute;
-    top: 3vw;
-    transform: rotate(-20deg);
-    left: 0;
-    background: url(../img/lights.png) no-repeat 50% 0%;
-    background-size: contain;
-    width: 10vw;
-    height: 3vw;
-}
+
 .mandarined::before, .mandarined::after, footer::before {
     content: '';
     position: absolute;
