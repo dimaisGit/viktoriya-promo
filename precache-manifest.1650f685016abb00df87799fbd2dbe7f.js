@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cce0829d8869bf9d1e001922d65c244f",
+    "revision": "c851ec8b78edb29058ca31ce954b47e6",
     "url": "/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "a8e4fb2ad18e37d3afa3",
-    "url": "/static/css/main.5ee6a12c.chunk.css"
+    "revision": "e715545ac94259d448e9",
+    "url": "/static/css/main.a7d5b80d.chunk.css"
   },
   {
     "revision": "636a3f1a4928c4cc002c",
     "url": "/static/js/2.dc9a60c6.chunk.js"
   },
   {
-    "revision": "a8e4fb2ad18e37d3afa3",
+    "revision": "e715545ac94259d448e9",
     "url": "/static/js/main.5bf85081.chunk.js"
   },
   {
@@ -138,10 +138,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "531e69949eb303c48033a16399d6b288",
     "url": "/static/media/left-hand.531e6994.svg"
-  },
-  {
-    "revision": "b589ca41ff618cfb514a4e84bdead1e5",
-    "url": "/static/media/lights.b589ca41.png"
   },
   {
     "revision": "25bf045ca257e971124f3997d89f321c",
