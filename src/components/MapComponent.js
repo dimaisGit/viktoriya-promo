@@ -19,7 +19,6 @@ export default class MapComponent extends React.Component {
         if (this.state.isMapInited) {
             const { longitude, latitude } = this.props
             if (longitude && latitude && !this.state.isRegionSet){
-                console.log(longitude, latitude)
                 let geoRequest = window.ymaps.geocode([latitude, longitude], {results: 1, json: true})
                 geoRequest.then(res => {
                     const { description } = res.GeoObjectCollection.featureMember[0].GeoObject
@@ -27,12 +26,13 @@ export default class MapComponent extends React.Component {
                     this.setState({
                         isRegionSet: true
                     })
-                    if (description != this.props.region && description === 'Москва, Россия' || description === 'Калининград, Россия'){
+                    if (description != this.props.region && description.includes('Москва, Россия') || description.includes('Калининград, Россия')){
                         this.myMap.setCenter([latitude, longitude]);
                         this.props.handleChangeRegion(description)
                     }
                 })
-            }
+            } else if (longitude && latitude)
+                this.myMap.setCenter([latitude, longitude])
         }
     }
 

@@ -14,6 +14,17 @@ import './css/main.css'
 import './css/animations.css'
 import './css/mobile.css'
 import leImg from './img/agree.png'
+
+export const moscowData = {
+    name: 'Москва, Россия',
+    coords: [55.7501, 37.539320499999995]
+}
+
+export const kalinigradData = {
+    name: 'Калининград, Россия',
+    coords: [54.704393, 20.507338]
+}
+
 export default class App extends React.Component {
     constructor(props) {
         super(props)
@@ -25,8 +36,11 @@ export default class App extends React.Component {
     }
 
     handleChangeRegion = region => {
+        const coords = region.includes(moscowData.name) ? moscowData.coords : kalinigradData.coords
         this.setState({
-            region: region
+            region: region,
+            latitude: coords[0],
+            longitude: coords[1]
         })
     }
 

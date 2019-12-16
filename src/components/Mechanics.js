@@ -27,7 +27,7 @@ export default class MechanicsComponent extends React.Component {
                                 <div className="block no-bg">
                                     <h4>скидку до 20%</h4>
                                     <p>
-                                        Используйте купон
+                                        Используйте карту
                                         при следующей покупке
                                     </p>
                                 </div>
