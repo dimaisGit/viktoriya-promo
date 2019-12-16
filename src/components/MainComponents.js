@@ -31,15 +31,8 @@ export default class MainComponent extends React.Component {
                     </div>
                     <div className="col">
                         <div className="mandarin-img">
-                            <img className="plane" src={salute} alt="salute"
+                            <img className="mandarin" src={mandarin} alt="mandarin"
                                  srcSet=""/>
-                            <img className="tour" src={tel} alt="tel" srcSet=""/>
-                                <img className="tel" src={coffe} alt="coffe" srcSet=""/>
-                                    <img className="card" src={fitnes2} alt="fitnes2" srcSet=""/>
-                                        <img className="list" src={fitnes1} alt="fitnes1"
-                                             srcSet=""/>
-                                        <img className="mandarin" src={mandarin} alt="mandarin"
-                                             srcSet=""/>
                         </div>
                         <div className="code">
                             <div className="btn register">
