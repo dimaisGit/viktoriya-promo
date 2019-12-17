@@ -5,7 +5,8 @@ import PhoneForm from "../components/PhoneForm";
 
 class PhoneFormContainer extends React.Component {
     render() {
-        const { handleSendCode, handleCheckCode, codeSent, error } = this.props
+        const { handleSendCode, handleCheckCode, codeSent, error, verifyCodeError } = this.props
+        console.log(error)
         return (
             <>
                 <PhoneForm
@@ -13,6 +14,7 @@ class PhoneFormContainer extends React.Component {
                     handleCheckCode={handleCheckCode}
                     codeSent={codeSent}
                     sendError={error}
+                    verifyCodeError={verifyCodeError}
                 />
             </>
         )
@@ -22,7 +24,8 @@ class PhoneFormContainer extends React.Component {
 const mapStateToProps = store => {
     return {
         codeSent: store.user.codeSent,
-        error: store.user.error
+        error: store.user.error,
+        verifyCodeError: store.user.verifyCodeError
     }
 }
 
