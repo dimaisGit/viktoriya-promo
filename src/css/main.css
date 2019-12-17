@@ -1348,13 +1348,14 @@ footer::after {
     position: relative;
     width: 100%;
     flex: 100% 1;
-    overflow-y: scroll;
     max-height: 10vw;
 }
 
 .couponDiv {
     display: flex;
     flex-wrap: wrap;
+    overflow-y: scroll;
+
 }
 
 body::-webkit-scrollbar:horizontal, .couponDiv::-webkit-scrollbar:horizontal {
