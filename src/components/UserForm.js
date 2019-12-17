@@ -70,7 +70,7 @@ class UserForm extends React.Component {
         else {
             handleAddBarcode(userToken, couponCode)
             this.setState({
-                couponError: 'Неверный номер купона'
+                couponError: ''
             })
         }
     }
