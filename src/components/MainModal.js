@@ -9,7 +9,6 @@ export default class MainModal extends React.Component {
 
     componentDidUpdate() {
         if (this.props.userToken) {
-            console.log(this.props.userToken)
             this.props.handleCheckToken(this.props.userToken)
         }
     }

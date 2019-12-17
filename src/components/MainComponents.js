@@ -17,7 +17,7 @@ export default class MainComponent extends React.Component {
         return (
             <main className="oranged ">
                 <div className="container flexing">
-                    <select className='geoSelect' value={region} onChange={e => handleChangeRegion(e.target.value)} onclick="return false;" id="">
+                    <select className='geoSelect' value={region} onChange={e => handleChangeRegion(e.target.value)} onClick="return false;" id="">
                         <option value='Москва, Россия'> Москва и МO</option>
                         <option value='Калининград, Россия'> Калининград и КO</option>
                     </select>

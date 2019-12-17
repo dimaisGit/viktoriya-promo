@@ -1050,8 +1050,8 @@ footer::after {
 }
 
 .divButton {
-    width: 40% !important;
-    margin: 2vw 0 0!important;
+    width: 40%;
+    margin: 2vw 0 0;
 }
 
 .mainModal form div:nth-child(2) {
@@ -1076,7 +1076,7 @@ footer::after {
 }
 
 .addCouponDiv {
-    margin: auto !important;
+    margin: auto;
     width: 80vw;
     display: flex;
     justify-content: center;
@@ -1095,7 +1095,7 @@ footer::after {
 }
 .addCouponDiv > div > div {
     max-width: 100%;
-    margin: 0 !important;
+    margin: 0;
 }
 .addCouponDiv > div > div  input{
     width: 100%;
@@ -1226,11 +1226,11 @@ footer::after {
 }
 
 .divButton {
-    height: auto !important;
-    display: block !important;
-    width: 18vw !important;
+    height: auto;
+    display: block;
+    width: 18vw ;
     padding-bottom: 3vw;
-    margin-top: 3vw !important;
+    margin-top: 3vw;
 }
 
 .mainModal form .subBut button, .divButton {
@@ -1299,7 +1299,7 @@ footer::after {
 }
 
 .mainModal form div:nth-child(2).inputError, .inputError {
-    position: absolute!important;
+    position: absolute;
     bottom: 1vw;
     margin: 0;
     padding: 0;
@@ -1312,7 +1312,7 @@ footer::after {
 }
 
 .mainModal form div:nth-child(2).error, .error {
-    position: absolute !important;
+    position: absolute;
     width: 30vw;
     height: auto;
     background-color: #fff;

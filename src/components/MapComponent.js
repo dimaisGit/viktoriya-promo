@@ -22,7 +22,6 @@ export default class MapComponent extends React.Component {
                 let geoRequest = window.ymaps.geocode([latitude, longitude], {results: 1, json: true})
                 geoRequest.then(res => {
                     const { description } = res.GeoObjectCollection.featureMember[0].GeoObject
-                    console.log(description)
                     this.setState({
                         isRegionSet: true
                     })
