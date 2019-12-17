@@ -1078,8 +1078,37 @@ footer::after {
 .addCouponDiv {
     margin: auto !important;
     width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.mainModal form div.addCouponDiv label{
+    display: none;
+}
+.mainModal form div.addCouponDiv > div:not(.addCoup){
+    height: auto;
+    flex: 40% 1;
+    max-width: 40%;
+    justify-content: flex-start;
+    padding-left: .5vw;
+    margin: 0;;
+}
+.addCouponDiv > div > div {
+    max-width: 100%;
+    margin: 0 !important;
+}
+.addCouponDiv > div > div  input{
+    width: 100%;
+}
+.mainModal form .subBut.addCoup{
+    height: auto;
+}
+.mainModal form .addCouponDiv .subBut.addCoup .divButton{
+    align-self: center;
+    padding: 1vw 3vw;
+    margin: 0;
+    height: auto;
+}
 .mainModal form input[name="userPhone"] {
     width: 76%;
     padding-left: 3vw;
@@ -1167,7 +1196,7 @@ footer::after {
     border-radius: 1.3vw;
     position: relative;
     height: auto;
-    overflow: auto;
+    overflow: initial;
 }
 
 .mainModal form.regForm .nameField-block {
@@ -1312,6 +1341,7 @@ footer::after {
     font-size: 1.5vw;
     font-family: 'pomidorko';
     color: #ff8200;
+    overflow: unset;
 }
 
 .haveNoPrizesDiv, .couponDiv {
@@ -1327,26 +1357,30 @@ footer::after {
     flex-wrap: wrap;
 }
 
-::-webkit-scrollbar:horizontal {
+body::-webkit-scrollbar:horizontal, .couponDiv::-webkit-scrollbar:horizontal {
     height: 5px;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.couponDiv::-webkit-scrollbar {
     position: relative;
     width: 5px
 }
 
-::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar, body::-webkit-scrollbar-track, body::-webkit-scrollbar-thumb,
+.couponDiv::-webkit-scrollbar, .couponDiv::-webkit-scrollbar-track, .couponDiv::-webkit-scrollbar-thumb {
     border-radius: 5px;
     -webkit-appearance: none;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+.couponDiv::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.couponDiv::-webkit-scrollbar-thumb {
     background: #2a4a30;
     outline: 1px solid slategrey
 }
