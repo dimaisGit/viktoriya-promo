@@ -1009,6 +1009,8 @@
         width: 40vw;
         height: 45vw;
         left: 2vw;
+        transform: translateZ(0);
+        z-index: 0;
     }
     .leftHand, .rightHand {
         width: 18vw;
