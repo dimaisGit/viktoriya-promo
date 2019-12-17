@@ -1355,7 +1355,7 @@ footer::after {
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-
+    max-height: 4vw;
 }
 
 body::-webkit-scrollbar:horizontal, .couponDiv::-webkit-scrollbar:horizontal {
@@ -1388,7 +1388,7 @@ body::-webkit-scrollbar-thumb,
 
 .regForm .couponDiv .coupon {
     flex: 50%;
-    font-size: 1.2vw;
+    font-size: 2.2vw;
     margin-top: 1vw;
     height: auto;
     max-width: 50%;
@@ -1397,7 +1397,7 @@ body::-webkit-scrollbar-thumb,
 .regForm .couponDiv .coupon span {
     font-family: 'pomidorko';
     color: #ff8200;
-    font-size: 1.2vw;
+    font-size: 2.2vw;
     margin-right: 1vw;
 }
 .addCouponDiv{
