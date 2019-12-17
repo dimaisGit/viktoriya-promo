@@ -1393,3 +1393,10 @@ footer::after {
 .mainModal form input[name='couponCode'] {
     font-size: 1.2vw;
 }
+footer .container p{
+    margin-bottom: 1vw;
+    text-align: justify;
+}
+footer .container p small {
+    font-size: 90%;
+}
