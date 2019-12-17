@@ -42,12 +42,10 @@ class UserForm extends React.Component {
         if (!this.state.isChecked) {
             throw new SubmissionError({userConsent: 'Необходимо разрешение на обработку персональных данных', _error: 'Login failed!'})
         }
-        console.log()
         this.props.handleUpdateUser(this.props.userToken, values.userName, values.userLastName, values.userEmail, values.userBirthDate)
     }
 
     onConsentChange = e => {
-        console.log(e.target.value)
         this.setState({
             isChecked: e.target.value === 'false' ? true : false
         })
@@ -55,9 +53,7 @@ class UserForm extends React.Component {
 
     onCouponSend = () => {
         const { userName, userLastName, userBirthDate, userEmail, couponCode, handleAddBarcode, userToken } = this.props
-        console.log(couponCode)
         let differenceInYears = ((new Date()).getTime() - (new Date(userBirthDate)).getTime()) / (1000 * 3600 * 24) / 365
-        console.log(differenceInYears)
         if (!userName || !userLastName || !userEmail || !userBirthDate)
             this.setState({
                 couponError: 'Заполните все поля!'
@@ -74,7 +70,7 @@ class UserForm extends React.Component {
         else {
             handleAddBarcode(userToken, couponCode)
             this.setState({
-                couponError: ''
+                couponError: 'Неверный номер купона'
             })
         }
     }
@@ -105,11 +101,9 @@ class UserForm extends React.Component {
     render() {
         const { handleSubmit, submitting, userPrizes, userData, codeError} = this.props
         const { userName, userLastName, userBirthDate, userEmail } = userData
-        console.log(userPrizes)
         const { couponError, isFormHidden } = this.state
         const resultIsFormHidden = isFormHidden && userName && userLastName && userEmail && userBirthDate
-        console.log(resultIsFormHidden)
-        console.log(this.state.isFormHidden)
+        
         return (
             <div className='userForm'>
                 <form className="regForm" onSubmit={handleSubmit(this.onHandleSubmit)}>

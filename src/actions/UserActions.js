@@ -17,7 +17,6 @@ export const CODE_ERROR = 'CODE_ERROR'
 
 export const handleAddBarcode = (userToken, barcode) => {
     return async dispatch => {
-        console.log(userToken, barcode)
         let response = await fetch('http://mandarin-victoria.mywfc.ru/api/addBarcode', {
             method: 'POST',
             body: JSON.stringify({
@@ -26,7 +25,6 @@ export const handleAddBarcode = (userToken, barcode) => {
             })
         })
         let jsR = await response.json()
-        console.log(jsR)
         if (jsR.status === 'ok') {
             dispatch(handleGetMyPrizes(userToken))
         } else {
@@ -47,7 +45,6 @@ export const handleGetMyPrizes = userToken => {
             })
         })
         let jsR = await response.json()
-        console.log(jsR)
         if (jsR.status === 'ok') {
             dispatch({
                 type: GET_MY_PRIZES_SUCCESS,
@@ -70,7 +67,6 @@ export const handleCheckToken = userToken => {
             })
         })
         let jsR = await response.json();
-        console.log(jsR)
         if (jsR.status === 'ok') {
             const { user_name, user_last_name, user_email, user_birth_date } = jsR
             dispatch({
@@ -102,7 +98,6 @@ export const handleGetTokenFromLocalStorage = () => {
 
 export const handleSendCode = userPhone => {
     return async dispatch => {
-        console.log(userPhone)
         let response = await fetch('http://mandarin-victoria.mywfc.ru/api/getCode', {
             method: 'POST',
             body: JSON.stringify({
@@ -110,7 +105,6 @@ export const handleSendCode = userPhone => {
             })
         })
         let jsR = await response.json();
-        console.log(jsR)
         if (jsR.status === 'ok') {
             dispatch({
                 type: CODE_REQUEST_SUCCESS
@@ -129,7 +123,6 @@ export const handleCheckCode = (userPhone, userCode) => {
             })
         })
         let jsR = await response.json()
-        console.log(jsR)
         if (jsR.status === 'ok') {
             const { user_token, user_name, user_last_name, user_email, user_birth_date } = jsR
             window.localStorage.setItem('userToken', user_token)
@@ -149,7 +142,6 @@ export const handleCheckCode = (userPhone, userCode) => {
 
 export const handleUpdateUser = (userToken, userName, userLastName, userEmail, userBirthDate) => {
     return async dispatch => {
-        console.log(userToken)
         let response = await fetch('http://mandarin-victoria.mywfc.ru/api/updateUser', {
             method: 'POST',
             body: JSON.stringify({
@@ -161,7 +153,6 @@ export const handleUpdateUser = (userToken, userName, userLastName, userEmail, u
             })
         })
         let jsR = await response.json();
-        console.log(jsR)
         if (jsR.status === 'ok') {
             dispatch({
                 type: UPDATE_USER_SUCCESS,
