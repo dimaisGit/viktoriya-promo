@@ -1054,6 +1054,7 @@
         left: 7.6vw;
         -webkit-animation: 4s eyeClosing ease-in-out infinite;
         animation: 4s eyeClosing ease-in-out infinite;
+        transform: translateZ(0);
     }
     .rightEye {
         width: 12vw;
@@ -1062,6 +1063,7 @@
         left: 21vw;
         -webkit-animation: 4s eyeClosingRight ease-in-out infinite;
         animation: 4s eyeClosingRight ease-in-out infinite;
+        transform: translateZ(0);
     }
     .mouth {
         width: 32vw;
@@ -1071,6 +1073,7 @@
         -o-transition: all .3s;
         transition: all .3s;
         left: 5.5vw;
+        transform: translateZ(0);
     }
     .map h2 {
         margin-bottom: 5vw;
