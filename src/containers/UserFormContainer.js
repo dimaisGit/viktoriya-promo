@@ -6,7 +6,6 @@ import { handleUpdateUser, handleGetMyPrizes, handleAddBarcode } from "../action
 class UserFormContainer extends React.Component {
     render() {
         const { handleUpdateUser, handleAddBarcode, userToken, userName, userLastName, userEmail, userBirthDate, handleGetMyPrizes, userPrizes, codeError } = this.props
-        console.log(userToken)
         return (
             <>
                 <UserForm

@@ -57,9 +57,7 @@ export default class App extends React.Component {
                 latitude: latitude,
                 longitude: longitude
             })
-            console.log(latitude, longitude)
         }, error => {
-            console.log(error)
         })
     }
 
