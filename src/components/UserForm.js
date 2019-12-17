@@ -112,7 +112,7 @@ class UserForm extends React.Component {
                     { !resultIsFormHidden &&
                         <>
                             <h2 className="label-reg ">{ !userName || !userLastName || !userEmail || !userBirthDate ? 'Заполните форму регистрации' : 'Привет, ' + userName + '!'}</h2>
-                            <Field name="userName" component={RenderField} placeholder='Имя' index="nameField"/>
+                            <Field name="userName" component={RenderField} placeholder='Имя' title="Язык ввода - русский" pattern="^[А-Яа-яЁё]+$" index="nameField"/>
                             <Field name="userLastName" component={RenderField} placeholder='Фамилия' index="nameField"/>
                             <Field name="userEmail" component={RenderField} type='email' placeholder='E-mail' index="nameField"/>
                             <Field name="userBirthDate" component={RenderField} type='date' placeholder='Дата рождения' index="nameField"/>
