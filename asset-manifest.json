@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea317d07.chunk.css",
+    "main.css": "/static/css/main.053f1e7b.chunk.css",
     "main.js": "/static/js/main.bfea5db1.chunk.js",
     "main.js.map": "/static/js/main.bfea5db1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.022fc79d.js",
@@ -9,10 +9,10 @@
     "static/js/2.dc9a60c6.chunk.js": "/static/js/2.dc9a60c6.chunk.js",
     "static/js/2.dc9a60c6.chunk.js.map": "/static/js/2.dc9a60c6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2617d7d0523b02c9d14037e11fe44736.js": "/precache-manifest.2617d7d0523b02c9d14037e11fe44736.js",
+    "precache-manifest.eb0b42a7db08ffe8c2f9878df33f5aed.js": "/precache-manifest.eb0b42a7db08ffe8c2f9878df33f5aed.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4c9116bc.chunk.css.map": "/static/css/2.4c9116bc.chunk.css.map",
-    "static/css/main.ea317d07.chunk.css.map": "/static/css/main.ea317d07.chunk.css.map",
+    "static/css/main.053f1e7b.chunk.css.map": "/static/css/main.053f1e7b.chunk.css.map",
     "static/media/animations.css": "/static/media/right-eye.b6356b0b.svg",
     "static/media/main.css": "/static/media/viktoriyaLogo.bc2aa8ea.png",
     "static/media/mobile.css": "/static/media/trees-bg.591d6818.svg",
@@ -35,7 +35,7 @@
     "static/js/runtime-main.022fc79d.js",
     "static/css/2.4c9116bc.chunk.css",
     "static/js/2.dc9a60c6.chunk.js",
-    "static/css/main.ea317d07.chunk.css",
+    "static/css/main.053f1e7b.chunk.css",
     "static/js/main.bfea5db1.chunk.js"
   ]
 }
