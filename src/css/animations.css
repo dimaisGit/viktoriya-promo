@@ -391,13 +391,13 @@
 @keyframes eyeClosing {
     0%, 6%, 100% {
         background: url(../img/orangePieces/left-eye.svg) no-repeat center;
-        background-size: contain;
+        background-size: 100%;
         transform: translateZ(0);
         z-index: 100;
     }
     5% {
         background: url(../img/orangePieces/left-eye-closed.svg) no-repeat center;
-        background-size: contain;
+        background-size: 100%;
         transform: translateZ(0);
         z-index: 100;
     }
@@ -406,13 +406,13 @@
 @keyframes eyeClosingRight {
     0%, 6%, 100% {
         background: url(../img/orangePieces/right-eye.svg) no-repeat center;
-        background-size: contain;
+        background-size: 100%;
         transform: translateZ(0);
         z-index: 100;
     }
     5% {
         background: url(../img/orangePieces/right-eye-closed.svg) no-repeat center;
-        background-size: contain;
+        background-size: 100%;
         transform: translateZ(0);
         z-index: 100;
     }

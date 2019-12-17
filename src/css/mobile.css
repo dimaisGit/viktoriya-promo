@@ -1058,7 +1058,8 @@
         animation: 4s eyeClosing ease-in-out infinite;
         transform: translateZ(0);
         z-index: 100;
-        overflow: visible
+        overflow: visible;
+        background-size: 100%
     }
     .rightEye {
         width: 12vw;
@@ -1069,7 +1070,8 @@
         animation: 4s eyeClosingRight ease-in-out infinite;
         transform: translateZ(0);
         z-index: 100;
-        overflow: visible
+        overflow: visible;
+        background-size: 100%
     }
     .mouth {
         width: 32vw;
