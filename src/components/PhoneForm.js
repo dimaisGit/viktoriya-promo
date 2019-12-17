@@ -1,5 +1,5 @@
 import React from 'react'
-import { Field, reduxForm, SubmissionError, change } from "redux-form";
+import { Field, reduxForm, SubmissionError, change, stopSubmit } from "redux-form";
 import { RenderField } from "./RenderField";
 
 
@@ -19,8 +19,17 @@ class PhoneForm extends React.Component {
             this.props.handleCheckCode('+7' + values.userPhone, values.userCode)
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        const { verifyCodeError, dispatch } = this.props
+        if (verifyCodeError != prevProps.verifyCodeError)
+            dispatch(stopSubmit('phone', {
+                userCode: 'Ошибка отправки кода'
+            }))
+    }
+
     render() {
         const { handleSubmit, submitting, codeSent, sendError } = this.props
+        console.log(sendError)
         return (
             <form onSubmit={handleSubmit(this.onHandleSubmit)}>
                 <div className="cancelBut"></div>
@@ -31,7 +40,6 @@ class PhoneForm extends React.Component {
                 </div>
                 {codeSent && <p className="formCodeEnt">Введите код</p>}
                 {codeSent && <Field name='userCode' component={RenderField} placeholder=" " />}
-                {sendError && <div className='error'>{sendError}</div>}
                 {codeSent && <p className="formCodeAgain">Отправить код повторно</p>}
 
             </form>

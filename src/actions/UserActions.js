@@ -136,6 +136,11 @@ export const handleCheckCode = (userPhone, userCode) => {
                     userBirthDate: user_birth_date
                 }
             })
+        } else {
+            dispatch({
+                type: VERIFY_CODE_FAIL,
+                payload: 'Неверный код'
+            })
         }
     }
 }
