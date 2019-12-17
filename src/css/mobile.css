@@ -1058,6 +1058,7 @@
         animation: 4s eyeClosing ease-in-out infinite;
         transform: translateZ(0);
         z-index: 100;
+        overflow: visible
     }
     .rightEye {
         width: 12vw;
@@ -1068,6 +1069,7 @@
         animation: 4s eyeClosingRight ease-in-out infinite;
         transform: translateZ(0);
         z-index: 100;
+        overflow: visible
     }
     .mouth {
         width: 32vw;
@@ -1079,6 +1081,7 @@
         left: 5.5vw;
         transform: translateZ(0);
         z-index: 100;
+        overflow: visible
     }
     .map h2 {
         margin-bottom: 5vw;
