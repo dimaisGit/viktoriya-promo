@@ -243,7 +243,9 @@
     }
     .mainModal form.regForm {
         width: 95vw;
-        height: 52vw;
+        min-height: 52vw;
+        max-height: 95vh;
+        height: auto;
     }
     .mainModal form .nameField-block input {
         font-size: 2.2vw;
@@ -260,7 +262,7 @@
         width: 3.5vw;
     }
     .mainModal form div.reg-block {
-        margin: 0;
+        margin: 3vw 0;
         font-size: 2.5vw;
     }
     .mainModal form div.reg-block div {
@@ -286,6 +288,14 @@
     .regForm .couponDiv .coupon {
         flex: 100% 2;
         max-width: 100%;
+    }
+    .addCouponDiv{
+        margin: 10vw auto;
+    }
+    .mainModal form div.reg-block div.inputError{
+        font-size: 2.3vw;
+        width: 100vw;
+        margin-top: 2vw;
     }
     .addCouponDiv input {
         width: 40vw;
@@ -697,7 +707,7 @@
     }
     .mainModal form.regForm {
         width: 95vw;
-        height: 85vw;
+        min-height: 85vw;
     }
     .mainModal form div.cancelBut {
         width: 5vw;
@@ -783,11 +793,15 @@
         justify-content: center;
     }
     .mainModal form .addCouponDiv .subBut.addCoup .divButton{
-        width: 31vw;
-        margin-top: 2.5vw; 
+        width: 35vw;
+        position: relative;
+        font-size: 4.2vw;
+        height: 8vw;
+        top: 2.5vw;
     }
-    .addCouponDiv > div > div input{
-        font-size: 2.7vw;;
+    .addCouponDiv > div > div input, .mainModal form input[name='couponCode']{
+        font-size: 2.7vw;
+        height: 8vw;
     }
 }
 
@@ -835,8 +849,9 @@
     }
     main.oranged {
         background: url(../img/oranged-bg-main-mobile-l.png), url(../img/snowflakes-bg-mobile.png);
-        background-position: -33vw -28vw, -10vw -6vw;
+        background-position: -28vw -32vw, -10vw -6vw;
         padding-bottom: 10vw;
+        background-size: 140%;
         overflow: hidden;
     }
     .btn {
@@ -1246,7 +1261,7 @@
         margin-top: 15vw;
     }
     main.oranged {
-        background-size: 160%, 100%;
-        background-position: -44vw -30vw, -10vw -6vw;
+        /* background-size: 160%, 100%; */
+        background-position: -29vw -21vw, -10vw -6vw;
     }
 }
