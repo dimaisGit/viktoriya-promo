@@ -33,7 +33,7 @@ export default class MechanicsComponent extends React.Component {
                                 </div>
                                 <div className="block no-bg">
                                     <h4>код «2020»</h4>
-                                    <p>Для участия в новогоднем розыгрыше <b>СУПЕРПРИЗОВ</b>!</p>
+                                    <p>Для участия в новогоднем розыгрыше <b>СУПЕРПРИЗОВ</b>!***</p>
                                 </div>
                             </div>
                         </div>

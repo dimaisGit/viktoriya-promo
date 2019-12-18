@@ -30,7 +30,7 @@ export default class MainComponent extends React.Component {
                         <div className="sales-block">
                             <div className="heading">скидки
                             </div>
-                            <div className="additional">и суперпризы</div>
+                            <div className="additional">и суперпризы***</div>
                         </div>
                     </div>
                     <div className="col">
