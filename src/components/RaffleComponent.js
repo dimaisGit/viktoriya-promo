@@ -10,8 +10,8 @@ export default class RaffleComponent extends React.Component {
                     <div className="content-raffle flexing">
                         <Mandarin />
                         <div className="info">
-                            <h2>Розыгрыш призов</h2>
-                            <p>Розыгрыш  состоится 07.02.2020. Мы проведем прямой эфир, где узнаем имена счастливых обладателей главных призов. Запись будет выложена на сайт сразу после определения победителей. </p>
+                            <h2>7 февраля 2020 года</h2>
+                            <p>Подведение итогов и объявление победителей </p>
                         </div>
                     </div>
                 </div>
