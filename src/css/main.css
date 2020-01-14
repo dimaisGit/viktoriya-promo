@@ -1437,3 +1437,6 @@ footer .container p{
 footer .container p small {
     font-size: 90%;
 }
+footer .container p.rulesTxt {
+    text-align: center;
+}

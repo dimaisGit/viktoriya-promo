@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Rules from '../docs/rules.pdf'
 
 export default class FooterComponent extends React.Component {
 
@@ -45,6 +45,7 @@ export default class FooterComponent extends React.Component {
                         <small>
                             *** Обязательное условие участия розыгрыша и для получения приза  - предъявить оригинал печатного купона. Купон изымается при получении приза.
                         </small>
+                       <p class="rulesTxt"><a href={Rules} target="_blank">Ознакомиться с полными правилами Акции</a></p>
                     </p>
                     </div> }
                     {this.props.region === 'Москва, Россия' && <div className="container">
@@ -67,6 +68,7 @@ export default class FooterComponent extends React.Component {
                                 *** Обязательное условие участия розыгрыша и для получения приза  - предъявить оригинал печатного купона. Купон изымается при получении приза.
                             </small>
                         </p>
+                        <p class="rulesTxt"><a href={Rules} target="_blank">Ознакомиться с полными правилами Акции</a></p>
 
                     </div> }
             </footer>
