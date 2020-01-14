@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.58c1258f.chunk.css",
-    "main.js": "/static/js/main.4ff51789.chunk.js",
-    "main.js.map": "/static/js/main.4ff51789.chunk.js.map",
+    "main.css": "/static/css/main.c3c906de.chunk.css",
+    "main.js": "/static/js/main.f8bbd6ce.chunk.js",
+    "main.js.map": "/static/js/main.f8bbd6ce.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.022fc79d.js",
     "runtime-main.js.map": "/static/js/runtime-main.022fc79d.js.map",
     "static/css/2.4c9116bc.chunk.css": "/static/css/2.4c9116bc.chunk.css",
-    "static/js/2.8a9fd487.chunk.js": "/static/js/2.8a9fd487.chunk.js",
-    "static/js/2.8a9fd487.chunk.js.map": "/static/js/2.8a9fd487.chunk.js.map",
+    "static/js/2.42c55c82.chunk.js": "/static/js/2.42c55c82.chunk.js",
+    "static/js/2.42c55c82.chunk.js.map": "/static/js/2.42c55c82.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ece75531cd00160095b5530ab5a9ed1d.js": "/precache-manifest.ece75531cd00160095b5530ab5a9ed1d.js",
+    "precache-manifest.853bef804a481ccb755fc2cdd4240a1d.js": "/precache-manifest.853bef804a481ccb755fc2cdd4240a1d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4c9116bc.chunk.css.map": "/static/css/2.4c9116bc.chunk.css.map",
-    "static/css/main.58c1258f.chunk.css.map": "/static/css/main.58c1258f.chunk.css.map",
+    "static/css/main.c3c906de.chunk.css.map": "/static/css/main.c3c906de.chunk.css.map",
     "static/media/animations.css": "/static/media/right-eye.b6356b0b.svg",
     "static/media/main.css": "/static/media/viktoriyaLogo.bc2aa8ea.png",
     "static/media/mobile.css": "/static/media/trees-bg.591d6818.svg",
@@ -27,6 +27,7 @@
     "static/media/mandarin.png": "/static/media/mandarin.c3b8fb0d.png",
     "static/media/phonePrize.png": "/static/media/phonePrize.b9b42f2e.png",
     "static/media/placemark.svg": "/static/media/placemark.29b74808.svg",
+    "static/media/rules.pdf": "/static/media/rules.1a24caca.pdf",
     "static/media/salute.png": "/static/media/salute.1fba3bcc.png",
     "static/media/tel.png": "/static/media/tel.c65edbaa.png",
     "static/media/tvPrize.png": "/static/media/tvPrize.a8d28772.png"
@@ -34,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.022fc79d.js",
     "static/css/2.4c9116bc.chunk.css",
-    "static/js/2.8a9fd487.chunk.js",
-    "static/css/main.58c1258f.chunk.css",
-    "static/js/main.4ff51789.chunk.js"
+    "static/js/2.42c55c82.chunk.js",
+    "static/css/main.c3c906de.chunk.css",
+    "static/js/main.f8bbd6ce.chunk.js"
   ]
 }
