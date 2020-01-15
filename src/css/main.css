@@ -1440,3 +1440,28 @@ footer .container p small {
 footer .container p.rulesTxt {
     text-align: center;
 }
+.mainModal form button.formCodeAgain{ 
+    background: none;
+    color: #ff8200;
+    display: inline;
+    border: none;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+    font-family: Ubuntu,sans-serif;
+    text-transform: initial;
+    font-size: 1.3vw;
+}
+span.formCodeAgain{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.centerBut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

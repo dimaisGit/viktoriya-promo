@@ -25,11 +25,16 @@ export const initOwl = () => {
             owl.trigger('prev.owl.carousel', [300]);
         })
         window.$('.btn').click(function(){
-            window.$('.mainModal').toggleClass('active')
+            window.$('.mainModal').addClass('active')
+            window.$('body').css({
+                'overflow' : 'hidden'
+            })
         })
         window.$('.cancelBut').click(function(){
-            console.log('cancel')
             window.$('.mainModal').removeClass('active')
+            window.$('body').css({
+                'overflow' : 'initial'
+            })
         })
     });
 }
