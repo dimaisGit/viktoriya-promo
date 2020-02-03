@@ -122,12 +122,12 @@ class UserForm extends React.Component {
                             </div>
                         </>
                     }
-                    <div className='addCouponDiv'>
+                    {/* <div className='addCouponDiv'>
                         <Field name='couponCode' component={RenderField} couponError={couponError || codeError}/>
                         <div className='subBut addCoup'>
                             <div className='divButton ' onClick={this.onCouponSend}>ДОБАВИТЬ КУПОН</div>
                         </div>
-                    </div>
+                    </div> */}
                     <h2 className="label-reg secHeading">Мои купоны</h2>
                     {this.getPrizesComponent(userPrizes)}
                 </form>

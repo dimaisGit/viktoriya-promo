@@ -42,7 +42,7 @@ export default class PricesComponent extends React.Component {
                         </div>
                         <div className="next">{'>'}</div>
                     </div>
-                    <div className="btn">Зарегистрировать код «2020»</div>
+                    <div className="btn">Войти на сайт</div>
                 </div>
             </section>
         )

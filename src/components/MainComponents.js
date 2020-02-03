@@ -40,7 +40,7 @@ export default class MainComponent extends React.Component {
                         </div>
                         <div className="code">
                             <div className="btn register">
-                                зарегистрировать код «2020»
+                                Войти на сайт
                             </div></div>
                     </div>
                 </div>
