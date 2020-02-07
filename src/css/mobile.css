@@ -169,17 +169,17 @@
         font-size: 1.8vw;
     }
     .orange-animated {
-        -webkit-box-flex: 20%;
-        -ms-flex: 20%;
-        flex: 20%;
-        margin: 0 10vw;
+        display: none;
+    }
+    #root {
+        overflow-x: hidden
     }
     .info {
         -webkit-box-flex: 80%;
         -ms-flex: 80% 1;
         flex: 80% 1;
-        max-width: 50vw;
-        margin: 0 5vw;
+        max-width: 70vw;
+        margin: 0;
     }
     .content-raffle .info p {
         font-size: 2vw;
@@ -289,10 +289,10 @@
         flex: 100% 2;
         max-width: 100%;
     }
-    .addCouponDiv{
+    .addCouponDiv {
         margin: 10vw auto;
     }
-    .mainModal form div.reg-block div.inputError{
+    .mainModal form div.reg-block div.inputError {
         font-size: 2.3vw;
         width: 100vw;
         margin-top: 2vw;
@@ -778,12 +778,11 @@
         font-size: 3.2vw;
         height: 6vw;
     }
-    .couponDiv{
+    .couponDiv {
         max-height: 27vw;
         height: auto;
     }
-    .regForm .couponDiv .coupon,
-    .regForm .couponDiv .coupon span{
+    .regForm .couponDiv .coupon, .regForm .couponDiv .coupon span {
         font-size: 5vw;
     }
     .regForm .couponDiv .coupon {
@@ -792,21 +791,20 @@
         text-align: left;
         justify-content: center;
     }
-    .mainModal form .addCouponDiv .subBut.addCoup .divButton{
+    .mainModal form .addCouponDiv .subBut.addCoup .divButton {
         width: 35vw;
         position: relative;
         font-size: 4.2vw;
         height: 8vw;
         top: 2.5vw;
     }
-    .addCouponDiv > div > div input, .mainModal form input[name='couponCode']{
+    .addCouponDiv>div>div input, .mainModal form input[name='couponCode'] {
         font-size: 2.7vw;
         height: 8vw;
     }
-    .mainModal form button.formCodeAgain{
+    .mainModal form button.formCodeAgain {
         font-size: 4.5vw;
         margin-top: 4vw;
-    
     }
     .mainModal form div:nth-child(2).inputError, .inputError {
         width: 100%;
@@ -825,8 +823,7 @@
         height: 6vw;
         font-size: 3.5vw;
     }
-    
-    .mainModal form h2{
+    .mainModal form h2 {
         margin-bottom: 9vw;
     }
     .divButton {
@@ -1258,11 +1255,11 @@
         align-self: flex-start;
         margin-top: 2.5vw;
     }
-    .mainModal form.regForm .subBut{
+    .mainModal form.regForm .subBut {
         align-self: flex-start;
         margin: 0 auto;
     }
-    .addCouponDiv{
+    .addCouponDiv {
         justify-content: flex-start;
     }
     .regForm h3.label-reg {

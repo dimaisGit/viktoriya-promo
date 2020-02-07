@@ -10,8 +10,7 @@ export default class RaffleComponent extends React.Component {
                     <div className="content-raffle flexing">
                         <Mandarin />
                         <div className="info">
-                            <h2>7 февраля 2020 года</h2>
-                            <p>Подведение итогов и объявление победителей </p>
+                        <iframe width="100%" height="296px" src="https://www.youtube.com/embed/wPw6zB7sCpY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
